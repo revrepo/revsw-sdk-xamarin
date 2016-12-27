@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{A7833601-70B7-4E22-8CEC-0B822863286D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DotNet.cs">
+    <Files>
+      <File FileName="AppDelegate.cs" Line="22" Column="71" />
+      <File FileName="Cocoa.cs" Line="32" Column="42" />
+      <File FileName="DotNet.cs" Line="35" Column="53" />
+      <File FileName="NetHttp.cs" Line="7" Column="1" />
+      <File FileName="LoggingHandler.cs" Line="1" Column="1" />
+      <File FileName="WebRequestCreator.cs" Line="36" Column="1" />
+      <File FileName="Main.cs" Line="20" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/ekaterina/Projects/revamp/RevBindings/test/HttpClient-rev-my/WebRequestCreator.cs" line="207" column="1" />
+      <Breakpoint file="/Users/ekaterina/Projects/revamp/RevBindings/test/HttpClient-rev-my/WebRequestCreator.cs" line="213" column="1" />
+      <Breakpoint file="/Users/ekaterina/Projects/revamp/RevBindings/test/HttpClient-rev-my/Cocoa.cs" line="46" column="1" />
+      <Breakpoint file="/Users/ekaterina/Projects/revamp/RevBindings/test/HttpClient-rev-my/Cocoa.cs" line="53" column="1" />
+      <Breakpoint file="/Users/ekaterina/Projects/revamp/RevBindings/test/HttpClient-rev-my/Cocoa.cs" line="38" column="1" />
+      <Breakpoint file="/Users/ekaterina/Projects/revamp/RevBindings/test/HttpClient-rev-my/DotNet.cs" line="73" column="1" />
+      <Breakpoint file="/Users/ekaterina/Projects/revamp/RevBindings/test/HttpClient-rev-my/DotNet.cs" line="109" column="1" />
+      <Breakpoint file="/Users/ekaterina/Projects/revamp/RevBindings/test/HttpClient-rev-my/WebRequestCreator.cs" line="188" column="1" />
+      <Breakpoint file="/Users/ekaterina/Projects/revamp/RevBindings/test/HttpClient-rev-my/WebRequestCreator.cs" line="46" column="1" />
+      <Breakpoint file="/Users/ekaterina/Projects/revamp/RevBindings/test/HttpClient-rev-my/WebRequestCreator.cs" line="70" column="1" />
+      <Breakpoint file="/Users/ekaterina/Projects/revamp/RevBindings/test/HttpClient-rev-my/WebRequestCreator.cs" line="28" column="1" />
+      <Breakpoint file="/Users/ekaterina/Projects/revamp/RevBindings/test/HttpClient-rev-my/WebRequestCreator.cs" line="25" column="1" />
+      <Breakpoint file="/Users/ekaterina/Projects/revamp/RevBindings/test/HttpClient-rev-my/DotNet.cs" line="46" column="1" />
+      <Breakpoint file="/Users/ekaterina/Projects/revamp/RevBindings/test/HttpClient-rev-my/WebRequestCreator.cs" line="36" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.HttpClient PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D3EF545E-8EB9-4A94-8A34-9E52C6420F4A" />
+</Properties>
