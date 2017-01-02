@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{A7833601-70B7-4E22-8CEC-0B822863286D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Main.cs">
+    <Files>
+      <File FileName="Cocoa.cs" Line="31" Column="66" />
+      <File FileName="DotNet.cs" Line="57" Column="73" />
+      <File FileName="NetHttp.cs" Line="37" Column="1" />
+      <File FileName="TableViewRocks.cs" Line="1" Column="1" />
+      <File FileName="MainWindow.xib.designer.cs" Line="18" Column="3" />
+      <File FileName="AppDelegate.cs" Line="57" Column="7" />
+      <File FileName="Main.cs" Line="21" Column="1" />
+      <File FileName="Info.plist" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/ekaterina/Projects/For Development/HttpClient/NetHttp.cs" line="37" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.HttpClient PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D3EF545E-8EB9-4A94-8A34-9E52C6420F4A" />
+</Properties>
