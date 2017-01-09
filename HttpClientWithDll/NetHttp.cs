@@ -9,7 +9,7 @@ using System.Net.Http;
 using RevSDK.iOS;
 using System.Json;
 using System.Text;
-using System.IO;
+using System;
 
 namespace HttpClientSample
 {
@@ -38,9 +38,12 @@ namespace HttpClientSample
 			ad.HandlerType = typeof(HttpMessageInvoker).GetField("handler", BindingFlags.Instance | BindingFlags.NonPublic)?.GetValue(client).GetType();
 
 			var jsonObject = new JsonObject();
-			jsonObject.Add("username","John Smith");
-			jsonObject.Add("password","johnpwd");
-			jsonObject.Add("email","john@smith.foo");
+			jsonObject.Add("DocumentsCount", "1");
+			jsonObject.Add("Id", Guid.NewGuid().ToString());
+			jsonObject.Add("Name", Guid.NewGuid().ToString());
+			jsonObject.Add("Description", "sample description");
+			jsonObject.Add("Deleted", false);
+			jsonObject.Add("UpdatedAt", "2017-01-08T12:27:20.1175366-05:00");
 
 			var content = new StringContent(jsonObject.ToString(), Encoding.UTF8, "application/json");
 

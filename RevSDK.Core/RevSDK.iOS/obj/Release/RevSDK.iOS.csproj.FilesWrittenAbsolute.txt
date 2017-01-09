@@ -7,3 +7,12 @@
 /Users/ekaterina/Projects/RevSDK.Core/RevSDK.iOS/bin/Release/RevSDK.dll
 /Users/ekaterina/Projects/RevSDK.Core/RevSDK.iOS/bin/Release/RevSDK.Core.dll
 /Users/ekaterina/Projects/RevSDK.Core/RevSDK.iOS/bin/Release/Newtonsoft.Json.dll
+/Users/ekaterina/Projects/RevAPM Xamarin SDK/revsw-sdk-xamarin/RevSDK.Core/RevSDK.iOS/obj/Release/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/ekaterina/Projects/RevAPM Xamarin SDK/revsw-sdk-xamarin/RevSDK.Core/RevSDK.iOS/obj/Release/optimized/
+/Users/ekaterina/Projects/RevAPM Xamarin SDK/revsw-sdk-xamarin/RevSDK.Core/RevSDK.iOS/obj/Release/RevSDK.iOS.dll
+/Users/ekaterina/Projects/RevAPM Xamarin SDK/revsw-sdk-xamarin/RevSDK.Core/RevSDK.iOS/obj/Release/RevSDK.iOS.dll.mdb
+/Users/ekaterina/Projects/RevAPM Xamarin SDK/revsw-sdk-xamarin/RevSDK.Core/RevSDK.iOS/bin/Release/RevSDK.dll
+/Users/ekaterina/Projects/RevAPM Xamarin SDK/revsw-sdk-xamarin/RevSDK.Core/RevSDK.iOS/bin/Release/Newtonsoft.Json.dll
+/Users/ekaterina/Projects/RevAPM Xamarin SDK/revsw-sdk-xamarin/RevSDK.Core/RevSDK.iOS/bin/Release/RevSDK.Core.dll
+/Users/ekaterina/Projects/RevAPM Xamarin SDK/revsw-sdk-xamarin/RevSDK.Core/RevSDK.iOS/bin/Release/RevSDK.iOS.dll.mdb
+/Users/ekaterina/Projects/RevAPM Xamarin SDK/revsw-sdk-xamarin/RevSDK.Core/RevSDK.iOS/bin/Release/RevSDK.iOS.dll

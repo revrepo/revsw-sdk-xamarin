@@ -65,13 +65,13 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Net.Http" />
     <Reference Include="Xamarin.iOS" />
-    <Reference Include="RevSDK.Core">
-      <HintPath>..\..\RevSDK.Core\RevSDK.iOS\bin\Release\RevSDK.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="RevSDK.iOS">
-      <HintPath>..\..\RevSDK.Core\RevSDK.iOS\bin\Release\RevSDK.iOS.dll</HintPath>
-    </Reference>
     <Reference Include="System.Json" />
+    <Reference Include="RevSDK.iOS">
+      <HintPath>..\RevSDK.Core\RevSDK.iOS\bin\Release\RevSDK.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="RevSDK.Core">
+      <HintPath>..\RevSDK.Core\RevSDK.iOS\bin\Release\RevSDK.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainWindow.xib.designer.cs">
