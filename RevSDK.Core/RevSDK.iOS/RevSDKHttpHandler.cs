@@ -6,6 +6,7 @@ using Foundation;
 using System.Text;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace RevSDK.iOS
 {
@@ -27,34 +28,42 @@ namespace RevSDK.iOS
 
 			if (request.Content != null)
 			{
-                var content = await request.Content.ReadAsStringAsync();
-                Console.WriteLine(content);
-                
-                var dic = JsonConvert.DeserializeObject<Dictionary<string, string>>(content);
-                var dict = new NSMutableDictionary();
-                foreach (var s in dic)
-                {
-                    NSString Key = new NSString(s.Key);
-                    NSString Value = new NSString(s.Value);
-                    dict.SetValueForKey(Key, Value);
-                }
-                
-                var contentData = NSKeyedArchiver.ArchivedDataWithRootObject(dict);
-                NSURLRequest.Body = contentData;
-                if (request.Content.Headers != null)
-                {
-                    var headersString = request.Content.Headers.ToString();
-                    Console.WriteLine(headersString);
-                    
-                    //var dic = JsonConvert.DeserializeObject<Dictionary<string, string>>(headersString);
-                    
-                    var dict2 = new NSMutableDictionary();
-                    dict2.SetValueForKey(new NSString("Content - Type"), new NSString("application / json"));
-                    dict2.SetValueForKey(new NSString("charset"), new NSString("utf-8"));
-                    
-                    
-                    //NSURLRequest.Headers = dict2;
-                }
+				var content = await request.Content.ReadAsStringAsync();
+				Console.WriteLine(content);
+				var NSContent = new NSString(content);
+				var NSContentData = NSContent.Encode(NSStringEncoding.UTF8);
+
+				NSURLRequest.Body = NSContentData;
+
+				if (request.Content.Headers != null)
+				{
+					Console.WriteLine(request.Content.Headers);
+
+					var responseHeadersCollection = request.Content.Headers;
+					var keys = new object[responseHeadersCollection.Count()];
+					var objects = new object[responseHeadersCollection.Count()];
+					int i = 0;
+
+					foreach (var pair in responseHeadersCollection)
+					{
+						Console.WriteLine("{0}={1}", pair.Key, pair.Value.ToArray()[0]);
+						keys[i] = pair.Key;
+						objects[i] = pair.Value.ToArray()[0];
+						i += 1;
+					}
+
+					//var keys = new object[] { "Content-Type", "charset" };
+					//var objects = new object[] { "application/json", "utf-8" };
+					var dict = NSDictionary.FromObjectsAndKeys(objects, keys);
+					NSURLRequest.Headers = dict;
+					//NSURLRequest.Headers.SetValueForKey(new NSString("application/json"), new NSString("Content-Type"));
+					//NSURLRequest.Headers.SetValueForKey(new NSString("utf-8"), new NSString("charset"));
+
+
+					//NSURLRequest.Headers.SetValuesForKeysWithDictionary(dict2);
+					Console.WriteLine(NSURLRequest.Headers);
+					//NSURLRequest.H
+				}
                 
                 
             }

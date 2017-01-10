@@ -13,7 +13,8 @@ namespace HttpClientSample
 		// URL where we fetch the wisdom from
 		public const string SecureUrl = "https://www.gmail.com";
 		public const string UnsecureUrl = "http://www.cnn.com";
-		public const string POSTUrl = "http://193.124.114.46:3001/users";
+		public const string POSTUrl = "http://jabos.com/api/Tags";
+
 
 
 		static void Main (string[] args)

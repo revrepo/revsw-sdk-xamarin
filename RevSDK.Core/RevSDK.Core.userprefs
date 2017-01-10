@@ -3,7 +3,7 @@
     <Files>
       <File FileName="RevSDK.Core/IRevSDK.cs" Line="6" Column="38" />
       <File FileName="RevSDK.iOS/RevDSK.cs" Line="16" Column="4" />
-      <File FileName="RevSDK.iOS/RevSDKHttpHandler.cs" Line="37" Column="1" />
+      <File FileName="RevSDK.iOS/RevSDKHttpHandler.cs" Line="43" Column="57" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
