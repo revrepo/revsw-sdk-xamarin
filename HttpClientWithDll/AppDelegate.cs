@@ -20,10 +20,13 @@ namespace HttpClientSample
 			//MyRevSDK.StartXamarinSDK("2764f867-ef7c-46ff-b7a0-6ed54464983b");
 			button1.TouchDown += Button1TouchDown;
 			TableViewSelector.Configure(stack, new[] {
-				"http  - NSUrlConnection",
-				"http  - HttpClient",
-				"https - HttpClient",
-				"POST  - HttpClient"/*,
+				"http    - HttpClient",
+				"https   - HttpClient",
+				"POST    - HttpClient",
+				"PUT     - HttpClient",
+				"DELETE  - HttpClient",
+				"OPTIONS - HttpClient",
+				"Auth    - HttpClient"/*,
 				"http  - WebRequest",
 				"https - WebRequest"*/
 			});
@@ -43,23 +46,26 @@ namespace HttpClientSample
 			button1.Enabled = false;
 			switch (stack.SelectedRow ()) {
 				case 0:
-					new Cocoa (this).HttpSample ();
+					await new NetHttp(this).HttpSample(secure: false);
 					break;
 				case 1:
-					await new NetHttp (this).HttpSample (secure: false);
+					await new NetHttp(this).HttpSample(secure: true);
 					break;
 				case 2:
-					await new NetHttp (this).HttpSample (secure: true);
-					break;
-				case 3:
 					await new NetHttp(this).PostSample(secure: true);
 					break;
-				/*case 4:
-					new DotNet(this).HttpSample();
+				case 3:
+					await new NetHttp(this).PutSample(secure: true);
+					break;
+				case 4:
+					await new NetHttp(this).DeleteSample(secure: true);
 					break;
 				case 5:
-					new DotNet(this).HttpSecureSample();
-					break;*/
+					await new NetHttp(this).OPTIONSSample(secure: true);
+					break;
+				case 6:
+					await new NetHttp(this).AuthSample(secure: true);
+					break;
 
 			}
 		}
