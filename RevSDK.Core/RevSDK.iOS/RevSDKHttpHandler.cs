@@ -56,31 +56,32 @@ namespace RevSDK.iOS
 					Console.WriteLine(NSURLRequest.Headers);
 				}
 
-				if (request.Headers != null)
+			}
+
+			if (request.Headers != null)
+			{
+				Console.WriteLine(request.Headers);
+
+				var requestHeadersCollection = request.Headers;
+				var keys = new object[requestHeadersCollection.Count()];
+				var objects = new object[requestHeadersCollection.Count()];
+				int i = 0;
+
+				foreach (var pair in requestHeadersCollection)
 				{
-					Console.WriteLine(request.Headers);
-
-					var responseHeadersCollection = request.Headers;
-					var keys = new object[responseHeadersCollection.Count()];
-					var objects = new object[responseHeadersCollection.Count()];
-					int i = 0;
-
-					foreach (var pair in responseHeadersCollection)
-					{
-						Console.WriteLine("{0}={1}", pair.Key, pair.Value.ToArray()[0]);
-						keys[i] = pair.Key;
-						objects[i] = pair.Value.ToArray()[0];
-						i += 1;
-					}
-
-					var dict = NSDictionary.FromObjectsAndKeys(objects, keys);
-					NSURLRequest.Headers = dict;
-
-					Console.WriteLine(NSURLRequest.Headers);
+					Console.WriteLine("{0}={1}", pair.Key, pair.Value.ToArray()[0]);
+					keys[i] = pair.Key;
+					objects[i] = pair.Value.ToArray()[0];
+					i += 1;
 				}
 
+				var dict = NSDictionary.FromObjectsAndKeys(objects, keys);
+				NSURLRequest.Headers = dict;
+
+				Console.WriteLine(NSURLRequest.Headers);
 			}
-            Console.WriteLine();
+
+			Console.WriteLine();
                         
             if (request.Method != null)
             {
@@ -102,6 +103,27 @@ namespace RevSDK.iOS
 			{
 				var dataString = result.Data.ToString();
 				var content = new StringContent(dataString,Encoding.UTF8);
+
+				NSHttpUrlResponse httpResponse = (NSHttpUrlResponse)result.Response;
+				var headersDict = httpResponse.AllHeaderFields;
+				foreach (var key in headersDict.Keys)
+				{
+					var keyValue = headersDict.ObjectForKey(key);
+					if ((keyValue != null) && (!key.Description.Contains("x-rev")))
+					{
+
+						try
+						{
+							content.Headers.Add(key.ToString(), keyValue.ToString());
+						}
+						catch
+						{
+							Console.WriteLine("{0}: {1}", key, keyValue);
+						}
+					}
+
+				}
+
 				response.Content = content;
 			}
 

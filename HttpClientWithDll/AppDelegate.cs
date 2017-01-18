@@ -72,6 +72,8 @@ namespace HttpClientSample
 
 		public Type HandlerType { get; set; }
 
+		public String HeadersString { get; set; }
+
 		public void RenderStream (Stream stream)
 		{
 			var reader = new StreamReader (stream);
@@ -85,16 +87,28 @@ namespace HttpClientSample
 				};
 				handler.SizeToFit ();
 
-				var label = new UILabel (new CGRect (20, 40, 300, 80)) {
+				var label_h = new UILabel(new CGRect(20, 60, 300, 20))
+				{
+					Text = "Headers returned by the server:"
+				};
+				var headers = new UITextView(new CGRect(20, 80, 300, 100))
+				{
+					Text = HeadersString
+				};
+				var label = new UILabel(new CGRect(20, 180, 300, 40))
+				{
 					Text = "The HTML returned by the server:"
 				};
-				var tv = new UITextView (new CGRect (20, 100, 300, 400)) {
-					Text = reader.ReadToEnd ()
+				var tv = new UITextView(new CGRect(20, 220, 300, 200))
+				{
+					Text = reader.ReadToEnd()
 				};
 				if (HandlerType != null)
-					view.Add (handler);
-				view.Add (label);
-				view.Add (tv);
+					view.Add(handler);
+				view.Add(label_h);
+				view.Add(headers);
+				view.Add(label);
+				view.Add(tv);
 
 				if (UIDevice.CurrentDevice.CheckSystemVersion (7, 0)) {
 					view.EdgesForExtendedLayout = UIRectEdge.None;

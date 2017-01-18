@@ -121,6 +121,15 @@ namespace HttpClientSample
 			client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(Encoding.ASCII.GetBytes(string.Format("{0}:{1}", "postman", "password"))));
 
 			var response = await client.GetAsync(Application.AuthUrl);
+			if (response.Content.Headers != null)
+			{
+				ad.HeadersString = "CHeaders:\n" + response.Content.Headers.ToString();
+			}
+			if (response.Headers != null)
+			{
+				ad.HeadersString += response.Headers.ToString();
+			}
+
 			await response.Content.ReadAsStreamAsync().ContinueWith(t =>
 				  {
 					  ad.RenderStream(t.Result);
