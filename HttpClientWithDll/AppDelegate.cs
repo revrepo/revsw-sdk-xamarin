@@ -20,10 +20,13 @@ namespace HttpClientSample
 			//MyRevSDK.StartXamarinSDK("2764f867-ef7c-46ff-b7a0-6ed54464983b");
 			button1.TouchDown += Button1TouchDown;
 			TableViewSelector.Configure(stack, new[] {
-				"http  - NSUrlConnection",
-				"http  - HttpClient",
-				"https - HttpClient",
-				"POST  - HttpClient"/*,
+				"http    - HttpClient",
+				"https   - HttpClient",
+				"POST    - HttpClient",
+				"PUT     - HttpClient",
+				"DELETE  - HttpClient",
+				"OPTIONS - HttpClient",
+				"Auth    - HttpClient"/*,
 				"http  - WebRequest",
 				"https - WebRequest"*/
 			});
@@ -43,28 +46,33 @@ namespace HttpClientSample
 			button1.Enabled = false;
 			switch (stack.SelectedRow ()) {
 				case 0:
-					new Cocoa (this).HttpSample ();
+					await new NetHttp(this).HttpSample(secure: false);
 					break;
 				case 1:
-					await new NetHttp (this).HttpSample (secure: false);
+					await new NetHttp(this).HttpSample(secure: true);
 					break;
 				case 2:
-					await new NetHttp (this).HttpSample (secure: true);
-					break;
-				case 3:
 					await new NetHttp(this).PostSample(secure: true);
 					break;
-				/*case 4:
-					new DotNet(this).HttpSample();
+				case 3:
+					await new NetHttp(this).PutSample(secure: true);
+					break;
+				case 4:
+					await new NetHttp(this).DeleteSample(secure: true);
 					break;
 				case 5:
-					new DotNet(this).HttpSecureSample();
-					break;*/
+					await new NetHttp(this).OPTIONSSample(secure: true);
+					break;
+				case 6:
+					await new NetHttp(this).AuthSample(secure: true);
+					break;
 
 			}
 		}
 
 		public Type HandlerType { get; set; }
+
+		public String HeadersString { get; set; }
 
 		public void RenderStream (Stream stream)
 		{
@@ -79,16 +87,28 @@ namespace HttpClientSample
 				};
 				handler.SizeToFit ();
 
-				var label = new UILabel (new CGRect (20, 40, 300, 80)) {
+				var label_h = new UILabel(new CGRect(20, 60, 300, 20))
+				{
+					Text = "Headers returned by the server:"
+				};
+				var headers = new UITextView(new CGRect(20, 80, 300, 100))
+				{
+					Text = HeadersString
+				};
+				var label = new UILabel(new CGRect(20, 180, 300, 40))
+				{
 					Text = "The HTML returned by the server:"
 				};
-				var tv = new UITextView (new CGRect (20, 100, 300, 400)) {
-					Text = reader.ReadToEnd ()
+				var tv = new UITextView(new CGRect(20, 220, 300, 200))
+				{
+					Text = reader.ReadToEnd()
 				};
 				if (HandlerType != null)
-					view.Add (handler);
-				view.Add (label);
-				view.Add (tv);
+					view.Add(handler);
+				view.Add(label_h);
+				view.Add(headers);
+				view.Add(label);
+				view.Add(tv);
 
 				if (UIDevice.CurrentDevice.CheckSystemVersion (7, 0)) {
 					view.EdgesForExtendedLayout = UIRectEdge.None;

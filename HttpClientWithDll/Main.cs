@@ -14,7 +14,9 @@ namespace HttpClientSample
 		public const string SecureUrl = "https://www.gmail.com";
 		public const string UnsecureUrl = "http://www.cnn.com";
 		public const string POSTUrl = "http://jabos.com/api/Tags";
-
+		public const string PUTUrl = "http://jabos.com/api/Tags/757f4078-5ed8-4f29-a66c-cbfec6a0fbc6";
+		public const string OPTIONSUrl = "http://jabos.com/api/Nodes";
+		public const string AuthUrl = "https://echo.getpostman.com/basic-auth";
 
 
 		static void Main (string[] args)

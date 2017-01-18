@@ -22,17 +22,16 @@ namespace RevSDK.iOS
 			Console.WriteLine("Request:");
 			Console.WriteLine(request.ToString());
             
-            string URLString = request.RequestUri.ToString();
-            
+            string URLString = request.RequestUri.ToString();           
             var NSURLRequest = new NSMutableUrlRequest(new NSUrl(URLString), NSUrlRequestCachePolicy.ReloadRevalidatingCacheData, 20);
 
 			if (request.Content != null)
 			{
 				var content = await request.Content.ReadAsStringAsync();
 				Console.WriteLine(content);
+
 				var NSContent = new NSString(content);
 				var NSContentData = NSContent.Encode(NSStringEncoding.UTF8);
-
 				NSURLRequest.Body = NSContentData;
 
 				if (request.Content.Headers != null)
@@ -52,25 +51,38 @@ namespace RevSDK.iOS
 						i += 1;
 					}
 
-					//var keys = new object[] { "Content-Type", "charset" };
-					//var objects = new object[] { "application/json", "utf-8" };
 					var dict = NSDictionary.FromObjectsAndKeys(objects, keys);
 					NSURLRequest.Headers = dict;
-					//NSURLRequest.Headers.SetValueForKey(new NSString("application/json"), new NSString("Content-Type"));
-					//NSURLRequest.Headers.SetValueForKey(new NSString("utf-8"), new NSString("charset"));
-
-
-					//NSURLRequest.Headers.SetValuesForKeysWithDictionary(dict2);
 					Console.WriteLine(NSURLRequest.Headers);
-					//NSURLRequest.H
 				}
-                
-                
-            }
-            Console.WriteLine();
-            
-            
-            
+
+			}
+
+			if (request.Headers != null)
+			{
+				Console.WriteLine(request.Headers);
+
+				var requestHeadersCollection = request.Headers;
+				var keys = new object[requestHeadersCollection.Count()];
+				var objects = new object[requestHeadersCollection.Count()];
+				int i = 0;
+
+				foreach (var pair in requestHeadersCollection)
+				{
+					Console.WriteLine("{0}={1}", pair.Key, pair.Value.ToArray()[0]);
+					keys[i] = pair.Key;
+					objects[i] = pair.Value.ToArray()[0];
+					i += 1;
+				}
+
+				var dict = NSDictionary.FromObjectsAndKeys(objects, keys);
+				NSURLRequest.Headers = dict;
+
+				Console.WriteLine(NSURLRequest.Headers);
+			}
+
+			Console.WriteLine();
+                        
             if (request.Method != null)
             {
                 NSURLRequest.HttpMethod = request.Method.ToString();
@@ -80,30 +92,40 @@ namespace RevSDK.iOS
 			//var connectionDelegate = new MyDelegate();
 			//NSUrlConnection.FromRequest(request, connectionDelegate);
 			NSOperationQueue OpsQueue = new NSOperationQueue();
-			OpsQueue.AddOperation(() =>
+			/*OpsQueue.AddOperation(() =>
 			{
 				//MyMethod();
 				//callback.Invoke(result);
 			});
-			//}; 
+			//}; */
 			var result = await NSUrlConnection.SendRequestAsync(NSURLRequest, OpsQueue);
 			if (result.Response != null)
 			{
 				var dataString = result.Data.ToString();
 				var content = new StringContent(dataString,Encoding.UTF8);
-					response.Content = content;
-			}
-			//callback.Invoke((System.IAsyncResult)result);
 
-			//return result;
+				NSHttpUrlResponse httpResponse = (NSHttpUrlResponse)result.Response;
+				var headersDict = httpResponse.AllHeaderFields;
+				foreach (var key in headersDict.Keys)
+				{
+					var keyValue = headersDict.ObjectForKey(key);
+					if ((keyValue != null) && (!key.Description.Contains("x-rev")))
+					{
 
-			/*Console.WriteLine("Response:");
-			Console.WriteLine(response.ToString());
-			if (response.Content != null)
-			{
-				Console.WriteLine(await response.Content.ReadAsStringAsync());
+						try
+						{
+							content.Headers.Add(key.ToString(), keyValue.ToString());
+						}
+						catch
+						{
+							Console.WriteLine("{0}: {1}", key, keyValue);
+						}
+					}
+
+				}
+
+				response.Content = content;
 			}
-			Console.WriteLine();*/
 
 			return response;
 		}
