@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RacerMobileApp"
+             x:Class="RacerMobileApp.MainPage"
+             Title="Main">
+
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="0.25*"/>
+      <ColumnDefinition Width="0.25*"/>
+      <ColumnDefinition Width="0.25*"/>
+      <ColumnDefinition Width="0.25*"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+
+    <Label Text="Url:"
+           Grid.Row="0" Grid.Column="0"
+           Margin="16,30,16,5"/>
+    
+    <Entry Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"
+           Text="{Binding Uri}"/>
+
+    <Label Text="Tests:"
+           Grid.Row="1" Grid.Column="0"
+           Margin="16,5,16,5"/>
+    
+    <Entry Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3"
+           Keyboard="Numeric"
+           Text="{Binding TestCount}"/>
+
+    <Label Text="Payload:"
+           Grid.Row="2" Grid.Column="0"
+           Margin="16,5,16,5"/>
+    
+    <Entry Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
+           Keyboard="Numeric"
+           Text="{Binding Payload}"/>
+    
+    <Label Text="KB"
+           Grid.Row="2" Grid.Column="3"/>
+
+    <StackLayout Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="16,5,5,5">     
+      <Label Text="Method"/>
+      
+      <Picker SelectedIndex="{Binding MethodSelected}">
+        <Picker.Items>
+          <x:String>GET</x:String>
+          <x:String>POST</x:String>
+        </Picker.Items>
+      </Picker>
+      
+    </StackLayout>
+
+    <StackLayout Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Margin="5,5,16,5">
+      <Label Text="Format"/>
+
+      <Picker SelectedIndex="{Binding DataTypeSelected}">
+        <Picker.Items>
+          <x:String>JSON</x:String>
+          <x:String>XML</x:String>
+        </Picker.Items>
+      </Picker>
+      
+    </StackLayout>
+
+    <Button Text="Start" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="End"
+            Margin="15,5,16,5"
+           Clicked="Start"/>
+    <Button Text="History" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4"
+            Margin="15,5,16,5"/>
+    
+  </Grid>
+
+</ContentPage>

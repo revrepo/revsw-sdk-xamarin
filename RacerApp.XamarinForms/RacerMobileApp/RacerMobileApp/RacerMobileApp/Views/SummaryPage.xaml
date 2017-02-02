@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RacerMobileApp.Views.SummaryPage"
+             Title="Summary">
+<StackLayout>
+  <Grid>
+     <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.5*"/>
+        <ColumnDefinition Width="0.25*"/>
+        <ColumnDefinition Width="0.25*"/>
+      </Grid.ColumnDefinitions>
+
+    <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" 
+           Text="Default" 
+           Grid.Row="0" Grid.Column="1"/>
+  <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" 
+         Text="RevAPM" Grid.Row="0" 
+         Grid.Column="2"/>
+  </Grid>
+ 
+    <Grid x:Name="grid"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.5*"/>
+        <ColumnDefinition Width="0.25*"/>
+        <ColumnDefinition Width="0.25*"/>
+      </Grid.ColumnDefinitions>
+
+      <StackLayout Grid.Row="0" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Label Text="Min"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               TextColor="Black"
+               FontSize="20"
+               Margin="0,5,0,0"
+               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+        <Label Text="(sec)"
+               VerticalTextAlignment="Start"
+               HorizontalTextAlignment="Center"
+               TextColor="Gray"
+               FontSize="16"
+               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <Label Grid.Row="0" Grid.Column="1"
+             Text="{Binding MinValue}"
+             VerticalTextAlignment="Center"
+             HorizontalTextAlignment="Center"
+             TextColor="Black"
+             FontSize="20"
+             VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+      
+      <Label Grid.Row="0" Grid.Column="2"
+             Text="{Binding RevMinValue}"
+             VerticalTextAlignment="Center"
+             HorizontalTextAlignment="Center"
+             TextColor="Black"
+             FontSize="20"
+             VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+      <StackLayout Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Label Text="Max"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               TextColor="Black"
+               FontSize="20"
+               Margin="0,5,0,0"
+               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+        <Label Text="(sec)"
+               VerticalTextAlignment="Start"
+               HorizontalTextAlignment="Center"
+               TextColor="Gray"
+               FontSize="16"
+               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <Label Grid.Row="1" Grid.Column="1"
+             Text="{Binding MaxValue}"
+             VerticalTextAlignment="Center"
+             HorizontalTextAlignment="Center"
+             TextColor="Black"
+             FontSize="20"
+             VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+      <Label Grid.Row="1" Grid.Column="2"
+             Text="{Binding RevMaxValue}"
+             VerticalTextAlignment="Center"
+             HorizontalTextAlignment="Center"
+             TextColor="Black"
+             FontSize="20"
+             VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+      <StackLayout Grid.Row="2" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Label Text="Average"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               TextColor="Black"
+               FontSize="20"
+               Margin="0,5,0,0"
+               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+        <Label Text="(sec)"
+               VerticalTextAlignment="Start"
+               HorizontalTextAlignment="Center"
+               TextColor="Gray"
+               FontSize="16"
+               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <Label Grid.Row="2" Grid.Column="1"
+             Text="{Binding Average}"
+             VerticalTextAlignment="Center"
+             HorizontalTextAlignment="Center"
+             TextColor="Black"
+             FontSize="20"
+             VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+      <Label Grid.Row="2" Grid.Column="2"
+             Text="{Binding RevAverage}"
+             VerticalTextAlignment="Center"
+             HorizontalTextAlignment="Center"
+             TextColor="Black"
+             FontSize="20"
+             VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+      <StackLayout Grid.Row="3" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Label Text="Mediana"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               TextColor="Black"
+               FontSize="20"
+               Margin="0,5,0,5"
+               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+        <!--<Label Text="{Binding}"
+               VerticalTextAlignment="Start"
+               HorizontalTextAlignment="Center"
+               TextColor="Gray"
+               FontSize="16"
+               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>-->
+      </StackLayout>
+
+      <Label Grid.Row="3" Grid.Column="1"
+             Text="{Binding Mediana}"
+             VerticalTextAlignment="Center"
+             HorizontalTextAlignment="Center"
+             TextColor="Black"
+             FontSize="20"
+             VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+      <Label Grid.Row="3" Grid.Column="2"
+             Text="{Binding RevMediana}"
+             VerticalTextAlignment="Center"
+             HorizontalTextAlignment="Center"
+             TextColor="Black"
+             FontSize="20"
+             VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+      <StackLayout Grid.Row="4" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Label Text="Stand. Deviation"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               TextColor="Black"
+               FontSize="20"
+               Margin="0,5,0,5"
+               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+       <!-- <Label Text="{Binding}"
+               VerticalTextAlignment="Start"
+               HorizontalTextAlignment="Center"
+               TextColor="Gray"
+               FontSize="16"
+               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>-->
+      </StackLayout>
+
+      <Label Grid.Row="4" Grid.Column="1"
+             Text="{Binding StandartDeviation}"
+             VerticalTextAlignment="Center"
+             HorizontalTextAlignment="Center"
+             TextColor="Black"
+             FontSize="20"
+             VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+      <Label Grid.Row="4" Grid.Column="2"
+             Text="{Binding RevStandartDeviation}"
+             VerticalTextAlignment="Center"
+             HorizontalTextAlignment="Center"
+             TextColor="Black"
+             FontSize="20"
+             VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+      <StackLayout Grid.Row="5" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Label Text="Expected Value"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               TextColor="Black"
+               FontSize="20"
+               Margin="0,5,0,5"
+               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+        <!--<Label Text="{Binding}"
+               VerticalTextAlignment="Start"
+               HorizontalTextAlignment="Center"
+               TextColor="Gray"
+               FontSize="16"
+               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>-->
+      </StackLayout>
+
+      <Label Grid.Row="5" Grid.Column="1"
+             Text="{Binding ExpectedValue}"
+             VerticalTextAlignment="Center"
+             HorizontalTextAlignment="Center"
+             TextColor="Black"
+             FontSize="20"
+             VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+      <Label Grid.Row="5" Grid.Column="2"
+             Text="{Binding RevExpectedValue}"
+             VerticalTextAlignment="Center"
+             HorizontalTextAlignment="Center"
+             TextColor="Black"
+             FontSize="20"
+             VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+      
+    </Grid>
+    
+   
+    
+</StackLayout>
+  
+  
+</ContentPage>

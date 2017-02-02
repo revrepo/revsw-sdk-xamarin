@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RacerMobileApp.Views.DetailsPage"
+             xmlns:controls="clr-namespace:RacerMobileApp.Controls;assembly=RacerMobileApp"
+             Title="Details">
+  <StackLayout>
+   
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="0.2*"/>
+          <ColumnDefinition Width="0.4*"/>
+          <ColumnDefinition Width="0.4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+      
+        
+
+        <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+               Text="RevAPM"
+               Grid.Row="0" Grid.Column="1"/>
+        <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+               Text="Default" Grid.Row="0"
+               Grid.Column="2"/>
+
+        <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+          <Label Text="Duration" HorizontalTextAlignment="End"/>
+          <Label Text="HTTP" HorizontalTextAlignment="End"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" Grid.Column="2" Orientation="Horizontal">
+          <Label Text="Duration" HorizontalTextAlignment="End"/>
+          <Label Text="HTTP" HorizontalTextAlignment="End"/>
+        </StackLayout>
+        
+      </Grid>
+
+    <StackLayout>
+      <ListView ItemsSource="{Binding List}">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <controls:DetailsViewCell/>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+
+  </StackLayout>
+</ContentPage>
