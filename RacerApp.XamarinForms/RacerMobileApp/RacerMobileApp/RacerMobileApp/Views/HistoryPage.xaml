@@ -3,5 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RacerMobileApp.Views.HistoryPage"
              Title="History">
-  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+  <StackLayout>
+    <ListView ItemsSource="{Binding List}" ItemTapped="ListViewItemTapped">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Margin="16,5,16,5">
+              <Label Text="{Binding Uri}"/>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+      <ListView.Footer>
+            <StackLayout>
+              <Button IsEnabled="{Binding IsClearHistoryEnabled}" Text="Clear History" Clicked="ClearHistoryBtnClicked"/>
+            </StackLayout>
+      </ListView.Footer>
+    </ListView>
+  </StackLayout>
 </ContentPage>

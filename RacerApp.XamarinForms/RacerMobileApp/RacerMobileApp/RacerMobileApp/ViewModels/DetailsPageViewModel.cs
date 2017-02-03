@@ -16,6 +16,13 @@ namespace RacerMobileApp.ViewModels
             DetailedReportList = new List<DetailedReport>();
         }
 
+        public DetailsPageViewModel(SessionResult sessionResult)
+        {
+            List = new List<DetailedReport>();
+            List = sessionResult.DetailedReportList;
+           
+        }
+
         private List<DetailedReport> list;
         public List<DetailedReport> List
         {

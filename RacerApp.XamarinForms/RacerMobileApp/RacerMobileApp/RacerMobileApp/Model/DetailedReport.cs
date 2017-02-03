@@ -14,5 +14,10 @@ namespace RacerMobileApp.Model
 
         public long RevDuration { get; set; }
         public string RevStatusCode { get; set; }
+        public string Method { get; set; }
+
+        public long DefaultResponseSizeBytes { get; set; }
+
+        public long RevResponseSizeBytes { get; set; }
     }
 }

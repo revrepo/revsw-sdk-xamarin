@@ -17,23 +17,28 @@ namespace RacerMobileApp.ViewModels
         public  MainPageViewModel()
         {
           #if DEBUG
-            Uri = "https://www.xamarin.com";
+            Uri = "https://www.revapm.com";
           #endif
         }
 
+     
+
+
+        
+
         public async void Navigate()
         {
-            if (int.Parse(TestCount) > 0 && Payload >= 0 && !string.IsNullOrEmpty(Uri))
+           
+            if (!string.IsNullOrEmpty(TestCount) && int.Parse(TestCount) > 0  && !string.IsNullOrEmpty(Uri))
             {
-                Method = MethodSelected == 0 ? HttpMethod.Get : HttpMethod.Post;
-                DataType = DataTypeSelected == 0 ? "application/json" : "application/xml";
+                Payload = MethodSelected == 0 ? string.Empty : Payload;
 
                 session = new Session()
                 {
                     TestsCount = int.Parse(TestCount),
-                    Payload = Payload,
-                    Method = Method,
-                    ContentType = DataType,
+                    Payload = string.IsNullOrEmpty(Payload) ? 0 : int.Parse(Payload),
+                    Method = MethodSelected == 0 ? HttpMethod.Get : HttpMethod.Post,
+                    ContentType = DataTypeSelected == 0 ? "application/json" : "application/xml",
                     Uri = new Uri(Uri, UriKind.Absolute)
                 };
 
@@ -43,10 +48,8 @@ namespace RacerMobileApp.ViewModels
             {
                 string text;
 
-                if (int.Parse(TestCount) <= 0)
-                    text = "You couldn't make 0 tests.";
-                else if (Payload <= 0)
-                    text = "Payload couldn't be less then 0.";
+                if (int.Parse(!string.IsNullOrEmpty(TestCount) ? TestCount:"0") <= 0)
+                    text = "You couldn't make 0 tests.";              
                 else if (string.IsNullOrEmpty(Uri))
                     text = "Please, paste your http link for make tests";
                 else
@@ -77,8 +80,8 @@ namespace RacerMobileApp.ViewModels
             set { SetProperty(ref _dataTypeSelected, value); }
         }
 
-        private int _payload;
-        public int Payload
+        private string _payload;
+        public string Payload
         {
             get { return _payload; }
             set { SetProperty(ref _payload, value); }
@@ -91,18 +94,5 @@ namespace RacerMobileApp.ViewModels
             set { SetProperty(ref _uri, value); }
         }
 
-        private HttpMethod _method;
-        public HttpMethod Method
-        {
-            get { return _method; }
-            set { SetProperty(ref _method, value); }
-        }
-
-        private string _dataType;
-        public string DataType
-        {
-            get { return _dataType; }
-            set { SetProperty(ref _dataType, value); }
-        }
     }
 }

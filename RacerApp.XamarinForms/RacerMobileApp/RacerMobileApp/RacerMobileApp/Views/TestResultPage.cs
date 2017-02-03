@@ -12,11 +12,14 @@ namespace RacerMobileApp.Views
     {
         public TestResultPage(Session session)
         {
-            //Children.Add(new NavigationPage(new SummaryPage(session)));
-            //Children.Add (new NavigationPage(new DetailsPage()));
-
             Children.Add(new SummaryPage(session));
             Children.Add(new DetailsPage());
+        }
+
+        public TestResultPage(SessionResult sessionResult)
+        {
+            Children.Add(new SummaryPage(sessionResult));
+            Children.Add(new DetailsPage(sessionResult));
         }
     }
 }

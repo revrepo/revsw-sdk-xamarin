@@ -10,7 +10,7 @@ namespace RacerMobileApp.Classes
 {
    public static class Settings
     {
-        private static ISettings AppSettings
+        public static ISettings AppSettings
         {
             get
             {
@@ -18,10 +18,14 @@ namespace RacerMobileApp.Classes
             }
         }
 
-        private const string UserNameKey = "username_key";
-        private static readonly string UserNameDefault = string.Empty;
+        private const string HistoryKey = "history_key";
+        private static readonly string HistoryDefault = string.Empty;
 
-        private const string SomeIntKey = "int_key";
-        private static readonly int SomeIntDefault = 6251986;
+
+        public static string History
+        {
+            get { return AppSettings.GetValueOrDefault<string>(Settings.HistoryKey, HistoryDefault); }
+            set {   AppSettings.AddOrUpdateValue<string>(HistoryKey, value); }
+        }
     }
 }

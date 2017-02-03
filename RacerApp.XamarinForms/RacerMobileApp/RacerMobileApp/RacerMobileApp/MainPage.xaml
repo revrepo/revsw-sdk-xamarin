@@ -5,7 +5,7 @@
              x:Class="RacerMobileApp.MainPage"
              Title="Main">
 
-  <Grid>
+  <Grid Margin="16,20,16,20">
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="0.25*"/>
       <ColumnDefinition Width="0.25*"/>
@@ -21,34 +21,34 @@
       <RowDefinition Height="Auto"/>
     </Grid.RowDefinitions>
 
-    <Label Text="Url:"
+    <Label Text="Url:" VerticalTextAlignment="Center"
            Grid.Row="0" Grid.Column="0"
-           Margin="16,30,16,5"/>
+           />
     
     <Entry Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"
            Text="{Binding Uri}"/>
 
-    <Label Text="Tests:"
+    <Label Text="Tests:" VerticalTextAlignment="Center"
            Grid.Row="1" Grid.Column="0"
-           Margin="16,5,16,5"/>
+          />
     
     <Entry Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3"
            Keyboard="Numeric"
            Text="{Binding TestCount}"/>
 
-    <Label Text="Payload:"
+    <Label Text="Payload:" VerticalTextAlignment="Center"
            Grid.Row="2" Grid.Column="0"
-           Margin="16,5,16,5"/>
+          />
     
-    <Entry Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
+    <Entry Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" 
            Keyboard="Numeric"
            Text="{Binding Payload}"/>
     
-    <Label Text="KB"
+    <Label Text="KB" VerticalTextAlignment="Center"
            Grid.Row="2" Grid.Column="3"/>
 
     <StackLayout Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="16,5,5,5">     
-      <Label Text="Method"/>
+      <Label Text="Method" HorizontalTextAlignment="Center"/>
       
       <Picker SelectedIndex="{Binding MethodSelected}">
         <Picker.Items>
@@ -60,7 +60,7 @@
     </StackLayout>
 
     <StackLayout Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Margin="5,5,16,5">
-      <Label Text="Format"/>
+      <Label Text="Format" HorizontalTextAlignment="Center"/>
 
       <Picker SelectedIndex="{Binding DataTypeSelected}">
         <Picker.Items>
@@ -72,10 +72,11 @@
     </StackLayout>
 
     <Button Text="Start" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="End"
-            Margin="15,5,16,5"
+          
            Clicked="Start"/>
     <Button Text="History" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4"
-            Margin="15,5,16,5"/>
+            
+    Clicked="HistoryBtnClicked"/>
     
   </Grid>
 

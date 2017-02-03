@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RacerMobileApp.Classes
 {
-   public class StaticticCalculator
+   public class StaticticsCalculator
     {
         public static string CalculateMinValue(List<TestResult> list)
         {

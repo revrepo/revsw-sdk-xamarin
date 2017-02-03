@@ -16,7 +16,7 @@ namespace RacerApp.Service
 
             string singleObjectString = string.Empty;
 
-            if (format != "applocation/json")
+            if (format != "application/json")
             {
                 singleObjectString = Serialize(so);
             }
@@ -38,7 +38,7 @@ namespace RacerApp.Service
                 list.Add(new Data());
             }
 
-            if (format != "applocation/json")
+            if (format != "application/json")
             {
                 return Serialize(list);
             }

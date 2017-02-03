@@ -11,6 +11,14 @@
         <ColumnDefinition Width="0.25*"/>
       </Grid.ColumnDefinitions>
 
+    <Label Text="(Ms)" Grid.Row="0" Grid.Column="0"
+             VerticalTextAlignment="Center"
+             HorizontalTextAlignment="Center"
+             TextColor="Gray"
+             FontSize="16"
+             VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+
     <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" 
            Text="Default" 
            Grid.Row="0" Grid.Column="1"/>
@@ -42,12 +50,12 @@
                FontSize="20"
                Margin="0,5,0,0"
                VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-        <Label Text="(sec)"
+       <!-- <Label Text="(Ms)"
                VerticalTextAlignment="Start"
                HorizontalTextAlignment="Center"
                TextColor="Gray"
                FontSize="16"
-               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>-->
       </StackLayout>
 
       <Label Grid.Row="0" Grid.Column="1"
@@ -74,12 +82,12 @@
                FontSize="20"
                Margin="0,5,0,0"
                VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-        <Label Text="(sec)"
+       <!-- <Label Text="(sec)"
                VerticalTextAlignment="Start"
                HorizontalTextAlignment="Center"
                TextColor="Gray"
                FontSize="16"
-               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>-->
       </StackLayout>
 
       <Label Grid.Row="1" Grid.Column="1"
@@ -106,12 +114,12 @@
                FontSize="20"
                Margin="0,5,0,0"
                VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-        <Label Text="(sec)"
+      <!--  <Label Text="(sec)"
                VerticalTextAlignment="Start"
                HorizontalTextAlignment="Center"
                TextColor="Gray"
                FontSize="16"
-               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>-->
       </StackLayout>
 
       <Label Grid.Row="2" Grid.Column="1"

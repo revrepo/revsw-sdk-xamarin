@@ -40,9 +40,10 @@
     </Compile>
     <Compile Include="Classes\IMessageHandlerInitializer.cs" />
     <Compile Include="Classes\Settings.cs" />
-    <Compile Include="Classes\StaticticCalculator.cs" />
+    <Compile Include="Classes\StaticticsCalculator.cs" />
     <Compile Include="Controls\DetailsViewCell.cs" />
-    <Compile Include="Helpers\Settings.cs" />
+    <Compile Include="Controls\MethodDataTemplateSelector.cs" />
+    <Compile Include="Controls\PostDetailsView.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

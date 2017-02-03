@@ -16,15 +16,6 @@ namespace RacerMobileApp.ViewModels
         public List<TestResult> RevApmTestsResult { get; set; }
         public List<TestResult> DefaultTestsResult { get; set; }
 
-        //  private static int TotalTests;
-        //  private static int TestNumber;
-
-        //private int _testNumber;
-        //public int TestNumber
-        //{
-        //    get { return _testNumber; }
-        //    set { SetProperty(ref _testNumber, value); }
-        //}
 
         private int _totalTests;
         public int TotalTests
@@ -73,27 +64,6 @@ namespace RacerMobileApp.ViewModels
             set { SetProperty(ref _expectedValue, value); }
         }
 
-
-        //private string _loadingText;
-        //public string LoadingText
-        //{
-        //    get { return _loadingText; }
-        //    set { SetProperty(ref _loadingText, value); }
-        //}
-
-        //private bool _isLoading;
-        //public bool IsLoading
-        //{
-        //    get { return _isLoading; }
-        //    set { SetProperty(ref _isLoading, value); }
-        //}
-
-        //private bool _isReady;
-        //public bool IsReady
-        //{
-        //    get { return _isReady; }
-        //    set { SetProperty(ref _isReady, value); }
-        //}
         private int _revTotalTests;
         public int RevTotalTests
         {
@@ -148,48 +118,49 @@ namespace RacerMobileApp.ViewModels
 
             RevApmTestsResult = new List<TestResult>();
             DefaultTestsResult = new List<TestResult>();
-
-            //IsLoading = true;
-            //IsReady = false;
-
-            //LoadingText = "Default requests processing " + TestNumber + "/" + TotalTests;
-
-            //MakeTests(session, DefaultTestsResult, false);
-
-            //LoadingText = "RevApm requests processing " + TestNumber + "/" + TotalTests;
-
-            //MakeTests(session, RevApmTestsResult, true);
-          
-
-            //IsLoading = false;
-            //IsReady = true;
         }
+
+        public SummaryPageViewModel(SessionResult sessionResult)
+        {
+
+            RevApmTestsResult = new List<TestResult>();
+            DefaultTestsResult = new List<TestResult>();
+
+            RevApmTestsResult = sessionResult.RevTestsResult;
+            DefaultTestsResult = sessionResult.DefaultTestsResult;
+
+
+            if (DetailsPageViewModel.DetailedReportList == null || DetailsPageViewModel.DetailedReportList.Count == 0)
+                DetailsPageViewModel.DetailedReportList = new List<DetailedReport>();
+
+
+            DetailsPageViewModel.DetailedReportList = sessionResult.DetailedReportList;
+
+            CalculateStatistics(DefaultTestsResult);
+            CalculateRevStatistics(RevApmTestsResult);
+        }
+
 
         public void CalculateRevStatistics(List<TestResult> results)
         {
-            RevMinValue = StaticticCalculator.CalculateMinValue(results);
-            RevMaxValue = StaticticCalculator.CalculateMaxValue(results);
-            RevMediana = StaticticCalculator.CalculateMedianaValue(results);
-            RevAverage = StaticticCalculator.CalculateAverageValue(results);
-            RevStandartDeviation = StaticticCalculator.CalculateStandardDeviation(results);
-            RevExpectedValue = StaticticCalculator.CalculateWeighteedAverage(results);
+            RevMinValue = StaticticsCalculator.CalculateMinValue(results);
+            RevMaxValue = StaticticsCalculator.CalculateMaxValue(results);
+            RevMediana = StaticticsCalculator.CalculateMedianaValue(results);
+            RevAverage = StaticticsCalculator.CalculateAverageValue(results);
+            RevStandartDeviation = StaticticsCalculator.CalculateStandardDeviation(results);
+            RevExpectedValue = StaticticsCalculator.CalculateWeighteedAverage(results);
         }
 
         public void CalculateStatistics(List<TestResult> results)
         {
-            MinValue = StaticticCalculator.CalculateMinValue(results);
-            MaxValue = StaticticCalculator.CalculateMaxValue(results);
-            Mediana = StaticticCalculator.CalculateMedianaValue(results);
-            Average = StaticticCalculator.CalculateAverageValue(results);
-            StandartDeviation = StaticticCalculator.CalculateStandardDeviation(results);
-            ExpectedValue = StaticticCalculator.CalculateWeighteedAverage(results);
+            MinValue = StaticticsCalculator.CalculateMinValue(results);
+            MaxValue = StaticticsCalculator.CalculateMaxValue(results);
+            Mediana = StaticticsCalculator.CalculateMedianaValue(results);
+            Average = StaticticsCalculator.CalculateAverageValue(results);
+            StandartDeviation = StaticticsCalculator.CalculateStandardDeviation(results);
+            ExpectedValue = StaticticsCalculator.CalculateWeighteedAverage(results);
         }
 
-
-        //public async Task MakeTests(Session session, List<TestResult> list, bool IsRevApm)
-        //{
-        //    list = await SendRequests(session, IsRevApm);
-        //}
 
         public async Task<List<TestResult>> SendRequests(Session session,bool IsRevApmTest)
         {

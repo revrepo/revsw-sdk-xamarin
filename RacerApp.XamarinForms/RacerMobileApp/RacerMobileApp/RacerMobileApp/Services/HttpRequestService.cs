@@ -18,63 +18,73 @@ namespace RacerMobileApp.Services
         public static HttpMessageHandler CustomMessageHandler { get; set; }
         public static async Task<TestResult> SendRequest(Uri Uri, int Payload, HttpMethod Method, string DataFormat, bool IsRevApmRequest)
         {
-            HttpClient client;
-            if (IsRevApmRequest)
+            try
             {
-                DependencyService.Get<IMessageHandlerInitializer>().InitializeMessageHandler();
-                client = new HttpClient(CustomMessageHandler);
-            }
-            else
-            {
-                client = new HttpClient();
-            }
-
-            using (client)
-            {
-                using (HttpRequestMessage requestMessage = new HttpRequestMessage() { Method = Method, RequestUri = Uri })
+                HttpClient client;
+                if (IsRevApmRequest)
                 {
-                    requestMessage.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(DataFormat));
-
-                    if (Payload > 0)
-                    {
-                        var content = await new StubDataGenerator().GetAsync(DataFormat, Payload * 1024);
-
-                        requestMessage.Content = new StringContent(content, UnicodeEncoding.UTF8, DataFormat);
-                    }
-                    
-                    Stopwatch sw = new Stopwatch();
-
-                    sw.Start();
-
-                    using (var response = await client.SendAsync(requestMessage))
-                    {
-                        sw.Stop();
-
-                        int length = 0;
-
-                        if (response.IsSuccessStatusCode)
-                        {
-                            
-                            var byteArray = await response.Content.ReadAsByteArrayAsync().ConfigureAwait(false);
-
-                            length = byteArray.Length;
-                                                        
-                        }
-
-                        return new TestResult()
-                        {
-                            DurationMs = sw.ElapsedMilliseconds,
-                            StatusCode = response.StatusCode,
-                            HasError = (int)response.StatusCode==200? false : true,
-                            ResponseSizeBytes = length
-                        };
-                    }
-
-                    
+                    DependencyService.Get<IMessageHandlerInitializer>().InitializeMessageHandler();
+                    client = new HttpClient(CustomMessageHandler);
+                }
+                else
+                {
+                    client = new HttpClient();
                 }
 
+                using (client)
+                {
+                    using (HttpRequestMessage requestMessage = new HttpRequestMessage() { Method = Method, RequestUri = Uri })
+                    {
+                        requestMessage.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(DataFormat));
 
+                        if (Payload > 0)
+                        {
+                            var content = await new StubDataGenerator().GetAsync(DataFormat, Payload * 1024);
+
+                            requestMessage.Content = new StringContent(content, UnicodeEncoding.UTF8, DataFormat);
+                        }
+
+                        Stopwatch sw = new Stopwatch();
+
+                        sw.Start();
+
+                        using (var response = await client.SendAsync(requestMessage))
+                        {
+                            sw.Stop();
+
+                            int length = 0;
+
+                            if (response.IsSuccessStatusCode)
+                            {
+
+                                var byteArray = await response.Content.ReadAsByteArrayAsync().ConfigureAwait(false);
+
+                                length = byteArray.Length;
+
+                            }
+
+                            return new TestResult()
+                            {
+                                DurationMs = sw.ElapsedMilliseconds,
+                                StatusCode = response.StatusCode,
+                                HasError = (int)response.StatusCode == 200 ? false : true,
+                                ResponseSizeBytes = length,
+                                Method = Method.Method
+                            };
+                        }
+
+
+                    }
+
+
+                }
             }
+            catch(Exception e)
+            {
+                Debug.WriteLine(e.Message);
+                return null;
+            }
+           
         }
     }
 }
