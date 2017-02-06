@@ -21,7 +21,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>10.2</string>
+	<string>8.0</string>
 	<key>CFBundleDisplayName</key>
 	<string>RacerMobileApp</string>
 	<key>CFBundleIdentifier</key>
@@ -47,5 +47,7 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleShortVersionString</key>
 	<string></string>
+	<key>CFBundleName</key>
+	<string>RacerMobileApp</string>
 </dict>
 </plist>
