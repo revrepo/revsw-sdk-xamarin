@@ -1,8 +1,11 @@
-﻿using RacerMobileApp.Classes;
+﻿using Acr.UserDialogs;
+using RacerMobileApp.Classes;
 using RacerMobileApp.Model;
 using RacerMobileApp.Services;
+using RacerMobileApp.Views;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -116,8 +119,8 @@ namespace RacerMobileApp.ViewModels
             this.session = session;
             TotalTests = session.TestsCount;
 
-            RevApmTestsResult = new List<TestResult>();
-            DefaultTestsResult = new List<TestResult>();
+            //RevApmTestsResult = new List<TestResult>();
+            //DefaultTestsResult = new List<TestResult>();
         }
 
         public SummaryPageViewModel(SessionResult sessionResult)
@@ -131,7 +134,7 @@ namespace RacerMobileApp.ViewModels
 
 
             if (DetailsPageViewModel.DetailedReportList == null || DetailsPageViewModel.DetailedReportList.Count == 0)
-                DetailsPageViewModel.DetailedReportList = new List<DetailedReport>();
+                DetailsPageViewModel.DetailedReportList = new ObservableCollection<DetailedReport>();
 
 
             DetailsPageViewModel.DetailedReportList = sessionResult.DetailedReportList;
@@ -167,11 +170,23 @@ namespace RacerMobileApp.ViewModels
           
             List<TestResult> list = new List<TestResult>();
 
-            for(int i = 1; i <= TotalTests; i++)
-            {               
-               var response = await HttpRequestService.SendRequest(session.Uri, session.Payload, session.Method, session.ContentType, IsRevApmTest);
+            var config = new ProgressDialogConfig();
+            var progressDialog = UserDialogs.Instance.Progress(config);
+
+            progressDialog.Show();
+
+            for (int i = 1; i <= TotalTests; i++)
+            {
+                if(IsRevApmTest)
+                   progressDialog.Title = "Loading RevAPM : " + i + "/" + TotalTests;
+                else
+                   progressDialog.Title = "Loading Default : " + i + "/" + TotalTests;
+
+                var response = await HttpRequestService.SendRequest(session.Uri, session.Payload, session.Method, session.ContentType, session.LoadAllUrls, IsRevApmTest);
                 list.Add(response);
             }
+
+            progressDialog.Hide();
 
             return list;
         }

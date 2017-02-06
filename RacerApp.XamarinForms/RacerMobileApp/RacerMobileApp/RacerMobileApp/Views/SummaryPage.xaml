@@ -3,6 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RacerMobileApp.Views.SummaryPage"
              Title="Summary">
+  
+  <ContentPage.ToolbarItems>
+    <ToolbarItem x:Name="sharebtn" Text="Send via E-mail" Activated="SendEmailEvent"></ToolbarItem>
+  </ContentPage.ToolbarItems>
+  
 <StackLayout>
   <Grid>
      <Grid.ColumnDefinitions>
@@ -235,7 +240,8 @@
              VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
       
     </Grid>
-    
+
+  <Button x:Name="rerunBtn" Text="Re-Run" Clicked="RerunBtnClicked"/>
    
     
 </StackLayout>

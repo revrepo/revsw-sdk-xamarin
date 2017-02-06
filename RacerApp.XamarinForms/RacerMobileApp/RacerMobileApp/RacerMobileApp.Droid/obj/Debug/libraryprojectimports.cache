@@ -5,6 +5,8 @@
     <ResolvedResourceDirectory>D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.Droid\obj\Debug\__library_projects__\Acr.Support.Android\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.Droid\obj\Debug\__library_projects__\Acr.UserDialogs\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.Droid\obj\Debug\__library_projects__\AndHUD\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.Droid\obj\Debug\__library_projects__\Plugin.Messaging\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.Droid\obj\Debug\__library_projects__\Plugin.Settings\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.Droid\obj\Debug\__library_projects__\Splat\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
@@ -13,6 +15,8 @@
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Acr.Support.Android\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Acr.UserDialogs\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\AndHUD\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Plugin.Messaging\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Plugin.Settings\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Splat\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
@@ -22,6 +26,8 @@
     <ResolvedResourceDirectoryStamp>D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.Droid\obj\Debug\__library_projects__\Acr.Support.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.Droid\obj\Debug\__library_projects__\Acr.UserDialogs.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.Droid\obj\Debug\__library_projects__\AndHUD.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.Droid\obj\Debug\__library_projects__\Plugin.Messaging.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.Droid\obj\Debug\__library_projects__\Plugin.Settings.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.Droid\obj\Debug\__library_projects__\Splat.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>

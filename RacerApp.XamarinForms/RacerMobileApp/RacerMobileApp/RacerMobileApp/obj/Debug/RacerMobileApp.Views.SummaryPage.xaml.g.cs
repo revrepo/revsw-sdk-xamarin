@@ -17,12 +17,20 @@ namespace RacerMobileApp.Views {
     public partial class SummaryPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ToolbarItem sharebtn;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Grid grid;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button rerunBtn;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(SummaryPage));
+            sharebtn = this.FindByName<global::Xamarin.Forms.ToolbarItem>("sharebtn");
             grid = this.FindByName<global::Xamarin.Forms.Grid>("grid");
+            rerunBtn = this.FindByName<global::Xamarin.Forms.Button>("rerunBtn");
         }
     }
 }

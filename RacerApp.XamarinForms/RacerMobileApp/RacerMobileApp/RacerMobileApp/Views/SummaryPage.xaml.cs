@@ -16,18 +16,24 @@ namespace RacerMobileApp.Views
     public partial class SummaryPage : ContentPage
     {
         Session session;
+        SessionResult sessionResult;
+
         public SummaryPage(Session session)
         {
             InitializeComponent();
 
             this.session = session;
             this.BindingContext = new SummaryPageViewModel(session);
+            rerunBtn.IsVisible = false;
         }
 
         public SummaryPage(SessionResult sessionResult)
         {
             InitializeComponent();
             this.BindingContext = new SummaryPageViewModel(sessionResult);
+            this.sessionResult = sessionResult;
+            this.session = sessionResult.Session;
+            //rerunBtn.IsVisible = false;
 
         }
 
@@ -40,17 +46,21 @@ namespace RacerMobileApp.Views
 
             if (Model.DefaultTestsResult == null|| Model.DefaultTestsResult.Count==0)
             {
-              
 
-                var config = new ProgressDialogConfig() { Title = "Processing..." };
-                var _progressDialog = UserDialogs.Instance.Progress(config);
-                _progressDialog.Show();
+                if (Model.DefaultTestsResult == null)
+                    Model.DefaultTestsResult = new List<TestResult>();
+
+                if (Model.RevApmTestsResult == null)
+                    Model.RevApmTestsResult = new List<TestResult>();
 
                 Model.DefaultTestsResult = await Model.SendRequests(session, false);
                 Model.RevApmTestsResult = await Model.SendRequests(session, true);
 
                 Model.CalculateRevStatistics(Model.RevApmTestsResult);
-                Model.CalculateStatistics(Model.DefaultTestsResult);             
+                Model.CalculateStatistics(Model.DefaultTestsResult);
+
+                if (DetailsPageViewModel.DetailedReportList == null)
+                    DetailsPageViewModel.DetailedReportList = new System.Collections.ObjectModel.ObservableCollection<DetailedReport>();
 
                 for (int i = 0; i < Model.RevApmTestsResult.Count; i++)
                 {
@@ -72,10 +82,13 @@ namespace RacerMobileApp.Views
                     Uri = session.Uri.AbsoluteUri,
                     RevTestsResult = Model.RevApmTestsResult,
                     DefaultTestsResult = Model.DefaultTestsResult,
-                    DetailedReportList = DetailsPageViewModel.DetailedReportList
+                    DetailedReportList = DetailsPageViewModel.DetailedReportList,
+                    Date = DateTime.Now,
+                    Session = session
 
                 };
 
+                this.sessionResult = sessionresult;
 
                 if (string.IsNullOrEmpty(Settings.History))
                 {
@@ -96,11 +109,28 @@ namespace RacerMobileApp.Views
                 }
 
              
-                _progressDialog.Hide();
+      
             }
             
 
         }
-       
+
+        public void RerunBtnClicked(object sender, EventArgs e)
+        {
+            this.sessionResult = null;
+
+            DetailsPageViewModel.DetailedReportList = null;
+
+            this.BindingContext = new SummaryPageViewModel(this.session);
+
+            this.OnAppearing();
+        }
+
+        async void SendEmailEvent(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SendEmailPage(sessionResult));
+
+        }
+
     }
 }

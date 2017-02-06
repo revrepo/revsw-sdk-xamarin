@@ -46,5 +46,11 @@ namespace RacerMobileApp
         {
             await Navigation.PushAsync(new HistoryPage());
         }
+
+        void switchToogled(object sender, ToggledEventArgs e)
+        {
+            Model.LoadAllPageUrls = e.Value;
+        }
+        
     }
 }

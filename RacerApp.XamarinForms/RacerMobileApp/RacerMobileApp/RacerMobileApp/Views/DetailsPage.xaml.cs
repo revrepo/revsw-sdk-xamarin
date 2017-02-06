@@ -2,6 +2,7 @@
 using RacerMobileApp.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,8 @@ namespace RacerMobileApp.Views
             this.BindingContext = new DetailsPageViewModel(sessionResult);
         }
 
+
+    
         public DetailsPageViewModel Model => BindingContext as DetailsPageViewModel;
         protected override void OnAppearing()
         {
@@ -35,10 +38,11 @@ namespace RacerMobileApp.Views
                 
 
                 if (Model.List == null)
-                    Model.List = new List<RacerMobileApp.Model.DetailedReport>();
+                    Model.List = new ObservableCollection<RacerMobileApp.Model.DetailedReport>();
 
                 Model.List = DetailsPageViewModel.DetailedReportList;
             }
+         
                
 
            

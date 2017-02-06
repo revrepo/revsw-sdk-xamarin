@@ -17,6 +17,7 @@
       <RowDefinition Height="Auto"/>
       <RowDefinition Height="Auto"/>
       <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
       <RowDefinition Height="*"/>
       <RowDefinition Height="Auto"/>
     </Grid.RowDefinitions>
@@ -71,10 +72,21 @@
       
     </StackLayout>
 
-    <Button Text="Start" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="End"
+    <StackLayout Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" Orientation="Horizontal"
+                 VerticalOptions="FillAndExpand" HorizontalOptions="Fill"
+                 Margin="5,5,16,5">
+      
+       <Label Text="Load all page urls" VerticalTextAlignment="Center"/>
+    <Switch HorizontalOptions="EndAndExpand"
+            Toggled="switchToogled"/>
+    
+    </StackLayout>
+  
+
+    <Button Text="Start" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="End"
           
            Clicked="Start"/>
-    <Button Text="History" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4"
+    <Button Text="History" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="4"
             
     Clicked="HistoryBtnClicked"/>
     

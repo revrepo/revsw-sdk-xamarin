@@ -21,7 +21,7 @@ namespace RacerMobileApp.ViewModels
           #endif
         }
 
-     
+        public bool LoadAllPageUrls { get; set; }
 
 
         
@@ -39,7 +39,8 @@ namespace RacerMobileApp.ViewModels
                     Payload = string.IsNullOrEmpty(Payload) ? 0 : int.Parse(Payload),
                     Method = MethodSelected == 0 ? HttpMethod.Get : HttpMethod.Post,
                     ContentType = DataTypeSelected == 0 ? "application/json" : "application/xml",
-                    Uri = new Uri(Uri, UriKind.Absolute)
+                    Uri = new Uri(Uri, UriKind.Absolute),
+                    LoadAllUrls = LoadAllPageUrls
                 };
 
                

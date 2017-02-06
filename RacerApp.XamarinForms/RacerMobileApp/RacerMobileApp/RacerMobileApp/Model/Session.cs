@@ -14,6 +14,7 @@ namespace RacerMobileApp.Model
         public int Payload { get; set; }
         public HttpMethod Method { get; set; }
         public string ContentType { get; set; }
+        public bool LoadAllUrls { get; set; }
 
     }
 }

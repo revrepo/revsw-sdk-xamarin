@@ -4,6 +4,10 @@ D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\Race
 D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Acr.Support.iOS.dll
 D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Acr.UserDialogs.dll
 D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Acr.UserDialogs.Interface.dll
+D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Plugin.Messaging.Abstractions.dll
+D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Plugin.Messaging.dll
+D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Plugin.Settings.Abstractions.dll
+D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Plugin.Settings.dll
 D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\RacerMobileApp.dll
 D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\RevAPM.dll
 D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\RevAPMiOSSDK.dll
@@ -22,6 +26,10 @@ D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\Race
 D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Acr.UserDialogs.dll.mdb
 D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Acr.UserDialogs.Interface.pdb
 D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Acr.UserDialogs.Interface.dll.mdb
+D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Plugin.Messaging.xml
+D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Plugin.Messaging.Abstractions.xml
+D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Plugin.Settings.xml
+D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Plugin.Settings.Abstractions.xml
 D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Splat.dll.mdb
 D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Extensions.xml
 D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Primitives.xml
@@ -91,9 +99,7 @@ D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\Race
 D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\obj\iPhoneSimulator\Debug\RacerMobileApp.iOS.csproj.RacerMobileApp.iOS.exe.config
 D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\obj\iPhoneSimulator\Debug\RacerMobileApp.iOS.exe
 D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\obj\iPhoneSimulator\Debug\RacerMobileApp.iOS.pdb
-D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Plugin.Settings.Abstractions.dll
-D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Plugin.Settings.dll
-D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Plugin.Settings.xml
-D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\Plugin.Settings.Abstractions.xml
+D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\HtmlAgilityPack.dll
+D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\HtmlAgilityPack.pdb
 D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\obj\iPhoneSimulator\Debug\RacerMobileApp.iOS.exe.mdb
 D:\Work\rev-sdk-xamarin\RacerApp.XamarinForms\RacerMobileApp\RacerMobileApp\RacerMobileApp.iOS\bin\iPhoneSimulator\Debug\RacerMobileApp.iOS.exe.mdb
