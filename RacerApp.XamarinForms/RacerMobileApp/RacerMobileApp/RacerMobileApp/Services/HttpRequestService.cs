@@ -22,21 +22,14 @@ namespace RacerMobileApp.Services
 
             try
             {
-               
-                using(var handler = DependencyService.Get<IMessageHandlerInitializer>().InitializeMessageHandler())
-                {
-                    HttpClient client;
+                var handler = IsRevApmRequest ?
+                                               DependencyService.Get<IMessageHandlerInitializer>().InitializeMessageHandler()
+                                               : 
+                                               new HttpClientHandler() { AllowAutoRedirect = true };
 
-                    if (IsRevApmRequest)
-                    {                        
-                        client = new HttpClient(handler);
-                    }
-                    else
-                    {
-                        client = new HttpClient();
-                    }
-
-                    using (client)
+                using (handler)
+                {                   
+                    using (HttpClient client = new HttpClient(handler))
                     {
                         using (HttpRequestMessage requestMessage = new HttpRequestMessage() { Method = Method, RequestUri = Uri })
                         {
@@ -156,19 +149,27 @@ namespace RacerMobileApp.Services
         {
             var doc = new HtmlWeb();
             var x = await doc.LoadFromWebAsync(Uri, UnicodeEncoding.UTF8, null);
-            var linkTags = x.DocumentNode.Descendants("link");
-            var linkedPages = x.DocumentNode.Descendants("a")
-                                              .Select(a => a.GetAttributeValue("href", null))
-                                              .Where(u => !String.IsNullOrEmpty(u));
 
-            var imgPages = x.DocumentNode.Descendants("img")
+
+            var links = x.DocumentNode.Descendants("link")
+                                                              .Select(a => a.GetAttributeValue("href", null))
+                                                              .Where(u => !string.IsNullOrEmpty(u));
+
+            var scripts = x.DocumentNode.Descendants("script")
+                                                             .Select(a => a.GetAttributeValue("src", null))
+                                                             .Where(u => !string.IsNullOrEmpty(u));
+          
+
+            var images = x.DocumentNode.Descendants("img")
                                              .Select(a => a.GetAttributeValue("src", null))
                                              .Where(u => !String.IsNullOrEmpty(u));
 
-            
-            var list = linkedPages.Concat(imgPages);
+
+            var list = links.Concat(images).Concat(scripts);
 
             return list.ToList();
+
+            
         }
 
       

@@ -144,7 +144,7 @@
              VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
 
       <StackLayout Grid.Row="3" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-        <Label Text="Mediana"
+        <Label Text="Median"
                VerticalTextAlignment="Center"
                HorizontalTextAlignment="Center"
                TextColor="Black"

@@ -35,12 +35,12 @@ namespace RacerMobileApp.Controls
             //stack = new StackLayout() { HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, Orientation = StackOrientation.Horizontal };
 
 
-            grid.Children.Add(number, 0, 0);
-            grid.Children.Add(revDuration, 1, 0);
-            grid.Children.Add(revStatusCode, 2, 0);
-            grid.Children.Add(Duration, 3, 0);
-            grid.Children.Add(StatusCode, 4, 0);
-       
+            grid.Children.Add(number, 0, 0);            
+            grid.Children.Add(Duration, 1, 0);
+            grid.Children.Add(StatusCode, 2, 0);
+            grid.Children.Add(revDuration, 3, 0);
+            grid.Children.Add(revStatusCode, 4, 0);
+
 
             //stack.Children.Add(number);
             //stack.Children.Add(revDuration);

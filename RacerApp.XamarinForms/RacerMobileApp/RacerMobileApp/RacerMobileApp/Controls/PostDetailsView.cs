@@ -47,10 +47,11 @@ namespace RacerMobileApp.Controls
             revstack.Children.Add(RevSize);
 
             grid.Children.Add(number, 0, 0);
-            grid.Children.Add(revstack, 1, 0);
-            grid.Children.Add(revStatusCode, 2, 0);
-            grid.Children.Add(stack, 3, 0);
-            grid.Children.Add(StatusCode, 4, 0);
+            grid.Children.Add(stack, 1, 0);
+            grid.Children.Add(StatusCode, 2, 0);
+            grid.Children.Add(revstack, 3, 0);
+            grid.Children.Add(revStatusCode, 4, 0);
+            
 
             this.View = grid;
         }
