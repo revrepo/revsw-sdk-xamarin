@@ -56,7 +56,7 @@ namespace RacerMobileApp.Services
                                 if (LoadAllPageUrls)
                                 {
                                     
-                                    var links = await ExtractAllAHrefTags(Uri); 
+                                    var links = await ExtractAllLinks(Uri); 
 
 
 
@@ -74,8 +74,8 @@ namespace RacerMobileApp.Services
                                                         sw.Stop();
                                                         if (resp.IsSuccessStatusCode)
                                                         {
-                                                          
-                                                            length += resp.Content.Headers.ContentLength;
+                                                            var byteArray = await resp.Content.ReadAsByteArrayAsync().ConfigureAwait(false);
+                                                            length += byteArray.Length;                                                         
                                                         }
                                                        
                                                     }
@@ -98,8 +98,9 @@ namespace RacerMobileApp.Services
                                                         sw.Stop();
                                                         if (resp.IsSuccessStatusCode)
                                                         {
-                                                          
-                                                            length += resp.Content.Headers.ContentLength;
+                                                            var byteArray = await resp.Content.ReadAsByteArrayAsync().ConfigureAwait(false);
+                                                            length += byteArray.Length;
+                                                         
                                                         }                                                   
                                                     }
                                                 }
@@ -117,7 +118,8 @@ namespace RacerMobileApp.Services
 
                                 if (response.IsSuccessStatusCode)
                                 {
-                                    length += response.Content.Headers.ContentLength;
+                                    var byteArray = await response.Content.ReadAsByteArrayAsync().ConfigureAwait(false);
+                                    length += byteArray.Length;                                 
                                 }
 
 
@@ -145,7 +147,7 @@ namespace RacerMobileApp.Services
 
       
 
-        private static async Task<List<string>> ExtractAllAHrefTags(Uri Uri)
+        private static async Task<List<string>> ExtractAllLinks(Uri Uri)
         {
             var doc = new HtmlWeb();
             var x = await doc.LoadFromWebAsync(Uri, UnicodeEncoding.UTF8, null);
@@ -162,7 +164,7 @@ namespace RacerMobileApp.Services
 
             var images = x.DocumentNode.Descendants("img")
                                              .Select(a => a.GetAttributeValue("src", null))
-                                             .Where(u => !String.IsNullOrEmpty(u));
+                                             .Where(u => !string.IsNullOrEmpty(u));
 
 
             var list = links.Concat(images).Concat(scripts);
