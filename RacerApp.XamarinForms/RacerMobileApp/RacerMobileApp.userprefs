@@ -1,7 +1,11 @@
 ﻿<Properties StartupConfiguration="{874FBAFB-F51F-430D-BA6F-7D6F26ADEBCD}|Default">
-  <MonoDevelop.Ide.ItemProperties.RacerMobileApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.10F8E9A6-BADD-451F-9AF6-CE6E30EBF72A" />
-  <MonoDevelop.Ide.Workbench />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.RacerMobileApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="RacerMobileApp/RacerMobileApp.iOS/Info.plist" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="AppStore|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
