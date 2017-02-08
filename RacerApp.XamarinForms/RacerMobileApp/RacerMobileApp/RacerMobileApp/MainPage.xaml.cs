@@ -18,7 +18,7 @@ namespace RacerMobileApp
         public MainPage()
         {
             InitializeComponent();
-            this.BindingContext = new MainPageViewModel();
+           
 
           
         }
@@ -29,7 +29,7 @@ namespace RacerMobileApp
         protected override void OnAppearing()
         {
             base.OnAppearing();
-
+            this.BindingContext = new MainPageViewModel();
         }
         public async void Start(object sender, EventArgs e)
         {

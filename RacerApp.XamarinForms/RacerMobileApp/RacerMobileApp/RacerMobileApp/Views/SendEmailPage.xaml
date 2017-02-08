@@ -4,7 +4,7 @@
              x:Class="RacerMobileApp.Views.SendEmailPage">
   <StackLayout Margin="16">
     <Label Text="Email:" VerticalOptions="Center" HorizontalOptions="Start" />
-    <Entry  x:Name="addresseeEntry"/>
+    <Entry  x:Name="addresseeEntry" Keyboard="Email"/>
     <Label Text="Subject:" VerticalOptions="Center" HorizontalOptions="Start" />
     <Entry  x:Name="subjectEntry"/>
     <WebView x:Name="webView" VerticalOptions="FillAndExpand">

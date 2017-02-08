@@ -119,11 +119,12 @@ namespace RacerMobileApp.Views
         {
             this.sessionResult = null;
 
-            DetailsPageViewModel.DetailedReportList = null;
+            DetailsPageViewModel.DetailedReportList = null;  
 
             this.BindingContext = new SummaryPageViewModel(this.session);
 
             this.OnAppearing();
+
         }
 
         async void SendEmailEvent(object sender, EventArgs e)

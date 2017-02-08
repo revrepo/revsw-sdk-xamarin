@@ -27,7 +27,8 @@
            />
     
     <Entry Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"
-           Text="{Binding Uri}"/>
+           Text="{Binding Uri}"
+           Keyboard="Url"/>
 
     <Label Text="Tests:" VerticalTextAlignment="Center"
            Grid.Row="1" Grid.Column="0"

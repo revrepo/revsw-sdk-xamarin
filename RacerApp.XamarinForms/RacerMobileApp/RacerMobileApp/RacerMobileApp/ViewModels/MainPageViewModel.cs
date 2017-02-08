@@ -17,8 +17,9 @@ namespace RacerMobileApp.ViewModels
         public  MainPageViewModel()
         {
           #if DEBUG
-            Uri = "https://www.revapm.com";
-          #endif
+            Uri = "revapm.com";
+            //Uri = "https://www.revapm.com";
+#endif
         }
 
         public bool LoadAllPageUrls { get; set; }
@@ -33,6 +34,19 @@ namespace RacerMobileApp.ViewModels
             {
                 Payload = MethodSelected == 0 ? string.Empty : Payload;
 
+                if(Uri.StartsWith("http://www.") || Uri.StartsWith("https://www."))
+                {
+                    return;
+                }
+                else if (Uri.StartsWith("www.") || Uri.StartsWith("www"))
+                {
+                    Uri = "http://" + Uri;
+                }
+                else
+                {
+                    Uri = "http://www." + Uri;
+                }
+                    
                 session = new Session()
                 {
                     TestsCount = int.Parse(TestCount),

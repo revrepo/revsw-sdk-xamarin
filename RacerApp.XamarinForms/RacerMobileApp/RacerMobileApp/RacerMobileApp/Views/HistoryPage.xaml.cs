@@ -1,4 +1,5 @@
-﻿using RacerMobileApp.Classes;
+﻿using Newtonsoft.Json;
+using RacerMobileApp.Classes;
 using RacerMobileApp.Model;
 using RacerMobileApp.ViewModels;
 using System;
@@ -17,6 +18,12 @@ namespace RacerMobileApp.Views
         {
             InitializeComponent();
 
+          
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
             this.BindingContext = new HistoryPageViewModel();
         }
 
@@ -34,8 +41,21 @@ namespace RacerMobileApp.Views
         }
         public void ClearHistoryBtnClicked(object sender, EventArgs e)
         {
-            Settings.History = string.Empty;
-            Model.List = new List<RacerMobileApp.Model.SessionResult>();
+         
+
+            if(Model.List !=null || Model.List.Count > 0)
+            {
+                var lastItem = Model.List.Last();
+                var list = new List<RacerMobileApp.Model.SessionResult>();
+                list.Add(lastItem);
+
+                Settings.History = JsonConvert.SerializeObject(list);
+
+                Model.List = JsonConvert.DeserializeObject<List<RacerMobileApp.Model.SessionResult>>(Settings.History);
+               
+
+            }
+            
             Model.IsClearHistoryEnabled = false;
         }
     }
