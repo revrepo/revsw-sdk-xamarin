@@ -35,7 +35,7 @@ namespace RacerMobileApp.ViewModels
             {
                 Payload = MethodSelected == 0 ? string.Empty : Payload;
 
-                if(Uri.StartsWith("http://www.") || Uri.StartsWith("https://www."))
+                if(Uri.StartsWith("http://") || Uri.StartsWith("https://"))
                 {
                    //Do nothing  
                 }
