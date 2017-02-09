@@ -62,6 +62,17 @@ namespace RacerMobileApp.Views
                 if (DetailsPageViewModel.DetailedReportList == null)
                     DetailsPageViewModel.DetailedReportList = new System.Collections.ObjectModel.ObservableCollection<DetailedReport>();
 
+                int count = 0;
+
+                if(Model.RevApmTestsResult.Count== Model.DefaultTestsResult.Count)
+                {
+                    count = Model.RevApmTestsResult.Count;
+                }
+                else
+                {
+                    
+                }
+
                 for (int i = 0; i < Model.RevApmTestsResult.Count; i++)
                 {
                     DetailsPageViewModel.DetailedReportList.Add(new DetailedReport()

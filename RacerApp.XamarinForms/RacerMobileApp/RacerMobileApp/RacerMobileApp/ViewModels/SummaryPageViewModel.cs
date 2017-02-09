@@ -6,6 +6,7 @@ using RacerMobileApp.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -117,10 +118,7 @@ namespace RacerMobileApp.ViewModels
         public SummaryPageViewModel(Session session)
         {
             this.session = session;
-            TotalTests = session.TestsCount;
-
-            //RevApmTestsResult = new List<TestResult>();
-            //DefaultTestsResult = new List<TestResult>();
+            TotalTests = session.TestsCount;      
         }
 
         public SummaryPageViewModel(SessionResult sessionResult)
@@ -182,8 +180,12 @@ namespace RacerMobileApp.ViewModels
                 else
                    progressDialog.Title = "Loading Default : " + i + "/" + TotalTests;
 
-                var response = await HttpRequestService.SendRequest(session.Uri, session.Payload, session.Method, session.ContentType, session.LoadAllUrls, IsRevApmTest);
-                list.Add(response);
+                var response = await HttpRequestService.SendRequest(session, IsRevApmTest);
+
+                if (response != null)
+                    list.Add(response);
+                else
+                    Debug.WriteLine("response== null");
             }
 
             progressDialog.Hide();

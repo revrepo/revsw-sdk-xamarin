@@ -4,6 +4,7 @@ using RacerMobileApp.Model;
 using RacerMobileApp.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,14 +18,17 @@ namespace RacerMobileApp.Views
         public HistoryPage()
         {
             InitializeComponent();
+            this.BindingContext = new HistoryPageViewModel();
 
-          
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            this.BindingContext = new HistoryPageViewModel();
+
+            if (!string.IsNullOrEmpty(Settings.History))
+                Model.List = JsonConvert.DeserializeObject<ObservableCollection<SessionResult>>(Settings.History);
+           
         }
 
         public HistoryPageViewModel Model => BindingContext as HistoryPageViewModel;
@@ -40,22 +44,14 @@ namespace RacerMobileApp.Views
 
         }
         public void ClearHistoryBtnClicked(object sender, EventArgs e)
-        {
-         
+        {           
 
-            if(Model.List !=null || Model.List.Count > 0)
+            if (Model.List !=null || Model.List.Count > 0)
             {
-                var lastItem = Model.List.Last();
-                var list = new List<RacerMobileApp.Model.SessionResult>();
-                list.Add(lastItem);
-
-                Settings.History = JsonConvert.SerializeObject(list);
-
-                Model.List = JsonConvert.DeserializeObject<List<RacerMobileApp.Model.SessionResult>>(Settings.History);
-               
-
+                Settings.History = string.Empty;
             }
-            
+
+            this.BindingContext = new HistoryPageViewModel();
             Model.IsClearHistoryEnabled = false;
         }
     }

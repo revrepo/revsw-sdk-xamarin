@@ -78,8 +78,7 @@
                  Margin="5,5,16,5">
       
        <Label Text="Load all page urls" VerticalTextAlignment="Center"/>
-    <Switch HorizontalOptions="EndAndExpand"
-            Toggled="switchToogled"/>
+    <Switch x:Name="loadPageUrlsSwitch" IsToggled="{Binding LoadAllPageUrls}" HorizontalOptions="EndAndExpand"/>
     
     </StackLayout>
   
