@@ -45,7 +45,7 @@ namespace RacerMobileApp.ViewModels
                 }
                 else
                 {
-                    Uri = "http://www." + Uri;
+                    Uri = "http://" + Uri;
                 }
                     
                 session = new Session()
