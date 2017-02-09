@@ -71,8 +71,8 @@ namespace RacerMobileApp.Services
                 return new TestResult()
                 {
                     DurationMs = sw.ElapsedMilliseconds,
-                    StatusCode = response.StatusCode,
-                    HasError = (int)response.StatusCode == 200 ? false : true,
+                    StatusCode = (int)response.StatusCode,
+					HasError = response.StatusCode == System.Net.HttpStatusCode.OK ? false : true,
                     ResponseSizeBytes = length,
                     Method = session.Method.Method
                 };
@@ -83,8 +83,8 @@ namespace RacerMobileApp.Services
              return new TestResult()
              {
                  DurationMs = sw.ElapsedMilliseconds,
-                 StatusCode = response.StatusCode,
-                 HasError = (int)response.StatusCode == 200 ? false : true,
+                 StatusCode = (int)response.StatusCode,
+                 HasError = response.StatusCode == System.Net.HttpStatusCode.OK ? false : true,
                  ResponseSizeBytes = length,
                  Method = session.Method.Method
              };

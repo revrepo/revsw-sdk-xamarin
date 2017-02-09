@@ -13,7 +13,7 @@ namespace RacerMobileApp.Model
         public long? ResponseSizeBytes { get; set; }
         public bool HasError { get; set; }
         public long DurationMs { get; set; }
-        public HttpStatusCode StatusCode { get; set; }
+        public int StatusCode { get; set; }
         public string Method { get; set; }
 
     }
