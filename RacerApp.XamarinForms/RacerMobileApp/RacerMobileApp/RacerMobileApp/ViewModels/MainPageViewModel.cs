@@ -38,11 +38,7 @@ namespace RacerMobileApp.ViewModels
                 if(Uri.StartsWith("http://") || Uri.StartsWith("https://"))
                 {
                    //Do nothing  
-                }
-                else if (Uri.StartsWith("www.") || Uri.StartsWith("www"))
-                {
-                    Uri = "http://" + Uri;
-                }
+                }              
                 else
                 {
                     Uri = "http://" + Uri;
