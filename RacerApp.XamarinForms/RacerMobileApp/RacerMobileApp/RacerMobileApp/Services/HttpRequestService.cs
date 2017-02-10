@@ -11,7 +11,6 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using SystemConfiguration;
 using Xamarin.Forms;
 
 namespace RacerMobileApp.Services
@@ -20,7 +19,7 @@ namespace RacerMobileApp.Services
     {
         public static async Task<TestResult> SendRequest(Session session, bool IsRevApmRequest)
         {
-            var response = new HttpResponseMessage();
+			HttpResponseMessage response = null;
             var sw = new Stopwatch();
             long? length = 0;         
 
@@ -81,29 +80,15 @@ namespace RacerMobileApp.Services
                }
             catch (Exception e)
             {
-             Debug.WriteLine(e.Message);
-                if (response == null)
-                {
-                    return new TestResult()
-                    {
-                        DurationMs = sw.ElapsedMilliseconds,
-                        StatusCode = (int)HttpStatusCode.InternalServerError,
-                        HasError = response.StatusCode == System.Net.HttpStatusCode.OK ? false : true,
-                        ResponseSizeBytes = length,
-                        Method = session.Method.Method
-                    };
-                }
-                else
-                {
-                    return new TestResult()
-                    {
-                        DurationMs = sw.ElapsedMilliseconds,
-                        StatusCode = (int)response.StatusCode,
-                        HasError = response.StatusCode == System.Net.HttpStatusCode.OK ? false : true,
-                        ResponseSizeBytes = length,
-                        Method = session.Method.Method
-                    };
-                }
+             	Debug.WriteLine(e.Message);
+                 return new TestResult()
+				{
+					DurationMs = sw.ElapsedMilliseconds,
+					StatusCode = (int)HttpStatusCode.InternalServerError,
+					HasError = response.StatusCode == System.Net.HttpStatusCode.OK ? false : true,
+					ResponseSizeBytes = length,
+					Method = session.Method.Method
+				};
             
             }
             finally
