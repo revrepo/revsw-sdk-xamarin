@@ -6,10 +6,12 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using SystemConfiguration;
 using Xamarin.Forms;
 
 namespace RacerMobileApp.Services
@@ -80,14 +82,29 @@ namespace RacerMobileApp.Services
             catch (Exception e)
             {
              Debug.WriteLine(e.Message);
-             return new TestResult()
-             {
-                 DurationMs = sw.ElapsedMilliseconds,
-                 StatusCode = (int)response.StatusCode,
-                 HasError = response.StatusCode == System.Net.HttpStatusCode.OK ? false : true,
-                 ResponseSizeBytes = length,
-                 Method = session.Method.Method
-             };
+                if (response == null)
+                {
+                    return new TestResult()
+                    {
+                        DurationMs = sw.ElapsedMilliseconds,
+                        StatusCode = (int)HttpStatusCode.InternalServerError,
+                        HasError = response.StatusCode == System.Net.HttpStatusCode.OK ? false : true,
+                        ResponseSizeBytes = length,
+                        Method = session.Method.Method
+                    };
+                }
+                else
+                {
+                    return new TestResult()
+                    {
+                        DurationMs = sw.ElapsedMilliseconds,
+                        StatusCode = (int)response.StatusCode,
+                        HasError = response.StatusCode == System.Net.HttpStatusCode.OK ? false : true,
+                        ResponseSizeBytes = length,
+                        Method = session.Method.Method
+                    };
+                }
+            
             }
             finally
             {
