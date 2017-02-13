@@ -85,7 +85,7 @@ namespace RacerMobileApp.Services
 				{
 					DurationMs = sw.ElapsedMilliseconds,
 					StatusCode = (int)HttpStatusCode.InternalServerError,
-					HasError = response.StatusCode == System.Net.HttpStatusCode.OK ? false : true,
+					HasError = true,
 					ResponseSizeBytes = length,
 					Method = session.Method.Method
 				};
@@ -93,7 +93,10 @@ namespace RacerMobileApp.Services
             }
             finally
             {
-                response.Dispose();
+				if(response != null)
+				{
+					response.Dispose();
+				}
             }
             
                 
