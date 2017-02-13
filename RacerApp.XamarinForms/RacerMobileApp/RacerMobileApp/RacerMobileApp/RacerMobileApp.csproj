@@ -118,11 +118,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="RevAPM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\RevAPM.1.0.1\lib\RevAPM.dll</HintPath>
+      <HintPath>..\..\packages\nuubit.SDK.1.0.1\lib\RevAPM.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="RevSDK, Version=1.0.6232.34286, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\RevAPM.1.0.1\lib\RevSDK.dll</HintPath>
+      <HintPath>..\..\packages\nuubit.SDK.1.0.1\lib\RevSDK.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
@@ -160,7 +160,9 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="GettingStarted.Xamarin" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\SummaryPage.xaml">
