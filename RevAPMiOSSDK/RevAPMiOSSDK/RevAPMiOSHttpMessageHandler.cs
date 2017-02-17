@@ -15,13 +15,20 @@
  * is strictly forbidden unless prior written permission is obtained
  * from Rev Software, Inc.
  */
+using System;
+
 namespace RevAPMiOSSDK
 {
     public class RevAPMiOSHttpMessageHandler: RevAPM.RevAPMHttpMessageHandler
     {
+             
 		public RevAPMiOSHttpMessageHandler():base(new iOSRevAPMHttpProcessor())
 		{
 		}
 
-	}
+        public RevAPMiOSHttpMessageHandler(TimeSpan? TimeOut) : base(new iOSRevAPMHttpProcessor(TimeOut))
+        {
+        }
+
+    }
 }

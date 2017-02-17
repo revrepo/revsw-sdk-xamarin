@@ -114,7 +114,13 @@ namespace RacerMobileApp.Views
                 {
                     var history = JsonConvert.DeserializeObject<List<SessionResult>>(Settings.History);
 
+                    if (history.Count >= 50)
+                    {
+                        history.RemoveAt(0);
+                    }
+
                     history.Add(sessionresult);
+
 
                     Settings.History = JsonConvert.SerializeObject(history);
                 }

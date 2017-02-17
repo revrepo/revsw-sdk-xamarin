@@ -181,10 +181,13 @@ namespace RacerMobileApp.Services
 
         private static async Task<long?> TryLoadAllPagesUrl(List<string> links, Stopwatch sw, Uri Uri, HttpClient client)
         {
+
             long? length = 0;
 
             foreach (var link in links)
             {
+                
+
                 if (IsUriAbsolute(link))
                 {
                    length+= await LoadUrl(link, client, sw, length);

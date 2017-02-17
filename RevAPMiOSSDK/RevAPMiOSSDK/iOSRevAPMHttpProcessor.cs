@@ -30,45 +30,11 @@ namespace RevAPMiOSSDK
     public class iOSRevAPMHttpProcessor: RevAPM.IRevAPMHttpProcessor
     {
 
-        List<string> ContentHeadersToSkip;
-
+        private List<string> ContentHeadersToSkip;
+        private TimeSpan? TimeOut { get; set; }
 
         public iOSRevAPMHttpProcessor()
         {
-            //HttpResponseMessage.Headers: 
-            //AcceptRanges          *ONLY GET
-            //Age
-            //CacheControl
-            //Connection            *ONLY GET
-            //ConnectionClose
-            //Date
-            //ETag
-            //Location
-            //Pragma                *ONLY GET
-            //ProxyAuthenticate     *ONLY GET
-            //RetryAfter
-            //Server                *ONLY GET
-            //Trailer               *ONLY GET
-            //TransferEncoding      *ONLY GET
-            //TransferEncodingChunked
-            //Upgrade               *ONLY GET
-            //Vary                  *ONLY GET
-            //Via                   *ONLY GET
-            //Warning               *ONLY GET
-            //WwwAuthenticate       *ONLY GET
-
-            // HttpResponseMessage.Content.Headers :
-            //Allow                *ONLY GET
-            //ContentDisposition
-            //ContentEncoding      *ONLY GET
-            //ContentLanguage      *ONLY GET
-            //ContentLength
-            //ContentLocation
-            //ContentMD5
-            //ContentRange
-            //ContentType
-            //Expires
-            //LastModified
 
             ContentHeadersToSkip = new List<string>();
             ContentHeadersToSkip.Add("Allow");
@@ -89,10 +55,34 @@ namespace RevAPMiOSSDK
 
         }
 
+        public iOSRevAPMHttpProcessor(TimeSpan? Timeout)
+        {
+
+            ContentHeadersToSkip = new List<string>();
+            ContentHeadersToSkip.Add("Allow");
+            ContentHeadersToSkip.Add("Content-Disposition");
+            ContentHeadersToSkip.Add("Content-Encoding");
+            ContentHeadersToSkip.Add("Content-Language");
+            ContentHeadersToSkip.Add("Content-Length");
+            ContentHeadersToSkip.Add("ContentLength");
+            ContentHeadersToSkip.Add("Content-Location");
+            ContentHeadersToSkip.Add("Content-MD5");
+            ContentHeadersToSkip.Add("Content-Range");
+            ContentHeadersToSkip.Add("Content-Type");
+            ContentHeadersToSkip.Add("Expires");
+            ContentHeadersToSkip.Add("Last-Modified");
+            ContentHeadersToSkip.Add("allow");
+            ContentHeadersToSkip.Add("content-md5");
+            ContentHeadersToSkip.Add("expires");
+
+            this.TimeOut = TimeOut;
+        }
+
         public async Task<HttpResponseMessage> ExecuteAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
-            //TODO: THINK ABOUT TIMEOUT (LATER)
-            NSMutableUrlRequest nsRequest = new NSMutableUrlRequest(request.RequestUri, NSUrlRequestCachePolicy.ReloadIgnoringCacheData, 10);
+            TimeSpan _timeout = TimeOut != null ? TimeOut.Value : new TimeSpan(0, 0, 30);
+           
+            NSMutableUrlRequest nsRequest = new NSMutableUrlRequest(request.RequestUri, NSUrlRequestCachePolicy.ReloadIgnoringCacheData, _timeout.Seconds);
 
             nsRequest.HttpMethod = request.Method.Method.ToString();
 
@@ -222,18 +212,6 @@ namespace RevAPMiOSSDK
 
         private void TryAddHeadersToContent(HttpContentHeaders responseheaders, string key, object value)
         {
-            // HttpResponseMessage.Content.Headers :
-            //Allow                *ONLY GET
-            //ContentDisposition
-            //ContentEncoding      *ONLY GET
-            //ContentLanguage      *ONLY GET
-            //ContentLength
-            //ContentLocation
-            //ContentMD5
-            //ContentRange
-            //ContentType
-            //Expires
-            //LastModified
 
             if (key == "Allow" || key == "allow")
             {
@@ -293,27 +271,6 @@ namespace RevAPMiOSSDK
 
         private void TryAddHeadersToResponse(HttpResponseHeaders responseheaders, string key, object value)
         {
-            //AcceptRanges          *ONLY GET
-            //Connection            *ONLY GET
-            //Pragma                *ONLY GET
-            //ProxyAuthenticate     *ONLY GET
-            //Server                *ONLY GET
-            //Trailer               *ONLY GET
-            //TransferEncoding      *ONLY GET
-            //Upgrade               *ONLY GET
-            //Vary                  *ONLY GET
-            //Via                   *ONLY GET
-            //Warning               *ONLY GET
-            //WwwAuthenticate       *ONLY GET
-            //Age
-            //CacheControl
-            //ConnectionClose
-            //Date
-            //ETag
-            //Location
-            //RetryAfter
-            //TransferEncodingChunked
-
 
             //TODO: it sometimes contains value but should be null
             if (key == "Age" || key == "age")
