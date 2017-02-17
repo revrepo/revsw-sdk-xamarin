@@ -24,7 +24,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Racer</string>
 	<key>CFBundleVersion</key>
-	<string>1.5</string>
+	<string>1.7</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon-60@2x.png</string>
@@ -47,6 +47,6 @@
 	<key>CFBundleName</key>
 	<string>Racer</string>
 	<key>CFBundleIdentifier</key>
-	<string>se.avantime.racerxamarin</string>
+	<string>com.revapm.racerxamarin</string>
 </dict>
 </plist>
