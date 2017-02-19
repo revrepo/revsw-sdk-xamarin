@@ -12,6 +12,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using ModernHttpClient;
 
 namespace RacerMobileApp.Services
 {
@@ -28,11 +29,13 @@ namespace RacerMobileApp.Services
                     var handler = IsRevApmRequest ?
                                                DependencyService.Get<IMessageHandlerInitializer>().InitializeMessageHandler()
                                                :
-                                               new HttpClientHandler() { AllowAutoRedirect = true };
+				                                                new NativeMessageHandler() { AllowAutoRedirect = true };
                     using (handler)
                     {
                         using(var client = new HttpClient(handler))
                         {
+							client.DefaultRequestHeaders.Add("Connection", "keep-alive");
+							client.DefaultRequestHeaders.Add("Keep-Alive", "600");
                             using(var request = new HttpRequestMessage() { Method = session.Method, RequestUri = session.Uri })
                             {
                                 request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(session.ContentType));

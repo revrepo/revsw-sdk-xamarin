@@ -24,7 +24,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Racer</string>
 	<key>CFBundleVersion</key>
-	<string>1.8</string>
+	<string>1.10</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon-60@2x.png</string>
@@ -48,5 +48,12 @@
 	<string>Racer</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.revapm.racerxamarin</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
