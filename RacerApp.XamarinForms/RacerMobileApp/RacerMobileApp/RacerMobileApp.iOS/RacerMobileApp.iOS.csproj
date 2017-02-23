@@ -27,7 +27,7 @@
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
     <CodesignKey>iPhone Developer</CodesignKey>
-<MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -99,7 +99,6 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Classes\Dependencies\RevApmMessageHandlerInitializer.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="app.config" />
@@ -159,16 +158,12 @@
       <HintPath>..\..\packages\Xam.Plugins.Settings.2.5.2.1\lib\Xamarin.iOS10\Plugin.Settings.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="RevAPM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\nuubit.SDK.1.0.1\lib\xamarinios\RevAPM.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="RevAPMiOSSDK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\nuubit.SDK.1.0.1\lib\xamarinios\RevAPMiOSSDK.dll</HintPath>
+    <Reference Include="RevApm.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\nuubit.SDK.2.0\lib\xamarinios\RevApm.iOS.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="RevSDK, Version=1.0.6232.34286, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\nuubit.SDK.1.0.1\lib\xamarinios\RevSDK.dll</HintPath>
+      <HintPath>..\..\packages\nuubit.SDK.2.0\lib\xamarinios\RevSDK.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">

@@ -19,7 +19,7 @@ using System;
 
 namespace RevAPMiOSSDK
 {
-    public class RevAPMiOSHttpMessageHandler: RevAPM.RevAPMHttpMessageHandler
+    public class RevAPMiOSHttpMessageHandler: RevApm.RevAPMHttpMessageHandler
     {
              
 		public RevAPMiOSHttpMessageHandler():base(new iOSRevAPMHttpProcessor())

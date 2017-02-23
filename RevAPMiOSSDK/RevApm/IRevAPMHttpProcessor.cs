@@ -20,9 +20,9 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using System.Threading;
 
-namespace RevAPM
+namespace RevApm
 {
-	public interface IRevAPMHttpProcessor
+	 interface IRevAPMHttpProcessor
 	{
 		Task<HttpResponseMessage> ExecuteAsync(HttpRequestMessage request,CancellationToken cancellationToken);
 	}

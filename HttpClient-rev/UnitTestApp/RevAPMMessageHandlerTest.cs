@@ -1,14 +1,12 @@
 using System;
-using NUnit.Framework;
 using System.Net;
 using System.Net.Http;
-using System.Text;
 using System.Diagnostics;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
-using RevAPM;
-using RevAPMiOSSDK;
+using RevApm;
+using NUnit.Framework;
 
 namespace UnitTestApp
 {
@@ -277,7 +275,8 @@ namespace UnitTestApp
        
         private async Task<bool> MakeTest(HttpMethod method, Uri uri, HttpContent content, WebHeaderCollection headers)
         {
-            var handler = new RevAPMiOSHttpMessageHandler();
+            // var handler = new RevAPMiOSHttpMessageHandler();
+            var handler = new RevApmMessageHandler();
             var client_with_handler = new HttpClient(handler);
             var client_without_handler = new HttpClient();
 

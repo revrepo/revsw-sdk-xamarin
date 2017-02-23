@@ -11,6 +11,8 @@
     <RootNamespace>RevAPMiOSSDK</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>RevAPMiOSSDK</AssemblyName>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,9 +47,9 @@
     <Compile Include="RevAPMWebResponse.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RevApm\RevAPM.csproj">
+    <ProjectReference Include="..\RevApm\RevApm.csproj">
       <Project>{511d4861-1bb7-4f73-bbff-8b7af6d5e4c6}</Project>
-      <Name>RevAPM</Name>
+      <Name>RevApm</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

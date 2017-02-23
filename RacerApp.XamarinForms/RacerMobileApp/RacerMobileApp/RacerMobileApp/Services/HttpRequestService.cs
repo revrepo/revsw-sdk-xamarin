@@ -13,27 +13,26 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using ModernHttpClient;
+using RevApm;
 
 namespace RacerMobileApp.Services
 {
    public class HttpRequestService
     {
+        private static HttpClient RevClient = new HttpClient(new RevApmMessageHandler());
+        private static HttpClient DefaultClient = new HttpClient(new HttpClientHandler() { AllowAutoRedirect = true });
+
         public static async Task<TestResult> SendRequest(Session session, bool IsRevApmRequest)
         {
 			HttpResponseMessage response = null;
             var sw = new Stopwatch();
             long? length = 0;         
-
+            
             try
                 {
-                    var handler = IsRevApmRequest ?
-                                               DependencyService.Get<IMessageHandlerInitializer>().InitializeMessageHandler()
-                                               :
-				                                                new NativeMessageHandler() { AllowAutoRedirect = true };
-                    using (handler)
-                    {
-                        using(var client = new HttpClient(handler))
-                        {
+
+                           var client = IsRevApmRequest ? RevClient : DefaultClient;
+                             
 							client.DefaultRequestHeaders.Add("Connection", "keep-alive");
 							client.DefaultRequestHeaders.Add("Keep-Alive", "600");
                             using(var request = new HttpRequestMessage() { Method = session.Method, RequestUri = session.Uri })
@@ -69,8 +68,7 @@ namespace RacerMobileApp.Services
 
 
                          }
-                      }
-                   }
+                  
 
                 return new TestResult()
                 {

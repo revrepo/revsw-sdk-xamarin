@@ -1,14 +1,4 @@
-using System;
 using NUnit.Framework;
-using System.Threading.Tasks;
-using System.Net;
-using System.Net.Http;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Collections.Generic;
-using System.Text;
-using RevAPMiOSSDK;
 
 namespace UnitTestApp
 {

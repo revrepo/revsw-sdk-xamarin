@@ -27,7 +27,7 @@ using System.Net.Http;
 
 namespace RevAPMiOSSDK
 {
-    public class iOSRevAPMHttpProcessor: RevAPM.IRevAPMHttpProcessor
+    public class iOSRevAPMHttpProcessor: RevApm.IRevAPMHttpProcessor
     {
 
         private List<string> ContentHeadersToSkip;

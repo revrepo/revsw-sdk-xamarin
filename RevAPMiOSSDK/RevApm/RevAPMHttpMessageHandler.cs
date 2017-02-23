@@ -15,7 +15,7 @@
  * is strictly forbidden unless prior written permission is obtained
  * from Rev Software, Inc.
  */
-using RevAPM;
+using RevApm;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -27,9 +27,9 @@ using System.Threading;
 using System.Threading.Tasks;
 
 
-namespace RevAPM
+namespace RevApm
 {
-    public class RevAPMHttpMessageHandler : HttpMessageHandler
+    sealed class RevAPMHttpMessageHandler : HttpMessageHandler
     {
         IRevAPMHttpProcessor _processor;
         public RevAPMHttpMessageHandler(IRevAPMHttpProcessor processor)

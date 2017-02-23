@@ -38,7 +38,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Classes\IMessageHandlerInitializer.cs" />
     <Compile Include="Classes\Settings.cs" />
     <Compile Include="Classes\StaticticsCalculator.cs" />
     <Compile Include="Controls\DetailsViewCell.cs" />
@@ -117,12 +116,8 @@
       <HintPath>..\..\packages\Xam.Plugins.Settings.2.5.2.1\lib\portable-net45+wp80+win8+wpa81\Plugin.Settings.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="RevAPM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\nuubit.SDK.1.0.1\lib\RevAPM.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="RevSDK, Version=1.0.6232.34286, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\nuubit.SDK.1.0.1\lib\RevSDK.dll</HintPath>
+    <Reference Include="RevApm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\nuubit.SDK.2.0\lib\RevApm.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
