@@ -33,9 +33,11 @@ namespace RacerMobileApp.Services
 
                            var client = IsRevApmRequest ? RevClient : DefaultClient;
                              
+							client.DefaultRequestHeaders.Clear();
 							client.DefaultRequestHeaders.Add("Connection", "keep-alive");
 							client.DefaultRequestHeaders.Add("Keep-Alive", "600");
-                            using(var request = new HttpRequestMessage() { Method = session.Method, RequestUri = session.Uri })
+                           
+							using(var request = new HttpRequestMessage() { Method = session.Method, RequestUri = session.Uri })
                             {
                                 request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(session.ContentType));
 
@@ -133,6 +135,7 @@ namespace RacerMobileApp.Services
 
         private static async Task<long?> CalculateResponseBufferSize(HttpResponseMessage response)
         {
+			//var data = await response.Content.ReadAsStringAsync();
             var byteArray = await response.Content.ReadAsByteArrayAsync().ConfigureAwait(false);
             return byteArray.Length;
         }
