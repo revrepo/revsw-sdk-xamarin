@@ -1,0 +1,29 @@
+%YAML 1.2
+---
+name: nuu:bit Mobile SDK
+id: nuubit.SDK
+publisher: nuu:bit, Inc.
+license: License.md
+icons:
+  - icons/icon_128x128.png
+  - icons/icon_512x512.png
+publisher-url: https://www.nuubit.com/
+libraries:
+  ios-unified: 
+    - lib/RevSDK.dll      
+    - lib/RevApm.iOS.dll     
+summary: The nuu:bit Mobile SDK is a simple way to connect a mobile application to nuu:bit global content acceleration and analytics platform.
+version: "2.1"
+details: Details.md
+getting-started: GettingStarted.md
+samples:
+  - name: "iOS Sample"
+    path: samples/ComponentSampleApp/ComponentSampleApp.sln
+    configuration: "Release|iPhone"
+    nobuild: true
+packages:
+  "": 
+    - Microsoft.Bcl.Build, Version=1.0.21
+    - Microsoft.Bcl, Version=1.1.10
+    - Microsoft.Net.Http, Version=2.2.29
+    - System.Net.Http, Version=4.3.0
