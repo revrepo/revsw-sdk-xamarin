@@ -41,6 +41,5 @@
 	<string>HttpClient</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>test</string>
-	
 </dict>
 </plist>

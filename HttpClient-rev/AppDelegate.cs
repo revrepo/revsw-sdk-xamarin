@@ -7,8 +7,7 @@ using RevSDK;
 using System.Net.Http;
 using System.Text;
 using System.Net;
-using RevAPM;
-using RevAPMiOSSDK;
+
 
 namespace HttpClientSample
 {
@@ -82,7 +81,7 @@ namespace HttpClientSample
                    message.Method = new HttpMethod("GET");              
                     message.RequestUri = new Uri("https://www.revapm.com/sample.html");                                                                                                                       //message.RequestUri = new Uri("https://www.revapm.com/sample.html"); //html
 
-                    var custommesagehandler = new RevAPMiOSHttpMessageHandler ();
+					var custommesagehandler = new RevApm.RevApmMessageHandler ();
 
                     var client = new HttpClient(custommesagehandler);
 

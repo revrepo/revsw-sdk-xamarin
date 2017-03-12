@@ -57,7 +57,7 @@
   <ItemGroup>
     <ProjectReference Include="..\RevApm\RevApm.csproj">
       <Project>{511D4861-1BB7-4F73-BBFF-8B7AF6D5E4C6}</Project>
-      <Name>RevApm</Name>
+      <Name>RevAPM</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
