@@ -4,8 +4,6 @@
 <dict>
 	<key>CFBundleDisplayName</key>
 	<string>UnitTestApp</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.your-company.UnitTestApp</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -41,5 +39,9 @@
 		<string>Default@2x.png</string>
 		<string>Default-568h@2x.png</string>
 	</array>
+	<key>CFBundleName</key>
+	<string>UnitTestApp</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.revapm.xamarin.unittest</string>
 </dict>
 </plist>
