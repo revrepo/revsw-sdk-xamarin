@@ -63,9 +63,6 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="RevAPM">
-      <HintPath>..\..\..\NugetPackage&amp;XamarinComponentFiles\nuget\RevAPM.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.Extensions">
@@ -121,11 +118,9 @@
     <ITunesArtwork Include="Resources\iTunesArtwork.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RevAPMiOSSDK\RevAPMiOSSDK\RevAPMiOSSDK.csproj">
-      <Project>{0E6DAEF6-0AF9-45B1-B881-C9550FE0778A}</Project>
-      <Name>RevAPMiOSSDK</Name>
-      <IsAppExtension>false</IsAppExtension>
-      <IsWatchApp>false</IsWatchApp>
+    <ProjectReference Include="..\RevAPMiOSSDK\RevApm.iOS\RevApm.iOS.csproj">
+      <Project>{19A64C91-5105-4AEF-BD15-F501BB1A00DB}</Project>
+      <Name>RevApm.iOS</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
