@@ -20,7 +20,10 @@ namespace RacerMobileApp.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new App());
+
+           var x = Com.Rev.Sdk.RevApplication.Instance;
+           LoadApplication(new App());
+            
         }
     }
 }
