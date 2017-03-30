@@ -27,7 +27,7 @@
     </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
+    <DebugSymbols>True</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
@@ -36,6 +36,15 @@
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <Debugger>.Net (Xamarin)</Debugger>
+    <AotAssemblies>False</AotAssemblies>
+    <EnableLLVM>False</EnableLLVM>
+    <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+    <EnableProguard>False</EnableProguard>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -182,6 +191,10 @@
     <ProjectReference Include="..\..\OkHttpBindingLibrary\OkHttpBindingLibrary.csproj">
       <Project>{4ee52003-87a4-4a73-a035-ab97531fa9f8}</Project>
       <Name>OkHttpBindingLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OkioBindingLibrary\OkioBindingLibrary.csproj">
+      <Project>{60c30ef7-c63a-496f-acc7-022246b70ccc}</Project>
+      <Name>OkioBindingLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="..\RacerMobileApp\RacerMobileApp.csproj">
       <Project>{D0A0C1E7-930D-4EF9-9DB9-439DE17C23D3}</Project>

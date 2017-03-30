@@ -18,6 +18,6 @@
   <remove-node path="/api/package[@name='com.google.gson.internal.bind']/class[@name='TimeTypeAdapter']" />
   <remove-node path="/api/package[@name='com.google.gson.internal.bind']/class[@name='TypeAdapters']" />
   <remove-node path="/api/package[@name='com.google.gson.internal']/class[@name='LinkedHashTreeMap']" />
-  <remove-node path="/api/package[@name='com.google.gson.internal']/class[@name='LinkedTreeMap']" />
-  <remove-node path="/api/package[@name='com.google.gson']/class[@name='JsonStreamParser']" />
+  <remove-node path="/api/package[@name='com.google.gson.internal']/class[@name='LinkedTreeMap']"/>
+  <remove-node path="/api/package[@name='com.google.gson']/class[@name='JsonStreamParser']"/>
 </metadata>
