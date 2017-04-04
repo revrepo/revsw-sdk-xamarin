@@ -21,6 +21,9 @@ namespace RacerMobileApp.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
+			Acr.UserDialogs.UserDialogs.Init(this);
+
+
            var x = Com.Rev.Sdk.RevApplication.Instance;
            LoadApplication(new App());
             
