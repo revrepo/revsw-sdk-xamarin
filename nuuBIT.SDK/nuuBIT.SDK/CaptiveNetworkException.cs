@@ -1,13 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace RevApm
 {
-    /// <summary>
-    /// Thrown when the request goes to a captive network. This happens
-    /// usually with wifi networks where an authentication html form is shown
-    /// instead of the real content.
-    /// </summary>
     public class CaptiveNetworkException : WebException
     {
         const string DefaultCaptiveNetworkErrorMessage = "Hostnames don't match, you are probably on a captive network";
@@ -31,4 +30,3 @@ namespace RevApm
         }
     }
 }
-

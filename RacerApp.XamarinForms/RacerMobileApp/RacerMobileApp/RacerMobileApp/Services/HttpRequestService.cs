@@ -12,7 +12,6 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using ModernHttpClient;
 using RevApm;
 
 namespace RacerMobileApp.Services

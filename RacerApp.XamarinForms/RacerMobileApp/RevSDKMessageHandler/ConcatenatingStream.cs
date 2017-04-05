@@ -5,7 +5,7 @@ using System.Threading;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace RevSDKMessageHandler
+namespace RevApm
 {
     class ConcatenatingStream : Stream
     {

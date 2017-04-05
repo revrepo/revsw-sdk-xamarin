@@ -3,7 +3,7 @@ using System.Linq;
 using System.Net;
 using Java.Net;
 
-namespace RevSDKMessageHandler
+namespace RevApm
 {
     public class NativeCookieHandler
     {

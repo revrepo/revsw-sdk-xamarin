@@ -63,6 +63,55 @@ namespace RacerMobileApp.Droid
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::RacerMobileApp.Droid.Resource.Styleable.ProgressWheel_ahText;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::RacerMobileApp.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::RacerMobileApp.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
+			global::RevSDKMessageHandler.Resource.String.ApplicationName = global::RacerMobileApp.Droid.Resource.String.ApplicationName;
+			global::RevSDKMessageHandler.Resource.String.Hello = global::RacerMobileApp.Droid.Resource.String.Hello;
+			global::RevSDKMessageHandler.Resource.String.accepted = global::RacerMobileApp.Droid.Resource.String.accepted;
+			global::RevSDKMessageHandler.Resource.String.app_name = global::RacerMobileApp.Droid.Resource.String.app_name;
+			global::RevSDKMessageHandler.Resource.String.bad_gateway = global::RacerMobileApp.Droid.Resource.String.bad_gateway;
+			global::RevSDKMessageHandler.Resource.String.bad_request = global::RacerMobileApp.Droid.Resource.String.bad_request;
+			global::RevSDKMessageHandler.Resource.String.conflict = global::RacerMobileApp.Droid.Resource.String.conflict;
+			global::RevSDKMessageHandler.Resource.String.continu = global::RacerMobileApp.Droid.Resource.String.continu;
+			global::RevSDKMessageHandler.Resource.String.crash_toast_text = global::RacerMobileApp.Droid.Resource.String.crash_toast_text;
+			global::RevSDKMessageHandler.Resource.String.created = global::RacerMobileApp.Droid.Resource.String.created;
+			global::RevSDKMessageHandler.Resource.String.expectation_failed = global::RacerMobileApp.Droid.Resource.String.expectation_failed;
+			global::RevSDKMessageHandler.Resource.String.forbidden = global::RacerMobileApp.Droid.Resource.String.forbidden;
+			global::RevSDKMessageHandler.Resource.String.found = global::RacerMobileApp.Droid.Resource.String.found;
+			global::RevSDKMessageHandler.Resource.String.g2 = global::RacerMobileApp.Droid.Resource.String.g2;
+			global::RevSDKMessageHandler.Resource.String.g3 = global::RacerMobileApp.Droid.Resource.String.g3;
+			global::RevSDKMessageHandler.Resource.String.g4 = global::RacerMobileApp.Droid.Resource.String.g4;
+			global::RevSDKMessageHandler.Resource.String.gateway_timeout = global::RacerMobileApp.Droid.Resource.String.gateway_timeout;
+			global::RevSDKMessageHandler.Resource.String.gone = global::RacerMobileApp.Droid.Resource.String.gone;
+			global::RevSDKMessageHandler.Resource.String.http_version_not_supported = global::RacerMobileApp.Droid.Resource.String.http_version_not_supported;
+			global::RevSDKMessageHandler.Resource.String.internal_server_error = global::RacerMobileApp.Droid.Resource.String.internal_server_error;
+			global::RevSDKMessageHandler.Resource.String.length_required = global::RacerMobileApp.Droid.Resource.String.length_required;
+			global::RevSDKMessageHandler.Resource.String.method_not_allowed = global::RacerMobileApp.Droid.Resource.String.method_not_allowed;
+			global::RevSDKMessageHandler.Resource.String.moved_permanently = global::RacerMobileApp.Droid.Resource.String.moved_permanently;
+			global::RevSDKMessageHandler.Resource.String.multiple_choices = global::RacerMobileApp.Droid.Resource.String.multiple_choices;
+			global::RevSDKMessageHandler.Resource.String.no_content = global::RacerMobileApp.Droid.Resource.String.no_content;
+			global::RevSDKMessageHandler.Resource.String.no_network = global::RacerMobileApp.Droid.Resource.String.no_network;
+			global::RevSDKMessageHandler.Resource.String.non_authoritative_information = global::RacerMobileApp.Droid.Resource.String.non_authoritative_information;
+			global::RevSDKMessageHandler.Resource.String.not_acceptable = global::RacerMobileApp.Droid.Resource.String.not_acceptable;
+			global::RevSDKMessageHandler.Resource.String.not_found = global::RacerMobileApp.Droid.Resource.String.not_found;
+			global::RevSDKMessageHandler.Resource.String.not_implemented = global::RacerMobileApp.Droid.Resource.String.not_implemented;
+			global::RevSDKMessageHandler.Resource.String.ok = global::RacerMobileApp.Droid.Resource.String.ok;
+			global::RevSDKMessageHandler.Resource.String.payload_to_large = global::RacerMobileApp.Droid.Resource.String.payload_to_large;
+			global::RevSDKMessageHandler.Resource.String.payment_required = global::RacerMobileApp.Droid.Resource.String.payment_required;
+			global::RevSDKMessageHandler.Resource.String.permission_denied = global::RacerMobileApp.Droid.Resource.String.permission_denied;
+			global::RevSDKMessageHandler.Resource.String.read_phone_state = global::RacerMobileApp.Droid.Resource.String.read_phone_state;
+			global::RevSDKMessageHandler.Resource.String.read_write_prmission = global::RacerMobileApp.Droid.Resource.String.read_write_prmission;
+			global::RevSDKMessageHandler.Resource.String.request_timeout = global::RacerMobileApp.Droid.Resource.String.request_timeout;
+			global::RevSDKMessageHandler.Resource.String.reset_content = global::RacerMobileApp.Droid.Resource.String.reset_content;
+			global::RevSDKMessageHandler.Resource.String.see_other = global::RacerMobileApp.Droid.Resource.String.see_other;
+			global::RevSDKMessageHandler.Resource.String.service_unavailable = global::RacerMobileApp.Droid.Resource.String.service_unavailable;
+			global::RevSDKMessageHandler.Resource.String.switching_protocols = global::RacerMobileApp.Droid.Resource.String.switching_protocols;
+			global::RevSDKMessageHandler.Resource.String.temporary_redirect = global::RacerMobileApp.Droid.Resource.String.temporary_redirect;
+			global::RevSDKMessageHandler.Resource.String.undefined = global::RacerMobileApp.Droid.Resource.String.undefined;
+			global::RevSDKMessageHandler.Resource.String.unknown = global::RacerMobileApp.Droid.Resource.String.unknown;
+			global::RevSDKMessageHandler.Resource.String.unsupported_media_type = global::RacerMobileApp.Droid.Resource.String.unsupported_media_type;
+			global::RevSDKMessageHandler.Resource.String.upgrade_required = global::RacerMobileApp.Droid.Resource.String.upgrade_required;
+			global::RevSDKMessageHandler.Resource.String.uri_too_long = global::RacerMobileApp.Droid.Resource.String.uri_too_long;
+			global::RevSDKMessageHandler.Resource.String.use_proxy = global::RacerMobileApp.Droid.Resource.String.use_proxy;
+			global::RevSDKMessageHandler.Resource.String.wifi = global::RacerMobileApp.Droid.Resource.String.wifi;
 			global::Splat.Resource.String.library_name = global::RacerMobileApp.Droid.Resource.String.library_name;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::RacerMobileApp.Droid.Resource.Attribute.actionBarSize;
 		}
@@ -3044,6 +3093,12 @@ namespace RacerMobileApp.Droid
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f080028
+			public const int ApplicationName = 2131230760;
+			
+			// aapt resource value: 0x7f080027
+			public const int Hello = 2131230759;
+			
 			// aapt resource value: 0x7f08000f
 			public const int abc_action_bar_home_description = 2131230735;
 			
@@ -3101,20 +3156,20 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f080021
 			public const int abc_toolbar_collapse_description = 2131230753;
 			
-			// aapt resource value: 0x7f080027
-			public const int accepted = 2131230759;
+			// aapt resource value: 0x7f080029
+			public const int accepted = 2131230761;
 			
-			// aapt resource value: 0x7f080028
-			public const int app_name = 2131230760;
+			// aapt resource value: 0x7f08002a
+			public const int app_name = 2131230762;
 			
 			// aapt resource value: 0x7f080023
 			public const int appbar_scrolling_view_behavior = 2131230755;
 			
-			// aapt resource value: 0x7f080029
-			public const int bad_gateway = 2131230761;
+			// aapt resource value: 0x7f08002b
+			public const int bad_gateway = 2131230763;
 			
-			// aapt resource value: 0x7f08002a
-			public const int bad_request = 2131230762;
+			// aapt resource value: 0x7f08002c
+			public const int bad_request = 2131230764;
 			
 			// aapt resource value: 0x7f080024
 			public const int bottom_sheet_behavior = 2131230756;
@@ -3122,59 +3177,59 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f080025
 			public const int character_counter_pattern = 2131230757;
 			
-			// aapt resource value: 0x7f08002b
-			public const int conflict = 2131230763;
-			
-			// aapt resource value: 0x7f08002c
-			public const int continu = 2131230764;
-			
 			// aapt resource value: 0x7f08002d
-			public const int crash_toast_text = 2131230765;
+			public const int conflict = 2131230765;
 			
 			// aapt resource value: 0x7f08002e
-			public const int created = 2131230766;
+			public const int continu = 2131230766;
 			
 			// aapt resource value: 0x7f08002f
-			public const int expectation_failed = 2131230767;
+			public const int crash_toast_text = 2131230767;
 			
 			// aapt resource value: 0x7f080030
-			public const int forbidden = 2131230768;
+			public const int created = 2131230768;
 			
 			// aapt resource value: 0x7f080031
-			public const int found = 2131230769;
+			public const int expectation_failed = 2131230769;
 			
 			// aapt resource value: 0x7f080032
-			public const int g2 = 2131230770;
+			public const int forbidden = 2131230770;
 			
 			// aapt resource value: 0x7f080033
-			public const int g3 = 2131230771;
+			public const int found = 2131230771;
 			
 			// aapt resource value: 0x7f080034
-			public const int g4 = 2131230772;
+			public const int g2 = 2131230772;
 			
 			// aapt resource value: 0x7f080035
-			public const int gateway_timeout = 2131230773;
+			public const int g3 = 2131230773;
 			
 			// aapt resource value: 0x7f080036
-			public const int gone = 2131230774;
+			public const int g4 = 2131230774;
 			
 			// aapt resource value: 0x7f080037
-			public const int http_version_not_supported = 2131230775;
+			public const int gateway_timeout = 2131230775;
 			
 			// aapt resource value: 0x7f080038
-			public const int internal_server_error = 2131230776;
+			public const int gone = 2131230776;
 			
 			// aapt resource value: 0x7f080039
-			public const int length_required = 2131230777;
+			public const int http_version_not_supported = 2131230777;
+			
+			// aapt resource value: 0x7f08003a
+			public const int internal_server_error = 2131230778;
+			
+			// aapt resource value: 0x7f08003b
+			public const int length_required = 2131230779;
 			
 			// aapt resource value: 0x7f080026
 			public const int library_name = 2131230758;
 			
-			// aapt resource value: 0x7f08003a
-			public const int method_not_allowed = 2131230778;
+			// aapt resource value: 0x7f08003c
+			public const int method_not_allowed = 2131230780;
 			
-			// aapt resource value: 0x7f08003b
-			public const int moved_permanently = 2131230779;
+			// aapt resource value: 0x7f08003d
+			public const int moved_permanently = 2131230781;
 			
 			// aapt resource value: 0x7f080000
 			public const int mr_button_content_description = 2131230720;
@@ -3221,89 +3276,89 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f08000e
 			public const int mr_user_route_category_name = 2131230734;
 			
-			// aapt resource value: 0x7f08003c
-			public const int multiple_choices = 2131230780;
-			
-			// aapt resource value: 0x7f08003d
-			public const int no_content = 2131230781;
-			
 			// aapt resource value: 0x7f08003e
-			public const int no_network = 2131230782;
+			public const int multiple_choices = 2131230782;
 			
 			// aapt resource value: 0x7f08003f
-			public const int non_authoritative_information = 2131230783;
+			public const int no_content = 2131230783;
 			
 			// aapt resource value: 0x7f080040
-			public const int not_acceptable = 2131230784;
+			public const int no_network = 2131230784;
 			
 			// aapt resource value: 0x7f080041
-			public const int not_found = 2131230785;
+			public const int non_authoritative_information = 2131230785;
 			
 			// aapt resource value: 0x7f080042
-			public const int not_implemented = 2131230786;
+			public const int not_acceptable = 2131230786;
 			
 			// aapt resource value: 0x7f080043
-			public const int ok = 2131230787;
+			public const int not_found = 2131230787;
 			
 			// aapt resource value: 0x7f080044
-			public const int payload_to_large = 2131230788;
+			public const int not_implemented = 2131230788;
 			
 			// aapt resource value: 0x7f080045
-			public const int payment_required = 2131230789;
+			public const int ok = 2131230789;
 			
 			// aapt resource value: 0x7f080046
-			public const int permission_denied = 2131230790;
+			public const int payload_to_large = 2131230790;
 			
 			// aapt resource value: 0x7f080047
-			public const int read_phone_state = 2131230791;
+			public const int payment_required = 2131230791;
 			
 			// aapt resource value: 0x7f080048
-			public const int read_write_prmission = 2131230792;
+			public const int permission_denied = 2131230792;
 			
 			// aapt resource value: 0x7f080049
-			public const int request_timeout = 2131230793;
+			public const int read_phone_state = 2131230793;
 			
 			// aapt resource value: 0x7f08004a
-			public const int reset_content = 2131230794;
-			
-			// aapt resource value: 0x7f080056
-			public const int revsdk_key = 2131230806;
+			public const int read_write_prmission = 2131230794;
 			
 			// aapt resource value: 0x7f08004b
-			public const int see_other = 2131230795;
+			public const int request_timeout = 2131230795;
 			
 			// aapt resource value: 0x7f08004c
-			public const int service_unavailable = 2131230796;
+			public const int reset_content = 2131230796;
+			
+			// aapt resource value: 0x7f080058
+			public const int revsdk_key = 2131230808;
+			
+			// aapt resource value: 0x7f08004d
+			public const int see_other = 2131230797;
+			
+			// aapt resource value: 0x7f08004e
+			public const int service_unavailable = 2131230798;
 			
 			// aapt resource value: 0x7f080022
 			public const int status_bar_notification_info_overflow = 2131230754;
 			
-			// aapt resource value: 0x7f08004d
-			public const int switching_protocols = 2131230797;
-			
-			// aapt resource value: 0x7f08004e
-			public const int temporary_redirect = 2131230798;
-			
 			// aapt resource value: 0x7f08004f
-			public const int undefined = 2131230799;
+			public const int switching_protocols = 2131230799;
 			
 			// aapt resource value: 0x7f080050
-			public const int unknown = 2131230800;
+			public const int temporary_redirect = 2131230800;
 			
 			// aapt resource value: 0x7f080051
-			public const int unsupported_media_type = 2131230801;
+			public const int undefined = 2131230801;
 			
 			// aapt resource value: 0x7f080052
-			public const int upgrade_required = 2131230802;
+			public const int unknown = 2131230802;
 			
 			// aapt resource value: 0x7f080053
-			public const int uri_too_long = 2131230803;
+			public const int unsupported_media_type = 2131230803;
 			
 			// aapt resource value: 0x7f080054
-			public const int use_proxy = 2131230804;
+			public const int upgrade_required = 2131230804;
 			
 			// aapt resource value: 0x7f080055
-			public const int wifi = 2131230805;
+			public const int uri_too_long = 2131230805;
+			
+			// aapt resource value: 0x7f080056
+			public const int use_proxy = 2131230806;
+			
+			// aapt resource value: 0x7f080057
+			public const int wifi = 2131230807;
 			
 			static String()
 			{
