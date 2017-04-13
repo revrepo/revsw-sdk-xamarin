@@ -45,7 +45,7 @@
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
-    <LibraryProjectZip Include="Jars\RevSDK-1.0.0.aar" />
+    <LibraryProjectZip Include="Jars\NuubitSDK-1.0.0.aar" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

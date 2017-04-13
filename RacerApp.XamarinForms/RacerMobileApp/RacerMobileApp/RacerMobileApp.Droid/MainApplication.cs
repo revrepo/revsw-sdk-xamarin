@@ -9,12 +9,12 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-
+using Com.Nuubit.Sdk;
 
 namespace RacerMobileApp.Droid
 {
-    [Application]
-    class MainApplication : Com.Rev.Sdk.RevApplication
+    [Application(Debuggable = false)]
+    class MainApplication : Com.Nuubit.Sdk.Statistic.Sections.App
     {
         public MainApplication(IntPtr handle, JniHandleOwnership transer)
            : base(handle, transer)

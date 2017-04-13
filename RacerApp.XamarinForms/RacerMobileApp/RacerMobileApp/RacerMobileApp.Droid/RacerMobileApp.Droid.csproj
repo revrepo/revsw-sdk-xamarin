@@ -192,13 +192,9 @@
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\AndroidBindingLibrary\AndroidBindingLibrary\AndroidBindingLibrary.csproj">
-      <Project>{ede5b85f-aed0-4355-a85f-6f711609c0e7}</Project>
-      <Name>AndroidBindingLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\nuuBIT.SDK\nuuBIT.SDK\nuuBIT.SDK.csproj">
-      <Project>{816cffed-e4b4-43f0-9f2c-199492fc58ac}</Project>
-      <Name>nuuBIT.SDK</Name>
+    <ProjectReference Include="..\..\AndroidNuubitMobileSDK\AndroidNuubitMobileSDK.csproj">
+      <Project>{0130fc02-3f96-4e8c-b93e-e8f1f8e0bb83}</Project>
+      <Name>AndroidNuubitMobileSDK</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\OkioBindingLibrary\OkioBindingLibrary.csproj">
       <Project>{60c30ef7-c63a-496f-acc7-022246b70ccc}</Project>
