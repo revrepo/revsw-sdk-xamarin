@@ -7,7 +7,7 @@ using System.Net;
 using Foundation;
 #endif
 
-namespace RevApm
+namespace Nuubit.SDK.Foundation
 {
     public class NativeCookieHandler
     {

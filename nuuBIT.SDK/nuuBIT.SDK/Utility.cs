@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace RevApm
+namespace Nuubit.SDK
 {
     public static class Utility
     {
@@ -12,7 +12,7 @@ namespace RevApm
             if (index == -1)
             {
                 // not a pattern, do a direct case-insensitive comparison
-                return (String.Compare(hostname, pattern, true, CultureInfo.InvariantCulture) == 0);
+                return (String.Compare(hostname, pattern) == 0);
             }
 
             // check pattern validity
@@ -38,7 +38,7 @@ namespace RevApm
             // no point to check a pattern that is longer than the hostname
             if (length <= 0) return false;
 
-            if (String.Compare(hostname, length, end, 0, end.Length, true, CultureInfo.InvariantCulture) != 0)
+            if (String.Compare(hostname, length, end, 0, end.Length) != 0)
             {
                 return false;
             }
@@ -53,7 +53,7 @@ namespace RevApm
 
             // match the start of the pattern
             string start = pattern.Substring(0, index);
-            return (String.Compare(hostname, 0, start, 0, start.Length, true, CultureInfo.InvariantCulture) == 0);
+            return (String.Compare(hostname, 0, start, 0, start.Length) == 0);
         }
     }
 }

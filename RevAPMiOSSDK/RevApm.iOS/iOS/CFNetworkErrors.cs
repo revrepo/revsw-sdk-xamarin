@@ -8,7 +8,7 @@ using System.Globalization;
 // These definitions are not currently provided by Xamarin.
 // To avoid a potential conflict, these are in a namespace specific to this library.
 
-namespace RevApm.CoreFoundation
+namespace Nuubit.SDK
 {
     public static class CFNetworkError
     {

@@ -1,7 +1,7 @@
 ﻿// The NSUrlError enum provided by Xamarin is missing some values.  
 // To avoid a potential conflict, these are in a namespace specific to this library.
 
-namespace RevApm.Foundation
+namespace Nuubit.SDK
 {
     public enum NSUrlErrorExtended
     {

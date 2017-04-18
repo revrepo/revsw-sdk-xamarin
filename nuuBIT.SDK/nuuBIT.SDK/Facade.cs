@@ -8,9 +8,9 @@ using System.Net.Http;
 using System.IO;
 using System.Threading;
 
-namespace RevApm
+namespace Nuubit.SDK
 {
-    public class RevApmMessageHandler : HttpClientHandler
+    public class NuubitMessageHandler : HttpClientHandler
     {
         const string wrongVersion = "You're referencing the Portable version in your App - you need to reference the platform (iOS/Android) version";
 
@@ -20,7 +20,7 @@ namespace RevApm
         /// Initializes a new instance of the <see
         /// cref="ModernHttpClient.Portable.NativeMessageHandler"/> class.
         /// </summary>
-        public RevApmMessageHandler() : base()
+        public NuubitMessageHandler() : base()
         {
         }
 
@@ -38,7 +38,7 @@ namespace RevApm
         /// will take place)</param>
         /// <param name="cookieHandler">Enable native cookie handling.
         /// </param>
-        public RevApmMessageHandler(bool throwOnCaptiveNetwork, bool customSSLVerification, NativeCookieHandler cookieHandler = null) : base()
+        public NuubitMessageHandler(bool throwOnCaptiveNetwork, bool customSSLVerification, NativeCookieHandler cookieHandler = null) : base()
         {
         }
 

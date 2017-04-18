@@ -3,7 +3,7 @@ using System.Linq;
 using System.Net;
 using Java.Net;
 
-namespace RevApm
+namespace Nuubit.SDK
 {
     public class NativeCookieHandler
     {

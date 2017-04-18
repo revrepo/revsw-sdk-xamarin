@@ -8,7 +8,7 @@ using System.Net.Http;
 using System.IO;
 using System.Threading;
 
-namespace RevApm
+namespace Nuubit.SDK
 {
     public class ProgressStreamContent : StreamContent
     {

@@ -8,9 +8,9 @@
     <ProjectGuid>{19A64C91-5105-4AEF-BD15-F501BB1A00DB}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>RevApm.iOS</RootNamespace>
+    <RootNamespace>Nuubit.SDK.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>RevApm.iOS</AssemblyName>
+    <AssemblyName>Nuubit.SDK.iOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,9 +52,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\nuuBIT.SDK\nuuBIT.SDK\nuuBIT.SDK.csproj">
-      <Project>{816cffed-e4b4-43f0-9f2c-199492fc58ac}</Project>
-      <Name>nuuBIT.SDK</Name>
+    <ProjectReference Include="..\..\nuuBIT.SDK\Nuubit.SDK\Nuubit.SDK.csproj">
+      <Project>{53751793-9C4A-463A-BDAF-95F12BF19C33}</Project>
+      <Name>Nuubit.SDK</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

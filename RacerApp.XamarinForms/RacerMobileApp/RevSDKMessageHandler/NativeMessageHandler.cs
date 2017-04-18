@@ -11,13 +11,12 @@ using Java.IO;
 using System.Security.Cryptography.X509Certificates;
 using System.Globalization;
 using Android.OS;
-using RevApm;
 using Square.OkHttp3;
-using static RevApm.AwaitableOkHttp;
+using Nuubit.SDK;
 
-namespace RevApm
+namespace Nuubit.SDK
 {
-    public class NativeMessageHandler : HttpClientHandler
+    public class NuubitMessageHandler : HttpClientHandler
     {
         readonly Square.OkHttp3.OkHttpClient client = new OkHttpClient();
         readonly CacheControl noCacheCacheControl = default(CacheControl);
@@ -32,9 +31,9 @@ namespace RevApm
 
         public bool DisableCaching { get; set; }
 
-        public NativeMessageHandler() : this(false, false) { }
+        public NuubitMessageHandler() : this(false, false) { }
 
-        public NativeMessageHandler(bool throwOnCaptiveNetwork, bool customSSLVerification, NativeCookieHandler cookieHandler = null)
+        public NuubitMessageHandler(bool throwOnCaptiveNetwork, bool customSSLVerification, NativeCookieHandler cookieHandler = null)
         {
             this.throwOnCaptiveNetwork = throwOnCaptiveNetwork;
 

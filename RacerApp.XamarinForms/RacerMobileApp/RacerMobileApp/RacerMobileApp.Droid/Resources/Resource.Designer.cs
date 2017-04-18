@@ -63,8 +63,8 @@ namespace RacerMobileApp.Droid
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::RacerMobileApp.Droid.Resource.Styleable.ProgressWheel_ahText;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::RacerMobileApp.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::RacerMobileApp.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
-			global::RevSDKMessageHandler.Resource.String.ApplicationName = global::RacerMobileApp.Droid.Resource.String.ApplicationName;
-			global::RevSDKMessageHandler.Resource.String.Hello = global::RacerMobileApp.Droid.Resource.String.Hello;
+			global::Nuubit.SDK.Droid.Resource.String.ApplicationName = global::RacerMobileApp.Droid.Resource.String.ApplicationName;
+			global::Nuubit.SDK.Droid.Resource.String.Hello = global::RacerMobileApp.Droid.Resource.String.Hello;
 			global::Splat.Resource.String.library_name = global::RacerMobileApp.Droid.Resource.String.library_name;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::RacerMobileApp.Droid.Resource.Attribute.actionBarSize;
 		}

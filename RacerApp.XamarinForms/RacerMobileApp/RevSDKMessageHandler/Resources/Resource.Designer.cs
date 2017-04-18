@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("RevSDKMessageHandler.Resource", IsApplication=false)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Nuubit.SDK.Droid.Resource", IsApplication=false)]
 
-namespace RevSDKMessageHandler
+namespace Nuubit.SDK.Droid
 {
 	
 	

@@ -9,11 +9,9 @@ using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
 using System.Net.Http;
-using RevApm;
 using Foundation;
-using RevApm.Foundation;
 using Security;
-using RevApm.CoreFoundation;
+using Nuubit.SDK.Foundation;
 
 #if UNIFIED
 using Foundation;
@@ -21,7 +19,7 @@ using Security;
 #else
 #endif
 
-namespace RevApm
+namespace Nuubit.SDK
 {
     class InflightOperation
     {
@@ -33,7 +31,7 @@ namespace RevApm
         public bool IsCompleted { get; set; }
     }
 
-    public class RevApmMessageHandler : HttpClientHandler
+    public class NuubitMessageHandler : HttpClientHandler
     {
         readonly NSUrlSession session;
 
@@ -53,8 +51,8 @@ namespace RevApm
 
         public bool DisableCaching { get; set; }
 
-        public RevApmMessageHandler(): this(false, false) { }
-        public RevApmMessageHandler(bool throwOnCaptiveNetwork, bool customSSLVerification, NativeCookieHandler cookieHandler = null, SslProtocol? minimumSSLProtocol = null)
+        public NuubitMessageHandler(): this(false, false) { }
+        public NuubitMessageHandler(bool throwOnCaptiveNetwork, bool customSSLVerification, Nuubit.SDK.Foundation.NativeCookieHandler cookieHandler = null, SslProtocol? minimumSSLProtocol = null)
         {
             var configuration = NSUrlSessionConfiguration.DefaultSessionConfiguration;
 
@@ -152,9 +150,9 @@ namespace RevApm
 
         class DataTaskDelegate : NSUrlSessionDataDelegate
         {
-            RevApmMessageHandler This { get; set; }
+            NuubitMessageHandler This { get; set; }
 
-            public DataTaskDelegate(RevApmMessageHandler that)
+            public DataTaskDelegate(NuubitMessageHandler that)
             {
                 this.This = that;
             }

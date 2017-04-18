@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using System.Threading;
 
 
-namespace RevApm
+namespace Nuubit.SDK
 {
     // Straight-up thieved from http://www.hanselman.com/blog/ComparingTwoTechniquesInNETAsynchronousCoordinationPrimitives.aspx 
     public sealed class AsyncLock

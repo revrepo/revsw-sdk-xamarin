@@ -5,7 +5,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RevApm
+namespace Nuubit.SDK
 {
     public class CaptiveNetworkException : WebException
     {

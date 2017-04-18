@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nuuBIT.SDK", "nuuBIT.SDK\nuuBIT.SDK.csproj", "{816CFFED-E4B4-43F0-9F2C-199492FC58AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuubit.SDK.iOS", "..\RevAPMiOSSDK\RevApm.iOS\Nuubit.SDK.iOS.csproj", "{19A64C91-5105-4AEF-BD15-F501BB1A00DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevApm.iOS", "..\RevAPMiOSSDK\RevApm.iOS\RevApm.iOS.csproj", "{19A64C91-5105-4AEF-BD15-F501BB1A00DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuubit.SDK.Droid", "..\RacerApp.XamarinForms\RacerMobileApp\RevSDKMessageHandler\Nuubit.SDK.Droid.csproj", "{95CD486D-7B2E-4E0D-9546-0E9A8EFA5DE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevSDKMessageHandler", "..\RacerApp.XamarinForms\RacerMobileApp\RevSDKMessageHandler\RevSDKMessageHandler.csproj", "{95CD486D-7B2E-4E0D-9546-0E9A8EFA5DE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuubit.SDK.BindingLibrary(Droid)", "..\AndroidBindingLibrary\AndroidBindingLibrary\Nuubit.SDK.BindingLibrary(Droid).csproj", "{EDE5B85F-AED0-4355-A85F-6F711609C0E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidBindingLibrary", "..\AndroidBindingLibrary\AndroidBindingLibrary\AndroidBindingLibrary.csproj", "{EDE5B85F-AED0-4355-A85F-6F711609C0E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuubit.SDK", "Nuubit.SDK\Nuubit.SDK.csproj", "{53751793-9C4A-463A-BDAF-95F12BF19C33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{816CFFED-E4B4-43F0-9F2C-199492FC58AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{816CFFED-E4B4-43F0-9F2C-199492FC58AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{816CFFED-E4B4-43F0-9F2C-199492FC58AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{816CFFED-E4B4-43F0-9F2C-199492FC58AC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19A64C91-5105-4AEF-BD15-F501BB1A00DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19A64C91-5105-4AEF-BD15-F501BB1A00DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19A64C91-5105-4AEF-BD15-F501BB1A00DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{EDE5B85F-AED0-4355-A85F-6F711609C0E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDE5B85F-AED0-4355-A85F-6F711609C0E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDE5B85F-AED0-4355-A85F-6F711609C0E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53751793-9C4A-463A-BDAF-95F12BF19C33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53751793-9C4A-463A-BDAF-95F12BF19C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53751793-9C4A-463A-BDAF-95F12BF19C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53751793-9C4A-463A-BDAF-95F12BF19C33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

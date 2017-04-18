@@ -12,21 +12,20 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using RevApm;
 
 namespace RacerMobileApp.Services
 {
-   public class HttpRequestService
+   public class HttpRequestService 
     {
-        private static HttpClient RevClient = new HttpClient(new RevApmMessageHandler());
+        private static HttpClient RevClient = new HttpClient(new Nuubit.SDK.NuubitMessageHandler());
         private static HttpClient DefaultClient = new HttpClient(new HttpClientHandler() { AllowAutoRedirect = true });
-
+         
         public static async Task<TestResult> SendRequest(Session session, bool IsRevApmRequest)
-        {
+        { 
 			HttpResponseMessage response = null;
             var sw = new Stopwatch();
             long? length = 0;         
-            
+          
             try
                 {
 

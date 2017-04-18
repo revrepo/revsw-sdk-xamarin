@@ -5,7 +5,7 @@ using System.Threading;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace RevApm
+namespace Nuubit.SDK
 {
     class ConcatenatingStream : Stream
     {
