@@ -15,7 +15,8 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <AndroidTlsProvider></AndroidTlsProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -70,6 +71,10 @@
     <ProjectReference Include="..\..\..\nuuBIT.SDK\nuuBIT.SDK\NuuBIT.SDK.csproj">
       <Project>{816cffed-e4b4-43f0-9f2c-199492fc58ac}</Project>
       <Name>NuuBIT.SDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\AndroidBindingLibrary\AndroidBindingLibrary\Nuubit.SDK.BindingLibrary.Droid.csproj">
+      <Project>{EDE5B85F-AED0-4355-A85F-6F711609C0E7}</Project>
+      <Name>Nuubit.SDK.BindingLibrary.Droid</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

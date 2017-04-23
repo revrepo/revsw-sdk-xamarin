@@ -142,6 +142,7 @@ namespace Nuubit.SDK
             }
             catch (IOException ex)
             {
+				
                 if (ex.Message.ToLowerInvariant().Contains("canceled"))
                 {
                     throw new Android.OS.OperationCanceledException();

@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RacerMobileApp.iOS", "Racer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuuBIT.SDK", "..\..\nuuBIT.SDK\nuuBIT.SDK\NuuBIT.SDK.csproj", "{816CFFED-E4B4-43F0-9F2C-199492FC58AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuubit.SDK.BindingLibrary(Droid)", "..\..\AndroidBindingLibrary\AndroidBindingLibrary\Nuubit.SDK.BindingLibrary(Droid).csproj", "{EDE5B85F-AED0-4355-A85F-6F711609C0E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuubit.SDK.BindingLibrary.Droid", "..\..\AndroidBindingLibrary\AndroidBindingLibrary\Nuubit.SDK.BindingLibrary.Droid.csproj", "{EDE5B85F-AED0-4355-A85F-6F711609C0E7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuubit.SDK.iOS", "..\..\RevAPMiOSSDK\RevApm.iOS\Nuubit.SDK.iOS.csproj", "{19A64C91-5105-4AEF-BD15-F501BB1A00DB}"
 EndProject

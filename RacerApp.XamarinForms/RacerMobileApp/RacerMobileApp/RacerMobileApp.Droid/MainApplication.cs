@@ -9,16 +9,18 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Com.Nuubit.Sdk;
+using RacerMobileApp.Services;
 
 namespace RacerMobileApp.Droid
 {
     [Application(Debuggable = false)]
-    class MainApplication : Com.Nuubit.Sdk.Statistic.Sections.App
+	class MainApplication : Com.Nuubit.Sdk.NuubitApplication
     {
         public MainApplication(IntPtr handle, JniHandleOwnership transer)
            : base(handle, transer)
         {
+			HttpRequestService.DefaultRacerHttpClientHandler = new Nuubit.SDK.NuubitMessageHandler();
+			HttpRequestService.Initialize();
         }
     }
 }

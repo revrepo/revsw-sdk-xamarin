@@ -17,9 +17,16 @@ namespace RacerMobileApp.Services
 {
    public class HttpRequestService 
     {
-        private static HttpClient RevClient = new HttpClient(new Nuubit.SDK.NuubitMessageHandler());
+		public static HttpClientHandler DefaultRacerHttpClientHandler = new Nuubit.SDK.NuubitMessageHandler();
+
+        private static HttpClient RevClient = new HttpClient(DefaultRacerHttpClientHandler);
         private static HttpClient DefaultClient = new HttpClient(new HttpClientHandler() { AllowAutoRedirect = true });
-         
+
+		public static void Initialize()
+		{
+			RevClient = new HttpClient(DefaultRacerHttpClientHandler);
+		}
+
         public static async Task<TestResult> SendRequest(Session session, bool IsRevApmRequest)
         { 
 			HttpResponseMessage response = null;
