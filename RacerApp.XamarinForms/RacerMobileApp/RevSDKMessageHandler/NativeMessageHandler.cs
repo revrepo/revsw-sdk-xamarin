@@ -18,7 +18,7 @@ namespace Nuubit.SDK
 {
     public class NuubitMessageHandler : HttpClientHandler
     {
-        readonly Square.OkHttp3.OkHttpClient client = new OkHttpClient();
+		readonly OkHttpClient client = Com.Nuubit.Sdk.NuubitSDK.OkHttpCreate();
         readonly CacheControl noCacheCacheControl = default(CacheControl);
         readonly bool throwOnCaptiveNetwork;
 
@@ -185,7 +185,7 @@ namespace Nuubit.SDK
         public static Task<Response> EnqueueAsync(this ICall This)
         {  
             var cb = new OkTaskCallback();
-            This.EnqueueAsync();
+			This.Enqueue(cb);
 
             return cb.Task;
         }
