@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
   
-  <string name="revsdk_key" translatable="false">
-      8852c009-9695-4d44-9300-d627886a9829   
-  </string>
   
   <style name="MainTheme" parent="MainTheme.Base">
   </style>

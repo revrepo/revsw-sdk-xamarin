@@ -4533,9 +4533,6 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0a0083
 			public const int reset_content = 2131361923;
 			
-			// aapt resource value: 0x7f0a00aa
-			public const int revsdk_key = 2131361962;
-			
 			// aapt resource value: 0x7f0a0084
 			public const int sdk_initialization_ready_stage = 2131361924;
 			

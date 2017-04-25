@@ -6,6 +6,6 @@
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<application  android:icon="@drawable/icon">
-		<meta-data android:name="com.nuubitsdk.key" android:value="8852c009-9695-4d44-9300-d627886a9829" />
+		<meta-data android:name="com.nuubit.key" android:value="8852c009-9695-4d44-9300-d627886a9829" />
 	</application>
 </manifest>

@@ -59,37 +59,37 @@ namespace Com.Nuubit.Sdk.Config.Serialization
 		}
 	}
 
-	 partial class OperationModeSerialize : global::Java.Lang.Object, global::GoogleGson.IJsonSerializer
+	partial class OperationModeSerialize : global::Java.Lang.Object, global::GoogleGson.IJsonSerializer
 	{
-		 unsafe global::GoogleGson.JsonElement global::GoogleGson.IJsonSerializer.Serialize(global::Java.Lang.Object p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonSerializationContext p2)
+		unsafe global::GoogleGson.JsonElement global::GoogleGson.IJsonSerializer.Serialize(global::Java.Lang.Object p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonSerializationContext p2)
 		{
 			return this.Serialize((global::Com.Nuubit.Sdk.Config.OperationMode)p0, p1, p2);
 		}
 
 	}
 
-	 partial class TransportProtocolSerialize : global::Java.Lang.Object, global::GoogleGson.IJsonSerializer
+	partial class TransportProtocolSerialize : global::Java.Lang.Object, global::GoogleGson.IJsonSerializer
 	{
-		 unsafe global::GoogleGson.JsonElement global::GoogleGson.IJsonSerializer.Serialize(global::Java.Lang.Object p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonSerializationContext p2)
+		unsafe global::GoogleGson.JsonElement global::GoogleGson.IJsonSerializer.Serialize(global::Java.Lang.Object p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonSerializationContext p2)
 		{
 			return this.Serialize((global::Com.Nuubit.Sdk.Protocols.ListProtocol)p0, p1, p2);
 		}
 
 	}
 
-	 partial class OperationModeDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
+	partial class OperationModeDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
 	{
-		  unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
+		unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
 		{
 			return this.Deserialize(p0, p1, p2);
 		}
 
 	}
 
-	 partial class TransportProtocolDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
+	partial class TransportProtocolDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
 	{
 
-		  unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
+		unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
 		{
 			return this.Deserialize(p0, p1, p2);
 		}
@@ -98,12 +98,12 @@ namespace Com.Nuubit.Sdk.Config.Serialization
 
 
 
-	}
+}
 
 namespace Com.Nuubit.Sdk.Statistic.Serialize
 {
 
-	 partial class RequestsDeserializer : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
+	partial class RequestsDeserializer : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
 	{
 		unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
 		{
@@ -112,7 +112,7 @@ namespace Com.Nuubit.Sdk.Statistic.Serialize
 
 	}
 
-		partial class WiFiDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
+	partial class WiFiDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
 	{
 		unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
 		{
@@ -121,17 +121,7 @@ namespace Com.Nuubit.Sdk.Statistic.Serialize
 
 	}
 
-		partial class RequestOneDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
-	{
-		unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
-		{
-			//TODO:CHECK!
-			return null;
-		}
-
-	}
-
-		partial class NetworkDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
+	partial class RequestOneDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
 	{
 		unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
 		{
@@ -140,9 +130,18 @@ namespace Com.Nuubit.Sdk.Statistic.Serialize
 
 	}
 
-		partial class LogEventsDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
+	partial class NetworkDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
 	{
-		 unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
+		unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
+		{
+			return this.Deserialize(p0, p1, p2);
+		}
+
+	}
+
+	partial class LogEventsDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
+	{
+		unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
 		{
 			return this.Deserialize(p0, p1, p2);
 		}
@@ -150,52 +149,52 @@ namespace Com.Nuubit.Sdk.Statistic.Serialize
 	}
 
 
-		partial class LocationDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
+	partial class LocationDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
 	{
-		 unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
+		unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
 		{
 			return this.Deserialize(p0, p1, p2);
 		}
 
 	}
 
-		partial class DeviceDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
+	partial class DeviceDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
 	{
-		 unsafe global::Java.Lang.Object  global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
+		unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
 		{
 			return this.Deserialize(p0, p1, p2);
 		}
 
 	}
 
-		partial class CarrierDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
+	partial class CarrierDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
 	{
-		  unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
+		unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
 		{
 			return this.Deserialize(p0, p1, p2);
 		}
 
 	}
 
-		partial class AppInfoDeserializer : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
+	partial class AppInfoDeserializer : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
 	{
-		 unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
+		unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
 		{
 			return this.Deserialize(p0, p1, p2);
 		}
 
 	}
 
-		partial class AppDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
+	partial class AppDeserialize : global::Java.Lang.Object, global::GoogleGson.IJsonDeserializer
 	{
 
-		  unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
+		unsafe global::Java.Lang.Object global::GoogleGson.IJsonDeserializer.Deserialize(global::GoogleGson.JsonElement p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonDeserializationContext p2)
 		{
 			return this.Deserialize(p0, p1, p2);
 		}
 	}
 
-		partial class AppInfoSerialize : global::Java.Lang.Object, global::GoogleGson.IJsonSerializer
+	partial class AppInfoSerialize : global::Java.Lang.Object, global::GoogleGson.IJsonSerializer
 	{
 
 		unsafe global::GoogleGson.JsonElement global::GoogleGson.IJsonSerializer.Serialize(global::Java.Lang.Object p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonSerializationContext p2)
@@ -268,27 +267,27 @@ namespace Com.Nuubit.Sdk.Statistic.Serialize
 
 	}
 
- 	partial class NetworkSerialize : global::Java.Lang.Object, global::GoogleGson.IJsonSerializer
+	partial class NetworkSerialize : global::Java.Lang.Object, global::GoogleGson.IJsonSerializer
 	{
-		 unsafe global::GoogleGson.JsonElement global::GoogleGson.IJsonSerializer.Serialize(global::Java.Lang.Object p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonSerializationContext p2)
+		unsafe global::GoogleGson.JsonElement global::GoogleGson.IJsonSerializer.Serialize(global::Java.Lang.Object p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonSerializationContext p2)
 		{
 			return this.Serialize((global::Com.Nuubit.Sdk.Statistic.Sections.Network)p0, p1, p2);
 		}
 	}
 
-	 partial class RequestsSerialize : global::Java.Lang.Object, global::GoogleGson.IJsonSerializer
+	partial class RequestsSerialize : global::Java.Lang.Object, global::GoogleGson.IJsonSerializer
 	{
-		  unsafe global::GoogleGson.JsonElement global::GoogleGson.IJsonSerializer.Serialize(global::Java.Lang.Object p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonSerializationContext p2)
+		unsafe global::GoogleGson.JsonElement global::GoogleGson.IJsonSerializer.Serialize(global::Java.Lang.Object p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonSerializationContext p2)
 		{
 			return this.Serialize((global::Com.Nuubit.Sdk.Statistic.Sections.Requests)p0, p1, p2);
 		}
 
 	}
 
-	 partial class StatisticSerializer : global::Java.Lang.Object, global::GoogleGson.IJsonSerializer
+	partial class StatisticSerializer : global::Java.Lang.Object, global::GoogleGson.IJsonSerializer
 	{
 
-		 unsafe global::GoogleGson.JsonElement global::GoogleGson.IJsonSerializer.Serialize(global::Java.Lang.Object p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonSerializationContext p2)
+		unsafe global::GoogleGson.JsonElement global::GoogleGson.IJsonSerializer.Serialize(global::Java.Lang.Object p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonSerializationContext p2)
 		{
 			return this.Serialize((global::Com.Nuubit.Sdk.Statistic.Statistic)p0, p1, p2);
 		}
@@ -296,21 +295,25 @@ namespace Com.Nuubit.Sdk.Statistic.Serialize
 
 	partial class WiFiSerialize : global::Java.Lang.Object, global::GoogleGson.IJsonSerializer
 	{
-		 unsafe global::GoogleGson.JsonElement global::GoogleGson.IJsonSerializer.Serialize(global::Java.Lang.Object p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonSerializationContext p2)
+		unsafe global::GoogleGson.JsonElement global::GoogleGson.IJsonSerializer.Serialize(global::Java.Lang.Object p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonSerializationContext p2)
 		{
 			return this.Serialize((global::Com.Nuubit.Sdk.Statistic.Sections.WiFi)p0, p1, p2);
 		}
 
 	}
 
-	 partial class RequestOneSerialize : global::Java.Lang.Object, global::GoogleGson.IJsonSerializer
+	partial class RequestOneSerialize : global::Java.Lang.Object, global::GoogleGson.IJsonSerializer
 	{
 
 		unsafe global::GoogleGson.JsonElement global::GoogleGson.IJsonSerializer.Serialize(global::Java.Lang.Object p0, global::Java.Lang.Reflect.IType p1, global::GoogleGson.IJsonSerializationContext p2)
 		{
-			//TODO: CHECK!!!
-			return null;
+			return this.Serialize((global::Com.Nuubit.Sdk.Statistic.Sections.RequestOne)p0, p1, p2);
 		}
-	}
+
+
+
+
 
 	}
+
+}

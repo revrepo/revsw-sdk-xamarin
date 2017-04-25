@@ -19,7 +19,7 @@ namespace RacerMobileApp.Droid
         public MainApplication(IntPtr handle, JniHandleOwnership transer)
            : base(handle, transer)
         {
-			var config = Com.Nuubit.Sdk.NuubitApplication.Instance;
+			//TODO: FIX AND REMOVE
 			HttpRequestService.DefaultRacerHttpClientHandler = new Nuubit.SDK.NuubitMessageHandler();
 			HttpRequestService.Initialize();
         }
