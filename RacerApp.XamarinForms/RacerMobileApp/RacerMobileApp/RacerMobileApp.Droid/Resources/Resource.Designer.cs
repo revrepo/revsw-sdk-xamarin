@@ -1400,44 +1400,44 @@ namespace RacerMobileApp.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f080052
-			public const int abc_background_cache_hint_selector_material_dark = 2131230802;
-			
-			// aapt resource value: 0x7f080053
-			public const int abc_background_cache_hint_selector_material_light = 2131230803;
-			
-			// aapt resource value: 0x7f080054
-			public const int abc_btn_colored_borderless_text_material = 2131230804;
-			
-			// aapt resource value: 0x7f080055
-			public const int abc_btn_colored_text_material = 2131230805;
-			
-			// aapt resource value: 0x7f080056
-			public const int abc_color_highlight_material = 2131230806;
-			
-			// aapt resource value: 0x7f080057
-			public const int abc_hint_foreground_material_dark = 2131230807;
-			
 			// aapt resource value: 0x7f080058
-			public const int abc_hint_foreground_material_light = 2131230808;
+			public const int abc_background_cache_hint_selector_material_dark = 2131230808;
+			
+			// aapt resource value: 0x7f080059
+			public const int abc_background_cache_hint_selector_material_light = 2131230809;
+			
+			// aapt resource value: 0x7f08005a
+			public const int abc_btn_colored_borderless_text_material = 2131230810;
+			
+			// aapt resource value: 0x7f08005b
+			public const int abc_btn_colored_text_material = 2131230811;
+			
+			// aapt resource value: 0x7f08005c
+			public const int abc_color_highlight_material = 2131230812;
+			
+			// aapt resource value: 0x7f08005d
+			public const int abc_hint_foreground_material_dark = 2131230813;
+			
+			// aapt resource value: 0x7f08005e
+			public const int abc_hint_foreground_material_light = 2131230814;
 			
 			// aapt resource value: 0x7f080018
 			public const int abc_input_method_navigation_guard = 2131230744;
 			
-			// aapt resource value: 0x7f080059
-			public const int abc_primary_text_disable_only_material_dark = 2131230809;
+			// aapt resource value: 0x7f08005f
+			public const int abc_primary_text_disable_only_material_dark = 2131230815;
 			
-			// aapt resource value: 0x7f08005a
-			public const int abc_primary_text_disable_only_material_light = 2131230810;
+			// aapt resource value: 0x7f080060
+			public const int abc_primary_text_disable_only_material_light = 2131230816;
 			
-			// aapt resource value: 0x7f08005b
-			public const int abc_primary_text_material_dark = 2131230811;
+			// aapt resource value: 0x7f080061
+			public const int abc_primary_text_material_dark = 2131230817;
 			
-			// aapt resource value: 0x7f08005c
-			public const int abc_primary_text_material_light = 2131230812;
+			// aapt resource value: 0x7f080062
+			public const int abc_primary_text_material_light = 2131230818;
 			
-			// aapt resource value: 0x7f08005d
-			public const int abc_search_url_text = 2131230813;
+			// aapt resource value: 0x7f080063
+			public const int abc_search_url_text = 2131230819;
 			
 			// aapt resource value: 0x7f080019
 			public const int abc_search_url_text_normal = 2131230745;
@@ -1448,32 +1448,32 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f08001b
 			public const int abc_search_url_text_selected = 2131230747;
 			
-			// aapt resource value: 0x7f08005e
-			public const int abc_secondary_text_material_dark = 2131230814;
-			
-			// aapt resource value: 0x7f08005f
-			public const int abc_secondary_text_material_light = 2131230815;
-			
-			// aapt resource value: 0x7f080060
-			public const int abc_tint_btn_checkable = 2131230816;
-			
-			// aapt resource value: 0x7f080061
-			public const int abc_tint_default = 2131230817;
-			
-			// aapt resource value: 0x7f080062
-			public const int abc_tint_edittext = 2131230818;
-			
-			// aapt resource value: 0x7f080063
-			public const int abc_tint_seek_thumb = 2131230819;
-			
 			// aapt resource value: 0x7f080064
-			public const int abc_tint_spinner = 2131230820;
+			public const int abc_secondary_text_material_dark = 2131230820;
 			
 			// aapt resource value: 0x7f080065
-			public const int abc_tint_switch_thumb = 2131230821;
+			public const int abc_secondary_text_material_light = 2131230821;
 			
 			// aapt resource value: 0x7f080066
-			public const int abc_tint_switch_track = 2131230822;
+			public const int abc_tint_btn_checkable = 2131230822;
+			
+			// aapt resource value: 0x7f080067
+			public const int abc_tint_default = 2131230823;
+			
+			// aapt resource value: 0x7f080068
+			public const int abc_tint_edittext = 2131230824;
+			
+			// aapt resource value: 0x7f080069
+			public const int abc_tint_seek_thumb = 2131230825;
+			
+			// aapt resource value: 0x7f08006a
+			public const int abc_tint_spinner = 2131230826;
+			
+			// aapt resource value: 0x7f08006b
+			public const int abc_tint_switch_thumb = 2131230827;
+			
+			// aapt resource value: 0x7f08006c
+			public const int abc_tint_switch_track = 2131230828;
 			
 			// aapt resource value: 0x7f08001c
 			public const int accent_material_dark = 2131230748;
@@ -1529,8 +1529,26 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f080003
 			public const int cardview_shadow_start_color = 2131230723;
 			
-			// aapt resource value: 0x7f080067
-			public const int common_google_signin_btn_text_dark = 2131230823;
+			// aapt resource value: 0x7f080052
+			public const int colorAccent = 2131230802;
+			
+			// aapt resource value: 0x7f080053
+			public const int colorBlack = 2131230803;
+			
+			// aapt resource value: 0x7f080054
+			public const int colorGray = 2131230804;
+			
+			// aapt resource value: 0x7f080055
+			public const int colorGrayLight = 2131230805;
+			
+			// aapt resource value: 0x7f080056
+			public const int colorPrimary = 2131230806;
+			
+			// aapt resource value: 0x7f080057
+			public const int colorPrimaryDark = 2131230807;
+			
+			// aapt resource value: 0x7f08006d
+			public const int common_google_signin_btn_text_dark = 2131230829;
 			
 			// aapt resource value: 0x7f080004
 			public const int common_google_signin_btn_text_dark_default = 2131230724;
@@ -1544,8 +1562,8 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f080007
 			public const int common_google_signin_btn_text_dark_pressed = 2131230727;
 			
-			// aapt resource value: 0x7f080068
-			public const int common_google_signin_btn_text_light = 2131230824;
+			// aapt resource value: 0x7f08006e
+			public const int common_google_signin_btn_text_light = 2131230830;
 			
 			// aapt resource value: 0x7f080008
 			public const int common_google_signin_btn_text_light_default = 2131230728;
@@ -1562,8 +1580,8 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f08000c
 			public const int design_bottom_navigation_shadow_color = 2131230732;
 			
-			// aapt resource value: 0x7f080069
-			public const int design_error = 2131230825;
+			// aapt resource value: 0x7f08006f
+			public const int design_error = 2131230831;
 			
 			// aapt resource value: 0x7f08000d
 			public const int design_fab_shadow_end_color = 2131230733;
@@ -1595,8 +1613,8 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f080016
 			public const int design_textinput_error_color_light = 2131230742;
 			
-			// aapt resource value: 0x7f08006a
-			public const int design_tint_password_toggle = 2131230826;
+			// aapt resource value: 0x7f080070
+			public const int design_tint_password_toggle = 2131230832;
 			
 			// aapt resource value: 0x7f08002a
 			public const int dim_foreground_disabled_material_dark = 2131230762;
@@ -1715,11 +1733,11 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f08004f
 			public const int switch_thumb_disabled_material_light = 2131230799;
 			
-			// aapt resource value: 0x7f08006b
-			public const int switch_thumb_material_dark = 2131230827;
+			// aapt resource value: 0x7f080071
+			public const int switch_thumb_material_dark = 2131230833;
 			
-			// aapt resource value: 0x7f08006c
-			public const int switch_thumb_material_light = 2131230828;
+			// aapt resource value: 0x7f080072
+			public const int switch_thumb_material_light = 2131230834;
 			
 			// aapt resource value: 0x7f080050
 			public const int switch_thumb_normal_material_dark = 2131230800;
@@ -1962,6 +1980,18 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f090033
 			public const int abc_text_size_title_material_toolbar = 2131296307;
 			
+			// aapt resource value: 0x7f090094
+			public const int activity_horizontal_margin = 2131296404;
+			
+			// aapt resource value: 0x7f090095
+			public const int activity_vertical_margin = 2131296405;
+			
+			// aapt resource value: 0x7f090096
+			public const int big = 2131296406;
+			
+			// aapt resource value: 0x7f090097
+			public const int big_size = 2131296407;
+			
 			// aapt resource value: 0x7f090000
 			public const int cardview_compat_inset_shadow = 2131296256;
 			
@@ -2121,6 +2151,9 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f090093
 			public const int item_touch_helper_swipe_escape_velocity = 2131296403;
 			
+			// aapt resource value: 0x7f090098
+			public const int middle = 2131296408;
+			
 			// aapt resource value: 0x7f090003
 			public const int mr_controller_volume_group_list_item_height = 2131296259;
 			
@@ -2138,6 +2171,12 @@ namespace RacerMobileApp.Droid
 			
 			// aapt resource value: 0x7f090007
 			public const int mr_dialog_fixed_width_minor = 2131296263;
+			
+			// aapt resource value: 0x7f090099
+			public const int nav_header_height = 2131296409;
+			
+			// aapt resource value: 0x7f09009a
+			public const int nav_header_vertical_spacing = 2131296410;
 			
 			// aapt resource value: 0x7f090086
 			public const int notification_action_icon_size = 2131296390;
@@ -2183,6 +2222,12 @@ namespace RacerMobileApp.Droid
 			
 			// aapt resource value: 0x7f090090
 			public const int notification_top_pad_large_text = 2131296400;
+			
+			// aapt resource value: 0x7f09009b
+			public const int small = 2131296411;
+			
+			// aapt resource value: 0x7f09009c
+			public const int small_font = 2131296412;
 			
 			static Dimension()
 			{
@@ -3083,8 +3128,8 @@ namespace RacerMobileApp.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0c00a7
-			public const int action0 = 2131493031;
+			// aapt resource value: 0x7f0c00cb
+			public const int action0 = 2131493067;
 			
 			// aapt resource value: 0x7f0c006b
 			public const int action_bar = 2131492971;
@@ -3107,17 +3152,17 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c0048
 			public const int action_bar_title = 2131492936;
 			
-			// aapt resource value: 0x7f0c00a4
-			public const int action_container = 2131493028;
+			// aapt resource value: 0x7f0c00c8
+			public const int action_container = 2131493064;
 			
 			// aapt resource value: 0x7f0c006c
 			public const int action_context_bar = 2131492972;
 			
-			// aapt resource value: 0x7f0c00ab
-			public const int action_divider = 2131493035;
+			// aapt resource value: 0x7f0c00cf
+			public const int action_divider = 2131493071;
 			
-			// aapt resource value: 0x7f0c00a5
-			public const int action_image = 2131493029;
+			// aapt resource value: 0x7f0c00c9
+			public const int action_image = 2131493065;
 			
 			// aapt resource value: 0x7f0c0005
 			public const int action_menu_divider = 2131492869;
@@ -3134,11 +3179,11 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c004a
 			public const int action_mode_close_button = 2131492938;
 			
-			// aapt resource value: 0x7f0c00a6
-			public const int action_text = 2131493030;
+			// aapt resource value: 0x7f0c00ca
+			public const int action_text = 2131493066;
 			
-			// aapt resource value: 0x7f0c00b4
-			public const int actions = 2131493044;
+			// aapt resource value: 0x7f0c00d8
+			public const int actions = 2131493080;
 			
 			// aapt resource value: 0x7f0c004b
 			public const int activity_chooser_view_content = 2131492939;
@@ -3173,8 +3218,8 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c0052
 			public const int buttonPanel = 2131492946;
 			
-			// aapt resource value: 0x7f0c00a8
-			public const int cancel_action = 2131493032;
+			// aapt resource value: 0x7f0c00cc
+			public const int cancel_action = 2131493068;
 			
 			// aapt resource value: 0x7f0c001e
 			public const int center = 2131492894;
@@ -3188,8 +3233,8 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c0062
 			public const int checkbox = 2131492962;
 			
-			// aapt resource value: 0x7f0c00b0
-			public const int chronometer = 2131493040;
+			// aapt resource value: 0x7f0c00d4
+			public const int chronometer = 2131493076;
 			
 			// aapt resource value: 0x7f0c0029
 			public const int clip_horizontal = 2131492905;
@@ -3200,6 +3245,9 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c0044
 			public const int collapseActionView = 2131492932;
 			
+			// aapt resource value: 0x7f0c009a
+			public const int content = 2131493018;
+			
 			// aapt resource value: 0x7f0c0055
 			public const int contentPanel = 2131492949;
 			
@@ -3208,6 +3256,9 @@ namespace RacerMobileApp.Droid
 			
 			// aapt resource value: 0x7f0c005b
 			public const int customPanel = 2131492955;
+			
+			// aapt resource value: 0x7f0c0098
+			public const int cvMain = 2131493016;
 			
 			// aapt resource value: 0x7f0c0016
 			public const int dark = 2131492886;
@@ -3242,8 +3293,8 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c0021
 			public const int end = 2131492897;
 			
-			// aapt resource value: 0x7f0c00ba
-			public const int end_padder = 2131493050;
+			// aapt resource value: 0x7f0c00de
+			public const int end_padder = 2131493086;
 			
 			// aapt resource value: 0x7f0c0018
 			public const int enterAlways = 2131492888;
@@ -3281,11 +3332,14 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c0050
 			public const int icon = 2131492944;
 			
-			// aapt resource value: 0x7f0c00b5
-			public const int icon_group = 2131493045;
+			// aapt resource value: 0x7f0c00d9
+			public const int icon_group = 2131493081;
 			
 			// aapt resource value: 0x7f0c0012
 			public const int icon_only = 2131492882;
+			
+			// aapt resource value: 0x7f0c0099
+			public const int id = 2131493017;
 			
 			// aapt resource value: 0x7f0c0045
 			public const int ifRoom = 2131492933;
@@ -3293,8 +3347,8 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c004d
 			public const int image = 2131492941;
 			
-			// aapt resource value: 0x7f0c00b1
-			public const int info = 2131493041;
+			// aapt resource value: 0x7f0c00d5
+			public const int info = 2131493077;
 			
 			// aapt resource value: 0x7f0c000c
 			public const int item_touch_helper_previous_elevation = 2131492876;
@@ -3308,11 +3362,14 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c0017
 			public const int light = 2131492887;
 			
-			// aapt resource value: 0x7f0c00b6
-			public const int line1 = 2131493046;
+			// aapt resource value: 0x7f0c00da
+			public const int line1 = 2131493082;
 			
-			// aapt resource value: 0x7f0c00b8
-			public const int line3 = 2131493048;
+			// aapt resource value: 0x7f0c00dc
+			public const int line3 = 2131493084;
+			
+			// aapt resource value: 0x7f0c009b
+			public const int list = 2131493019;
 			
 			// aapt resource value: 0x7f0c0037
 			public const int listMode = 2131492919;
@@ -3320,20 +3377,23 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c004f
 			public const int list_item = 2131492943;
 			
-			// aapt resource value: 0x7f0c0088
-			public const int loadingImage = 2131493000;
-			
-			// aapt resource value: 0x7f0c0086
-			public const int loadingProgressBar = 2131492998;
-			
 			// aapt resource value: 0x7f0c0089
-			public const int loadingProgressWheel = 2131493001;
+			public const int llContainer = 2131493001;
 			
-			// aapt resource value: 0x7f0c00be
-			public const int masked = 2131493054;
+			// aapt resource value: 0x7f0c00ac
+			public const int loadingImage = 2131493036;
 			
 			// aapt resource value: 0x7f0c00aa
-			public const int media_actions = 2131493034;
+			public const int loadingProgressBar = 2131493034;
+			
+			// aapt resource value: 0x7f0c00ad
+			public const int loadingProgressWheel = 2131493037;
+			
+			// aapt resource value: 0x7f0c00e2
+			public const int masked = 2131493090;
+			
+			// aapt resource value: 0x7f0c00ce
+			public const int media_actions = 2131493070;
 			
 			// aapt resource value: 0x7f0c0042
 			public const int middle = 2131492930;
@@ -3341,80 +3401,80 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c002e
 			public const int mini = 2131492910;
 			
-			// aapt resource value: 0x7f0c0096
-			public const int mr_art = 2131493014;
+			// aapt resource value: 0x7f0c00ba
+			public const int mr_art = 2131493050;
 			
-			// aapt resource value: 0x7f0c008b
-			public const int mr_chooser_list = 2131493003;
+			// aapt resource value: 0x7f0c00af
+			public const int mr_chooser_list = 2131493039;
 			
-			// aapt resource value: 0x7f0c008e
-			public const int mr_chooser_route_desc = 2131493006;
+			// aapt resource value: 0x7f0c00b2
+			public const int mr_chooser_route_desc = 2131493042;
 			
-			// aapt resource value: 0x7f0c008c
-			public const int mr_chooser_route_icon = 2131493004;
+			// aapt resource value: 0x7f0c00b0
+			public const int mr_chooser_route_icon = 2131493040;
 			
-			// aapt resource value: 0x7f0c008d
-			public const int mr_chooser_route_name = 2131493005;
+			// aapt resource value: 0x7f0c00b1
+			public const int mr_chooser_route_name = 2131493041;
 			
-			// aapt resource value: 0x7f0c008a
-			public const int mr_chooser_title = 2131493002;
+			// aapt resource value: 0x7f0c00ae
+			public const int mr_chooser_title = 2131493038;
 			
-			// aapt resource value: 0x7f0c0093
-			public const int mr_close = 2131493011;
+			// aapt resource value: 0x7f0c00b7
+			public const int mr_close = 2131493047;
 			
-			// aapt resource value: 0x7f0c0099
-			public const int mr_control_divider = 2131493017;
+			// aapt resource value: 0x7f0c00bd
+			public const int mr_control_divider = 2131493053;
 			
-			// aapt resource value: 0x7f0c009f
-			public const int mr_control_play_pause = 2131493023;
+			// aapt resource value: 0x7f0c00c3
+			public const int mr_control_play_pause = 2131493059;
 			
-			// aapt resource value: 0x7f0c00a2
-			public const int mr_control_subtitle = 2131493026;
+			// aapt resource value: 0x7f0c00c6
+			public const int mr_control_subtitle = 2131493062;
 			
-			// aapt resource value: 0x7f0c00a1
-			public const int mr_control_title = 2131493025;
+			// aapt resource value: 0x7f0c00c5
+			public const int mr_control_title = 2131493061;
 			
-			// aapt resource value: 0x7f0c00a0
-			public const int mr_control_title_container = 2131493024;
+			// aapt resource value: 0x7f0c00c4
+			public const int mr_control_title_container = 2131493060;
 			
-			// aapt resource value: 0x7f0c0094
-			public const int mr_custom_control = 2131493012;
+			// aapt resource value: 0x7f0c00b8
+			public const int mr_custom_control = 2131493048;
 			
-			// aapt resource value: 0x7f0c0095
-			public const int mr_default_control = 2131493013;
+			// aapt resource value: 0x7f0c00b9
+			public const int mr_default_control = 2131493049;
 			
-			// aapt resource value: 0x7f0c0090
-			public const int mr_dialog_area = 2131493008;
+			// aapt resource value: 0x7f0c00b4
+			public const int mr_dialog_area = 2131493044;
 			
-			// aapt resource value: 0x7f0c008f
-			public const int mr_expandable_area = 2131493007;
+			// aapt resource value: 0x7f0c00b3
+			public const int mr_expandable_area = 2131493043;
 			
-			// aapt resource value: 0x7f0c00a3
-			public const int mr_group_expand_collapse = 2131493027;
+			// aapt resource value: 0x7f0c00c7
+			public const int mr_group_expand_collapse = 2131493063;
 			
-			// aapt resource value: 0x7f0c0097
-			public const int mr_media_main_control = 2131493015;
+			// aapt resource value: 0x7f0c00bb
+			public const int mr_media_main_control = 2131493051;
 			
-			// aapt resource value: 0x7f0c0092
-			public const int mr_name = 2131493010;
+			// aapt resource value: 0x7f0c00b6
+			public const int mr_name = 2131493046;
 			
-			// aapt resource value: 0x7f0c0098
-			public const int mr_playback_control = 2131493016;
+			// aapt resource value: 0x7f0c00bc
+			public const int mr_playback_control = 2131493052;
 			
-			// aapt resource value: 0x7f0c0091
-			public const int mr_title_bar = 2131493009;
+			// aapt resource value: 0x7f0c00b5
+			public const int mr_title_bar = 2131493045;
 			
-			// aapt resource value: 0x7f0c009a
-			public const int mr_volume_control = 2131493018;
+			// aapt resource value: 0x7f0c00be
+			public const int mr_volume_control = 2131493054;
 			
-			// aapt resource value: 0x7f0c009b
-			public const int mr_volume_group_list = 2131493019;
+			// aapt resource value: 0x7f0c00bf
+			public const int mr_volume_group_list = 2131493055;
 			
-			// aapt resource value: 0x7f0c009d
-			public const int mr_volume_item_icon = 2131493021;
+			// aapt resource value: 0x7f0c00c1
+			public const int mr_volume_item_icon = 2131493057;
 			
-			// aapt resource value: 0x7f0c009e
-			public const int mr_volume_slider = 2131493022;
+			// aapt resource value: 0x7f0c00c2
+			public const int mr_volume_slider = 2131493058;
 			
 			// aapt resource value: 0x7f0c0032
 			public const int multiply = 2131492914;
@@ -3431,14 +3491,14 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c002f
 			public const int normal = 2131492911;
 			
-			// aapt resource value: 0x7f0c00b3
-			public const int notification_background = 2131493043;
+			// aapt resource value: 0x7f0c00d7
+			public const int notification_background = 2131493079;
 			
-			// aapt resource value: 0x7f0c00ad
-			public const int notification_main_column = 2131493037;
+			// aapt resource value: 0x7f0c00d1
+			public const int notification_main_column = 2131493073;
 			
-			// aapt resource value: 0x7f0c00ac
-			public const int notification_main_column_container = 2131493036;
+			// aapt resource value: 0x7f0c00d0
+			public const int notification_main_column_container = 2131493072;
 			
 			// aapt resource value: 0x7f0c0027
 			public const int parallax = 2131492903;
@@ -3461,11 +3521,56 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c0024
 			public const int right = 2131492900;
 			
-			// aapt resource value: 0x7f0c00b2
-			public const int right_icon = 2131493042;
+			// aapt resource value: 0x7f0c00d6
+			public const int right_icon = 2131493078;
 			
-			// aapt resource value: 0x7f0c00ae
-			public const int right_side = 2131493038;
+			// aapt resource value: 0x7f0c00d2
+			public const int right_side = 2131493074;
+			
+			// aapt resource value: 0x7f0c0088
+			public const int rlBottom = 2131493000;
+			
+			// aapt resource value: 0x7f0c009f
+			public const int rvCarrier = 2131493023;
+			
+			// aapt resource value: 0x7f0c008b
+			public const int rvConfig = 2131493003;
+			
+			// aapt resource value: 0x7f0c00a1
+			public const int rvDevice = 2131493025;
+			
+			// aapt resource value: 0x7f0c00a3
+			public const int rvEvents = 2131493027;
+			
+			// aapt resource value: 0x7f0c008d
+			public const int rvLMMonitoring = 2131493005;
+			
+			// aapt resource value: 0x7f0c00a5
+			public const int rvLocation = 2131493029;
+			
+			// aapt resource value: 0x7f0c009d
+			public const int rvMain = 2131493021;
+			
+			// aapt resource value: 0x7f0c00a7
+			public const int rvNetwork = 2131493031;
+			
+			// aapt resource value: 0x7f0c0095
+			public const int rvQUIC = 2131493013;
+			
+			// aapt resource value: 0x7f0c0097
+			public const int rvRTM = 2131493015;
+			
+			// aapt resource value: 0x7f0c008f
+			public const int rvRequests = 2131493007;
+			
+			// aapt resource value: 0x7f0c0093
+			public const int rvStandart = 2131493011;
+			
+			// aapt resource value: 0x7f0c0091
+			public const int rvStats = 2131493009;
+			
+			// aapt resource value: 0x7f0c00a9
+			public const int rvWiFi = 2131493033;
 			
 			// aapt resource value: 0x7f0c0033
 			public const int screen = 2131492915;
@@ -3530,8 +3635,8 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c003d
 			public const int showTitle = 2131492925;
 			
-			// aapt resource value: 0x7f0c00bb
-			public const int sliding_tabs = 2131493051;
+			// aapt resource value: 0x7f0c00df
+			public const int sliding_tabs = 2131493087;
 			
 			// aapt resource value: 0x7f0c007a
 			public const int smallLabel = 2131492986;
@@ -3566,8 +3671,8 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c0025
 			public const int start = 2131492901;
 			
-			// aapt resource value: 0x7f0c00a9
-			public const int status_bar_latest_event_content = 2131493033;
+			// aapt resource value: 0x7f0c00cd
+			public const int status_bar_latest_event_content = 2131493069;
 			
 			// aapt resource value: 0x7f0c0065
 			public const int submenuarrow = 2131492965;
@@ -3578,11 +3683,11 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c0038
 			public const int tabMode = 2131492920;
 			
-			// aapt resource value: 0x7f0c00b9
-			public const int text = 2131493049;
+			// aapt resource value: 0x7f0c00dd
+			public const int text = 2131493085;
 			
-			// aapt resource value: 0x7f0c00b7
-			public const int text2 = 2131493047;
+			// aapt resource value: 0x7f0c00db
+			public const int text2 = 2131493083;
 			
 			// aapt resource value: 0x7f0c0059
 			public const int textSpacerNoButtons = 2131492953;
@@ -3590,8 +3695,8 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c0058
 			public const int textSpacerNoTitle = 2131492952;
 			
-			// aapt resource value: 0x7f0c0087
-			public const int textViewStatus = 2131492999;
+			// aapt resource value: 0x7f0c00ab
+			public const int textViewStatus = 2131493035;
 			
 			// aapt resource value: 0x7f0c0085
 			public const int text_input_password_toggle = 2131492997;
@@ -3602,8 +3707,8 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c0001
 			public const int textinput_error = 2131492865;
 			
-			// aapt resource value: 0x7f0c00af
-			public const int time = 2131493039;
+			// aapt resource value: 0x7f0c00d3
+			public const int time = 2131493075;
 			
 			// aapt resource value: 0x7f0c0051
 			public const int title = 2131492945;
@@ -3614,8 +3719,8 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c005e
 			public const int title_template = 2131492958;
 			
-			// aapt resource value: 0x7f0c00bc
-			public const int toolbar = 2131493052;
+			// aapt resource value: 0x7f0c00e0
+			public const int toolbar = 2131493088;
 			
 			// aapt resource value: 0x7f0c0026
 			public const int top = 2131492902;
@@ -3632,6 +3737,54 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c000e
 			public const int transition_scene_layoutid_cache = 2131492878;
 			
+			// aapt resource value: 0x7f0c009e
+			public const int tvCarrier = 2131493022;
+			
+			// aapt resource value: 0x7f0c008a
+			public const int tvConfig = 2131493002;
+			
+			// aapt resource value: 0x7f0c00a0
+			public const int tvDevice = 2131493024;
+			
+			// aapt resource value: 0x7f0c00a2
+			public const int tvEvents = 2131493026;
+			
+			// aapt resource value: 0x7f0c008c
+			public const int tvLMMonitoring = 2131493004;
+			
+			// aapt resource value: 0x7f0c00a4
+			public const int tvLocation = 2131493028;
+			
+			// aapt resource value: 0x7f0c009c
+			public const int tvMain = 2131493020;
+			
+			// aapt resource value: 0x7f0c0086
+			public const int tvName = 2131492998;
+			
+			// aapt resource value: 0x7f0c00a6
+			public const int tvNetwork = 2131493030;
+			
+			// aapt resource value: 0x7f0c0094
+			public const int tvQUIC = 2131493012;
+			
+			// aapt resource value: 0x7f0c0096
+			public const int tvRMP = 2131493014;
+			
+			// aapt resource value: 0x7f0c008e
+			public const int tvRequests = 2131493006;
+			
+			// aapt resource value: 0x7f0c0092
+			public const int tvStandart = 2131493010;
+			
+			// aapt resource value: 0x7f0c0090
+			public const int tvStats = 2131493008;
+			
+			// aapt resource value: 0x7f0c0087
+			public const int tvValue = 2131492999;
+			
+			// aapt resource value: 0x7f0c00a8
+			public const int tvWiFi = 2131493032;
+			
 			// aapt resource value: 0x7f0c000b
 			public const int up = 2131492875;
 			
@@ -3641,11 +3794,11 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0c0002
 			public const int view_offset_helper = 2131492866;
 			
-			// aapt resource value: 0x7f0c00bd
-			public const int visible = 2131493053;
+			// aapt resource value: 0x7f0c00e1
+			public const int visible = 2131493089;
 			
-			// aapt resource value: 0x7f0c009c
-			public const int volume_item_container = 2131493020;
+			// aapt resource value: 0x7f0c00c0
+			public const int volume_item_container = 2131493056;
 			
 			// aapt resource value: 0x7f0c0014
 			public const int wide = 2131492884;
@@ -3864,94 +4017,109 @@ namespace RacerMobileApp.Droid
 			public const int design_text_input_password_icon = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int loading = 2130903081;
+			public const int dialog_param = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int loadingimage = 2130903082;
+			public const int fragment_counters = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int loadingprogress = 2130903083;
+			public const int fragment_pair = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int mr_chooser_dialog = 2130903084;
+			public const int fragment_pair_list = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int mr_chooser_list_item = 2130903085;
+			public const int fragment_stat = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int mr_controller_material_dialog_b = 2130903086;
+			public const int loading = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int mr_controller_volume_item = 2130903087;
+			public const int loadingimage = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int mr_playback_control = 2130903088;
+			public const int loadingprogress = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int mr_volume_control = 2130903089;
+			public const int mr_chooser_dialog = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int notification_action = 2130903090;
+			public const int mr_chooser_list_item = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int notification_action_tombstone = 2130903091;
+			public const int mr_controller_material_dialog_b = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int notification_media_action = 2130903092;
+			public const int mr_controller_volume_item = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int notification_media_cancel_action = 2130903093;
+			public const int mr_playback_control = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int notification_template_big_media = 2130903094;
+			public const int mr_volume_control = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int notification_template_big_media_custom = 2130903095;
+			public const int notification_action = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int notification_template_big_media_narrow = 2130903096;
+			public const int notification_action_tombstone = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int notification_template_big_media_narrow_custom = 2130903097;
+			public const int notification_media_action = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int notification_template_custom_big = 2130903098;
+			public const int notification_media_cancel_action = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int notification_template_icon_group = 2130903099;
+			public const int notification_template_big_media = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int notification_template_lines_media = 2130903100;
+			public const int notification_template_big_media_custom = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int notification_template_media = 2130903101;
+			public const int notification_template_big_media_narrow = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int notification_template_media_custom = 2130903102;
+			public const int notification_template_big_media_narrow_custom = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int notification_template_part_chronometer = 2130903103;
+			public const int notification_template_custom_big = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int notification_template_part_time = 2130903104;
+			public const int notification_template_icon_group = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int select_dialog_item_material = 2130903105;
+			public const int notification_template_lines_media = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int select_dialog_multichoice_material = 2130903106;
+			public const int notification_template_media = 2130903106;
 			
 			// aapt resource value: 0x7f030043
-			public const int select_dialog_singlechoice_material = 2130903107;
+			public const int notification_template_media_custom = 2130903107;
 			
 			// aapt resource value: 0x7f030044
-			public const int support_simple_spinner_dropdown_item = 2130903108;
+			public const int notification_template_part_chronometer = 2130903108;
 			
 			// aapt resource value: 0x7f030045
-			public const int Tabbar = 2130903109;
+			public const int notification_template_part_time = 2130903109;
 			
 			// aapt resource value: 0x7f030046
-			public const int Toolbar = 2130903110;
+			public const int select_dialog_item_material = 2130903110;
+			
+			// aapt resource value: 0x7f030047
+			public const int select_dialog_multichoice_material = 2130903111;
+			
+			// aapt resource value: 0x7f030048
+			public const int select_dialog_singlechoice_material = 2130903112;
+			
+			// aapt resource value: 0x7f030049
+			public const int support_simple_spinner_dropdown_item = 2130903113;
+			
+			// aapt resource value: 0x7f03004a
+			public const int Tabbar = 2130903114;
+			
+			// aapt resource value: 0x7f03004b
+			public const int Toolbar = 2130903115;
 			
 			static Layout()
 			{
@@ -3966,11 +4134,11 @@ namespace RacerMobileApp.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f0a0098
-			public const int ApplicationName = 2131361944;
+			// aapt resource value: 0x7f0a00a8
+			public const int ApplicationName = 2131361960;
 			
-			// aapt resource value: 0x7f0a0097
-			public const int Hello = 2131361943;
+			// aapt resource value: 0x7f0a00a7
+			public const int Hello = 2131361959;
 			
 			// aapt resource value: 0x7f0a002d
 			public const int abc_action_bar_home_description = 2131361837;
@@ -4144,85 +4312,91 @@ namespace RacerMobileApp.Droid
 			public const int continu = 2131361875;
 			
 			// aapt resource value: 0x7f0a0054
-			public const int crash_toast_text = 2131361876;
+			public const int counter_config = 2131361876;
 			
 			// aapt resource value: 0x7f0a0055
-			public const int created = 2131361877;
+			public const int crash_toast_text = 2131361877;
 			
 			// aapt resource value: 0x7f0a0056
-			public const int critical = 2131361878;
+			public const int created = 2131361878;
 			
 			// aapt resource value: 0x7f0a0057
-			public const int debug = 2131361879;
+			public const int critical = 2131361879;
 			
 			// aapt resource value: 0x7f0a0058
-			public const int details_of_loaded_sdk_configuration = 2131361880;
+			public const int debug = 2131361880;
 			
 			// aapt resource value: 0x7f0a0059
-			public const int error = 2131361881;
+			public const int details_of_loaded_sdk_configuration = 2131361881;
 			
 			// aapt resource value: 0x7f0a005a
-			public const int expectation_failed = 2131361882;
+			public const int error = 2131361882;
 			
 			// aapt resource value: 0x7f0a005b
-			public const int fail_init_sdk = 2131361883;
+			public const int expectation_failed = 2131361883;
 			
 			// aapt resource value: 0x7f0a005c
-			public const int failed_fetch_object = 2131361884;
+			public const int fail_init_sdk = 2131361884;
 			
 			// aapt resource value: 0x7f0a005d
-			public const int failed_refresh_configuration = 2131361885;
+			public const int failed_fetch_object = 2131361885;
 			
 			// aapt resource value: 0x7f0a005e
-			public const int failed_upload_stats = 2131361886;
+			public const int failed_refresh_configuration = 2131361886;
 			
 			// aapt resource value: 0x7f0a005f
-			public const int failure_all_lm = 2131361887;
+			public const int failed_upload_stats = 2131361887;
 			
 			// aapt resource value: 0x7f0a0060
-			public const int failure_monitoring_logic = 2131361888;
+			public const int failure_all_lm = 2131361888;
 			
 			// aapt resource value: 0x7f0a0061
-			public const int forbidden = 2131361889;
+			public const int failure_monitoring_logic = 2131361889;
 			
 			// aapt resource value: 0x7f0a0062
-			public const int found = 2131361890;
+			public const int forbidden = 2131361890;
 			
 			// aapt resource value: 0x7f0a0063
-			public const int g2 = 2131361891;
+			public const int found = 2131361891;
 			
 			// aapt resource value: 0x7f0a0064
-			public const int g3 = 2131361892;
+			public const int g2 = 2131361892;
 			
 			// aapt resource value: 0x7f0a0065
-			public const int g4 = 2131361893;
+			public const int g3 = 2131361893;
 			
 			// aapt resource value: 0x7f0a0066
-			public const int gateway_timeout = 2131361894;
+			public const int g4 = 2131361894;
 			
 			// aapt resource value: 0x7f0a0067
-			public const int gone = 2131361895;
+			public const int gateway_timeout = 2131361895;
 			
 			// aapt resource value: 0x7f0a0068
-			public const int http_version_not_supported = 2131361896;
+			public const int gone = 2131361896;
 			
 			// aapt resource value: 0x7f0a0069
-			public const int info = 2131361897;
+			public const int http_version_not_supported = 2131361897;
 			
 			// aapt resource value: 0x7f0a006a
-			public const int internal_server_error = 2131361898;
+			public const int info = 2131361898;
 			
 			// aapt resource value: 0x7f0a006b
-			public const int length_required = 2131361899;
-			
-			// aapt resource value: 0x7f0a0099
-			public const int library_name = 2131361945;
+			public const int internal_server_error = 2131361899;
 			
 			// aapt resource value: 0x7f0a006c
-			public const int method_not_allowed = 2131361900;
+			public const int length_required = 2131361900;
+			
+			// aapt resource value: 0x7f0a00a9
+			public const int library_name = 2131361961;
 			
 			// aapt resource value: 0x7f0a006d
-			public const int moved_permanently = 2131361901;
+			public const int lm_monitoring = 2131361901;
+			
+			// aapt resource value: 0x7f0a006e
+			public const int method_not_allowed = 2131361902;
+			
+			// aapt resource value: 0x7f0a006f
+			public const int moved_permanently = 2131361903;
 			
 			// aapt resource value: 0x7f0a0011
 			public const int mr_button_content_description = 2131361809;
@@ -4284,35 +4458,38 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0a0024
 			public const int mr_user_route_category_name = 2131361828;
 			
-			// aapt resource value: 0x7f0a006e
-			public const int multiple_choices = 2131361902;
-			
-			// aapt resource value: 0x7f0a006f
-			public const int network_error = 2131361903;
-			
 			// aapt resource value: 0x7f0a0070
-			public const int no_content = 2131361904;
+			public const int multiple_choices = 2131361904;
 			
 			// aapt resource value: 0x7f0a0071
-			public const int no_network = 2131361905;
+			public const int name = 2131361905;
 			
 			// aapt resource value: 0x7f0a0072
-			public const int non_authoritative_information = 2131361906;
+			public const int network_error = 2131361906;
 			
 			// aapt resource value: 0x7f0a0073
-			public const int not_acceptable = 2131361907;
+			public const int no_content = 2131361907;
 			
 			// aapt resource value: 0x7f0a0074
-			public const int not_found = 2131361908;
+			public const int no_network = 2131361908;
 			
 			// aapt resource value: 0x7f0a0075
-			public const int not_implemented = 2131361909;
+			public const int non_authoritative_information = 2131361909;
 			
 			// aapt resource value: 0x7f0a0076
-			public const int ok = 2131361910;
+			public const int not_acceptable = 2131361910;
 			
 			// aapt resource value: 0x7f0a0077
-			public const int os_access_permissions = 2131361911;
+			public const int not_found = 2131361911;
+			
+			// aapt resource value: 0x7f0a0078
+			public const int not_implemented = 2131361912;
+			
+			// aapt resource value: 0x7f0a0079
+			public const int ok = 2131361913;
+			
+			// aapt resource value: 0x7f0a007a
+			public const int os_access_permissions = 2131361914;
 			
 			// aapt resource value: 0x7f0a0028
 			public const int password_toggle_content_description = 2131361832;
@@ -4329,107 +4506,146 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0a002c
 			public const int path_password_strike_through = 2131361836;
 			
-			// aapt resource value: 0x7f0a0078
-			public const int payload_to_large = 2131361912;
-			
-			// aapt resource value: 0x7f0a0079
-			public const int payment_required = 2131361913;
-			
-			// aapt resource value: 0x7f0a007a
-			public const int permission_denied = 2131361914;
-			
 			// aapt resource value: 0x7f0a007b
-			public const int read_phone_state = 2131361915;
+			public const int payload_to_large = 2131361915;
 			
 			// aapt resource value: 0x7f0a007c
-			public const int read_write_prmission = 2131361916;
+			public const int payment_required = 2131361916;
 			
 			// aapt resource value: 0x7f0a007d
-			public const int received_object_with_5xx = 2131361917;
+			public const int permission_denied = 2131361917;
 			
 			// aapt resource value: 0x7f0a007e
-			public const int recovable_oom = 2131361918;
+			public const int read_phone_state = 2131361918;
 			
 			// aapt resource value: 0x7f0a007f
-			public const int request_timeout = 2131361919;
+			public const int read_write_prmission = 2131361919;
 			
 			// aapt resource value: 0x7f0a0080
-			public const int reset_content = 2131361920;
-			
-			// aapt resource value: 0x7f0a009a
-			public const int revsdk_key = 2131361946;
+			public const int received_object_with_5xx = 2131361920;
 			
 			// aapt resource value: 0x7f0a0081
-			public const int sdk_initialization_ready_stage = 2131361921;
+			public const int recovable_oom = 2131361921;
+			
+			// aapt resource value: 0x7f0a0082
+			public const int request_timeout = 2131361922;
+			
+			// aapt resource value: 0x7f0a0083
+			public const int reset_content = 2131361923;
+			
+			// aapt resource value: 0x7f0a00aa
+			public const int revsdk_key = 2131361962;
+			
+			// aapt resource value: 0x7f0a0084
+			public const int sdk_initialization_ready_stage = 2131361924;
 			
 			// aapt resource value: 0x7f0a0040
 			public const int search_menu_title = 2131361856;
 			
-			// aapt resource value: 0x7f0a0082
-			public const int see_other = 2131361922;
-			
-			// aapt resource value: 0x7f0a0083
-			public const int service_unavailable = 2131361923;
-			
-			// aapt resource value: 0x7f0a0084
-			public const int star_finish_sdk_stats_upload_process = 2131361924;
-			
 			// aapt resource value: 0x7f0a0085
-			public const int start_finish_url_fetch = 2131361925;
+			public const int see_other = 2131361925;
 			
 			// aapt resource value: 0x7f0a0086
-			public const int starting_ending_lm_selection_logic = 2131361926;
+			public const int service_unavailable = 2131361926;
 			
 			// aapt resource value: 0x7f0a0087
-			public const int starting_ending_sdk_configuration_refresh = 2131361927;
+			public const int star_finish_sdk_stats_upload_process = 2131361927;
+			
+			// aapt resource value: 0x7f0a0088
+			public const int start_finish_url_fetch = 2131361928;
+			
+			// aapt resource value: 0x7f0a0089
+			public const int starting_ending_lm_selection_logic = 2131361929;
+			
+			// aapt resource value: 0x7f0a008a
+			public const int starting_ending_sdk_configuration_refresh = 2131361930;
+			
+			// aapt resource value: 0x7f0a008b
+			public const int stat_Requests = 2131361931;
+			
+			// aapt resource value: 0x7f0a008c
+			public const int stat_carrier = 2131361932;
+			
+			// aapt resource value: 0x7f0a008d
+			public const int stat_device = 2131361933;
+			
+			// aapt resource value: 0x7f0a008e
+			public const int stat_events = 2131361934;
+			
+			// aapt resource value: 0x7f0a008f
+			public const int stat_location = 2131361935;
+			
+			// aapt resource value: 0x7f0a0090
+			public const int stat_main = 2131361936;
+			
+			// aapt resource value: 0x7f0a0091
+			public const int stat_network = 2131361937;
+			
+			// aapt resource value: 0x7f0a0092
+			public const int stat_quic = 2131361938;
+			
+			// aapt resource value: 0x7f0a0093
+			public const int stat_rmp = 2131361939;
+			
+			// aapt resource value: 0x7f0a0094
+			public const int stat_standart = 2131361940;
+			
+			// aapt resource value: 0x7f0a0095
+			public const int stat_stat = 2131361941;
+			
+			// aapt resource value: 0x7f0a0096
+			public const int stat_wifi = 2131361942;
 			
 			// aapt resource value: 0x7f0a0041
 			public const int status_bar_notification_info_overflow = 2131361857;
 			
-			// aapt resource value: 0x7f0a0088
-			public const int switching_configuration_stale_mode = 2131361928;
+			// aapt resource value: 0x7f0a0097
+			public const int switching_configuration_stale_mode = 2131361943;
 			
-			// aapt resource value: 0x7f0a0089
-			public const int switching_operation_mode = 2131361929;
+			// aapt resource value: 0x7f0a0098
+			public const int switching_operation_mode = 2131361944;
 			
-			// aapt resource value: 0x7f0a008a
-			public const int switching_protocols = 2131361930;
+			// aapt resource value: 0x7f0a0099
+			public const int switching_protocols = 2131361945;
 			
-			// aapt resource value: 0x7f0a008b
-			public const int tcp_quic_connection_reestablishing = 2131361931;
+			// aapt resource value: 0x7f0a009a
+			public const int tcp_quic_connection_reestablishing = 2131361946;
 			
-			// aapt resource value: 0x7f0a008c
-			public const int temporary_redirect = 2131361932;
+			// aapt resource value: 0x7f0a009b
+			public const int temporary_redirect = 2131361947;
 			
-			// aapt resource value: 0x7f0a008d
-			public const int timing_performance_for_loaded_objects = 2131361933;
+			// aapt resource value: 0x7f0a009c
+			public const int timing_performance_for_loaded_objects = 2131361948;
 			
-			// aapt resource value: 0x7f0a008e
-			public const int undefined = 2131361934;
+			// aapt resource value: 0x7f0a009d
+			public const int undefined = 2131361949;
 			
-			// aapt resource value: 0x7f0a008f
-			public const int unknown = 2131361935;
+			// aapt resource value: 0x7f0a009e
+			public const int unknown = 2131361950;
 			
-			// aapt resource value: 0x7f0a0090
-			public const int unrecoverable_oom = 2131361936;
+			// aapt resource value: 0x7f0a009f
+			public const int unrecoverable_oom = 2131361951;
 			
-			// aapt resource value: 0x7f0a0091
-			public const int unsupported_media_type = 2131361937;
+			// aapt resource value: 0x7f0a00a0
+			public const int unsupported_media_type = 2131361952;
 			
-			// aapt resource value: 0x7f0a0092
-			public const int upgrade_required = 2131361938;
+			// aapt resource value: 0x7f0a00a1
+			public const int upgrade_required = 2131361953;
 			
-			// aapt resource value: 0x7f0a0093
-			public const int uri_too_long = 2131361939;
+			// aapt resource value: 0x7f0a00a2
+			public const int uri_too_long = 2131361954;
 			
-			// aapt resource value: 0x7f0a0094
-			public const int use_proxy = 2131361940;
+			// aapt resource value: 0x7f0a00a3
+			public const int use_proxy = 2131361955;
 			
-			// aapt resource value: 0x7f0a0095
-			public const int warning = 2131361941;
+			// aapt resource value: 0x7f0a00a4
+			public const int value = 2131361956;
 			
-			// aapt resource value: 0x7f0a0096
-			public const int wifi = 2131361942;
+			// aapt resource value: 0x7f0a00a5
+			public const int warning = 2131361957;
+			
+			// aapt resource value: 0x7f0a00a6
+			public const int wifi = 2131361958;
 			
 			static String()
 			{

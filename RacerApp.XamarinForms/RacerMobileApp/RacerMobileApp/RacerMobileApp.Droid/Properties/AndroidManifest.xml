@@ -5,7 +5,7 @@
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
-	<application android:name="MainApplication.RevApp" android:label="RacerMobileApp.Droid" android:icon="@drawable/icon">
-		<meta-data android:name="com.revsdk.key" android:value="@string/revsdk_key" />
+	<application  android:icon="@drawable/icon">
+		<meta-data android:name="com.nuubitsdk.key" android:value="8852c009-9695-4d44-9300-d627886a9829" />
 	</application>
 </manifest>
