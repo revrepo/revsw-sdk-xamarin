@@ -46,6 +46,11 @@ namespace Nuubit.SDK
         {
             throw new Exception(wrongVersion);
         }
+
+		protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+		{
+			throw new Exception(wrongVersion);
+		}
     }
 
   

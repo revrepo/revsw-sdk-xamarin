@@ -53,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\nuuBIT.SDK\Nuubit.SDK\Nuubit.SDK.csproj">
-      <Project>{53751793-9C4A-463A-BDAF-95F12BF19C33}</Project>
+      <Project>{816CFFED-E4B4-43F0-9F2C-199492FC58AC}</Project>
       <Name>Nuubit.SDK</Name>
     </ProjectReference>
   </ItemGroup>

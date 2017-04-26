@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Nuubit.SDK;
 using RacerMobileApp.Services;
 
 namespace RacerMobileApp.Droid
@@ -19,9 +20,7 @@ namespace RacerMobileApp.Droid
         public MainApplication(IntPtr handle, JniHandleOwnership transer)
            : base(handle, transer)
         {
-			//TODO: FIX AND REMOVE
-			HttpRequestService.DefaultRacerHttpClientHandler = new Nuubit.SDK.NuubitMessageHandler();
-			HttpRequestService.Initialize();
+			HttpRequestService.Initialize(new NuubitMessageHandler());
         }
     }
 }

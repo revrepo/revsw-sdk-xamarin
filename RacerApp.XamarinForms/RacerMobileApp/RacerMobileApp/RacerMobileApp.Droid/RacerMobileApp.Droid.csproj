@@ -214,17 +214,13 @@
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\RevSDKMessageHandler\Nuubit.SDK.Droid.csproj">
-      <Project>{95cd486d-7b2e-4e0d-9546-0e9a8efa5de6}</Project>
-      <Name>Nuubit.SDK.Droid</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RacerMobileApp\RacerMobileApp.csproj">
       <Project>{D0A0C1E7-930D-4EF9-9DB9-439DE17C23D3}</Project>
       <Name>RacerMobileApp</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\AndroidBindingLibrary\AndroidBindingLibrary\Nuubit.SDK.BindingLibrary.Droid.csproj">
+    <ProjectReference Include="..\..\..\..\AndroidBindingLibrary\AndroidBindingLibrary\Nuubit.SDK.Droid.csproj">
       <Project>{EDE5B85F-AED0-4355-A85F-6F711609C0E7}</Project>
-      <Name>Nuubit.SDK.BindingLibrary.Droid</Name>
+      <Name>Nuubit.SDK.Droid</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

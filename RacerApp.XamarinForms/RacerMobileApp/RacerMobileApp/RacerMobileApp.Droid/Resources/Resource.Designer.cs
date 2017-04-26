@@ -65,153 +65,6 @@ namespace RacerMobileApp.Droid
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::RacerMobileApp.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
 			global::Splat.Resource.String.library_name = global::RacerMobileApp.Droid.Resource.String.library_name;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::RacerMobileApp.Droid.Resource.Attribute.actionBarSize;
-			global::Nuubit.SDK.Droid.Resource.Attribute.buttonSize = global::RacerMobileApp.Droid.Resource.Attribute.buttonSize;
-			global::Nuubit.SDK.Droid.Resource.Attribute.circleCrop = global::RacerMobileApp.Droid.Resource.Attribute.circleCrop;
-			global::Nuubit.SDK.Droid.Resource.Attribute.colorScheme = global::RacerMobileApp.Droid.Resource.Attribute.colorScheme;
-			global::Nuubit.SDK.Droid.Resource.Attribute.imageAspectRatio = global::RacerMobileApp.Droid.Resource.Attribute.imageAspectRatio;
-			global::Nuubit.SDK.Droid.Resource.Attribute.imageAspectRatioAdjust = global::RacerMobileApp.Droid.Resource.Attribute.imageAspectRatioAdjust;
-			global::Nuubit.SDK.Droid.Resource.Attribute.scopeUris = global::RacerMobileApp.Droid.Resource.Attribute.scopeUris;
-			global::Nuubit.SDK.Droid.Resource.Color.common_google_signin_btn_text_dark = global::RacerMobileApp.Droid.Resource.Color.common_google_signin_btn_text_dark;
-			global::Nuubit.SDK.Droid.Resource.Color.common_google_signin_btn_text_dark_default = global::RacerMobileApp.Droid.Resource.Color.common_google_signin_btn_text_dark_default;
-			global::Nuubit.SDK.Droid.Resource.Color.common_google_signin_btn_text_dark_disabled = global::RacerMobileApp.Droid.Resource.Color.common_google_signin_btn_text_dark_disabled;
-			global::Nuubit.SDK.Droid.Resource.Color.common_google_signin_btn_text_dark_focused = global::RacerMobileApp.Droid.Resource.Color.common_google_signin_btn_text_dark_focused;
-			global::Nuubit.SDK.Droid.Resource.Color.common_google_signin_btn_text_dark_pressed = global::RacerMobileApp.Droid.Resource.Color.common_google_signin_btn_text_dark_pressed;
-			global::Nuubit.SDK.Droid.Resource.Color.common_google_signin_btn_text_light = global::RacerMobileApp.Droid.Resource.Color.common_google_signin_btn_text_light;
-			global::Nuubit.SDK.Droid.Resource.Color.common_google_signin_btn_text_light_default = global::RacerMobileApp.Droid.Resource.Color.common_google_signin_btn_text_light_default;
-			global::Nuubit.SDK.Droid.Resource.Color.common_google_signin_btn_text_light_disabled = global::RacerMobileApp.Droid.Resource.Color.common_google_signin_btn_text_light_disabled;
-			global::Nuubit.SDK.Droid.Resource.Color.common_google_signin_btn_text_light_focused = global::RacerMobileApp.Droid.Resource.Color.common_google_signin_btn_text_light_focused;
-			global::Nuubit.SDK.Droid.Resource.Color.common_google_signin_btn_text_light_pressed = global::RacerMobileApp.Droid.Resource.Color.common_google_signin_btn_text_light_pressed;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_full_open_on_phone = global::RacerMobileApp.Droid.Resource.Drawable.common_full_open_on_phone;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_icon_dark = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_icon_dark;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_disabled = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_disabled;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_focused = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_focused;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_normal = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_normal;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_pressed = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_pressed;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_icon_light = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_icon_light;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_icon_light_disabled = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_icon_light_disabled;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_icon_light_focused = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_icon_light_focused;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_icon_light_normal = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_icon_light_normal;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_icon_light_pressed = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_icon_light_pressed;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_text_dark = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_text_dark;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_text_dark_disabled = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_text_dark_disabled;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_text_dark_focused = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_text_dark_focused;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_text_dark_normal = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_text_dark_normal;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_text_dark_pressed = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_text_dark_pressed;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_text_light = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_text_light;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_text_light_disabled = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_text_light_disabled;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_text_light_focused = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_text_light_focused;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_text_light_normal = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_text_light_normal;
-			global::Nuubit.SDK.Droid.Resource.Drawable.common_google_signin_btn_text_light_pressed = global::RacerMobileApp.Droid.Resource.Drawable.common_google_signin_btn_text_light_pressed;
-			global::Nuubit.SDK.Droid.Resource.Id.adjust_height = global::RacerMobileApp.Droid.Resource.Id.adjust_height;
-			global::Nuubit.SDK.Droid.Resource.Id.adjust_width = global::RacerMobileApp.Droid.Resource.Id.adjust_width;
-			global::Nuubit.SDK.Droid.Resource.Id.auto = global::RacerMobileApp.Droid.Resource.Id.auto;
-			global::Nuubit.SDK.Droid.Resource.Id.dark = global::RacerMobileApp.Droid.Resource.Id.dark;
-			global::Nuubit.SDK.Droid.Resource.Id.icon_only = global::RacerMobileApp.Droid.Resource.Id.icon_only;
-			global::Nuubit.SDK.Droid.Resource.Id.light = global::RacerMobileApp.Droid.Resource.Id.light;
-			global::Nuubit.SDK.Droid.Resource.Id.none = global::RacerMobileApp.Droid.Resource.Id.none;
-			global::Nuubit.SDK.Droid.Resource.Id.standard = global::RacerMobileApp.Droid.Resource.Id.standard;
-			global::Nuubit.SDK.Droid.Resource.Id.wide = global::RacerMobileApp.Droid.Resource.Id.wide;
-			global::Nuubit.SDK.Droid.Resource.Integer.google_play_services_version = global::RacerMobileApp.Droid.Resource.Integer.google_play_services_version;
-			global::Nuubit.SDK.Droid.Resource.String.ApplicationName = global::RacerMobileApp.Droid.Resource.String.ApplicationName;
-			global::Nuubit.SDK.Droid.Resource.String.Hello = global::RacerMobileApp.Droid.Resource.String.Hello;
-			global::Nuubit.SDK.Droid.Resource.String.accepted = global::RacerMobileApp.Droid.Resource.String.accepted;
-			global::Nuubit.SDK.Droid.Resource.String.app_name = global::RacerMobileApp.Droid.Resource.String.app_name;
-			global::Nuubit.SDK.Droid.Resource.String.bad_gateway = global::RacerMobileApp.Droid.Resource.String.bad_gateway;
-			global::Nuubit.SDK.Droid.Resource.String.bad_request = global::RacerMobileApp.Droid.Resource.String.bad_request;
-			global::Nuubit.SDK.Droid.Resource.String.common_google_play_services_enable_button = global::RacerMobileApp.Droid.Resource.String.common_google_play_services_enable_button;
-			global::Nuubit.SDK.Droid.Resource.String.common_google_play_services_enable_text = global::RacerMobileApp.Droid.Resource.String.common_google_play_services_enable_text;
-			global::Nuubit.SDK.Droid.Resource.String.common_google_play_services_enable_title = global::RacerMobileApp.Droid.Resource.String.common_google_play_services_enable_title;
-			global::Nuubit.SDK.Droid.Resource.String.common_google_play_services_install_button = global::RacerMobileApp.Droid.Resource.String.common_google_play_services_install_button;
-			global::Nuubit.SDK.Droid.Resource.String.common_google_play_services_install_text = global::RacerMobileApp.Droid.Resource.String.common_google_play_services_install_text;
-			global::Nuubit.SDK.Droid.Resource.String.common_google_play_services_install_title = global::RacerMobileApp.Droid.Resource.String.common_google_play_services_install_title;
-			global::Nuubit.SDK.Droid.Resource.String.common_google_play_services_notification_ticker = global::RacerMobileApp.Droid.Resource.String.common_google_play_services_notification_ticker;
-			global::Nuubit.SDK.Droid.Resource.String.common_google_play_services_unknown_issue = global::RacerMobileApp.Droid.Resource.String.common_google_play_services_unknown_issue;
-			global::Nuubit.SDK.Droid.Resource.String.common_google_play_services_unsupported_text = global::RacerMobileApp.Droid.Resource.String.common_google_play_services_unsupported_text;
-			global::Nuubit.SDK.Droid.Resource.String.common_google_play_services_update_button = global::RacerMobileApp.Droid.Resource.String.common_google_play_services_update_button;
-			global::Nuubit.SDK.Droid.Resource.String.common_google_play_services_update_text = global::RacerMobileApp.Droid.Resource.String.common_google_play_services_update_text;
-			global::Nuubit.SDK.Droid.Resource.String.common_google_play_services_update_title = global::RacerMobileApp.Droid.Resource.String.common_google_play_services_update_title;
-			global::Nuubit.SDK.Droid.Resource.String.common_google_play_services_updating_text = global::RacerMobileApp.Droid.Resource.String.common_google_play_services_updating_text;
-			global::Nuubit.SDK.Droid.Resource.String.common_google_play_services_wear_update_text = global::RacerMobileApp.Droid.Resource.String.common_google_play_services_wear_update_text;
-			global::Nuubit.SDK.Droid.Resource.String.common_open_on_phone = global::RacerMobileApp.Droid.Resource.String.common_open_on_phone;
-			global::Nuubit.SDK.Droid.Resource.String.common_signin_button_text = global::RacerMobileApp.Droid.Resource.String.common_signin_button_text;
-			global::Nuubit.SDK.Droid.Resource.String.common_signin_button_text_long = global::RacerMobileApp.Droid.Resource.String.common_signin_button_text_long;
-			global::Nuubit.SDK.Droid.Resource.String.conflict = global::RacerMobileApp.Droid.Resource.String.conflict;
-			global::Nuubit.SDK.Droid.Resource.String.continu = global::RacerMobileApp.Droid.Resource.String.continu;
-			global::Nuubit.SDK.Droid.Resource.String.crash_toast_text = global::RacerMobileApp.Droid.Resource.String.crash_toast_text;
-			global::Nuubit.SDK.Droid.Resource.String.created = global::RacerMobileApp.Droid.Resource.String.created;
-			global::Nuubit.SDK.Droid.Resource.String.critical = global::RacerMobileApp.Droid.Resource.String.critical;
-			global::Nuubit.SDK.Droid.Resource.String.debug = global::RacerMobileApp.Droid.Resource.String.debug;
-			global::Nuubit.SDK.Droid.Resource.String.details_of_loaded_sdk_configuration = global::RacerMobileApp.Droid.Resource.String.details_of_loaded_sdk_configuration;
-			global::Nuubit.SDK.Droid.Resource.String.error = global::RacerMobileApp.Droid.Resource.String.error;
-			global::Nuubit.SDK.Droid.Resource.String.expectation_failed = global::RacerMobileApp.Droid.Resource.String.expectation_failed;
-			global::Nuubit.SDK.Droid.Resource.String.fail_init_sdk = global::RacerMobileApp.Droid.Resource.String.fail_init_sdk;
-			global::Nuubit.SDK.Droid.Resource.String.failed_fetch_object = global::RacerMobileApp.Droid.Resource.String.failed_fetch_object;
-			global::Nuubit.SDK.Droid.Resource.String.failed_refresh_configuration = global::RacerMobileApp.Droid.Resource.String.failed_refresh_configuration;
-			global::Nuubit.SDK.Droid.Resource.String.failed_upload_stats = global::RacerMobileApp.Droid.Resource.String.failed_upload_stats;
-			global::Nuubit.SDK.Droid.Resource.String.failure_all_lm = global::RacerMobileApp.Droid.Resource.String.failure_all_lm;
-			global::Nuubit.SDK.Droid.Resource.String.failure_monitoring_logic = global::RacerMobileApp.Droid.Resource.String.failure_monitoring_logic;
-			global::Nuubit.SDK.Droid.Resource.String.forbidden = global::RacerMobileApp.Droid.Resource.String.forbidden;
-			global::Nuubit.SDK.Droid.Resource.String.found = global::RacerMobileApp.Droid.Resource.String.found;
-			global::Nuubit.SDK.Droid.Resource.String.g2 = global::RacerMobileApp.Droid.Resource.String.g2;
-			global::Nuubit.SDK.Droid.Resource.String.g3 = global::RacerMobileApp.Droid.Resource.String.g3;
-			global::Nuubit.SDK.Droid.Resource.String.g4 = global::RacerMobileApp.Droid.Resource.String.g4;
-			global::Nuubit.SDK.Droid.Resource.String.gateway_timeout = global::RacerMobileApp.Droid.Resource.String.gateway_timeout;
-			global::Nuubit.SDK.Droid.Resource.String.gone = global::RacerMobileApp.Droid.Resource.String.gone;
-			global::Nuubit.SDK.Droid.Resource.String.http_version_not_supported = global::RacerMobileApp.Droid.Resource.String.http_version_not_supported;
-			global::Nuubit.SDK.Droid.Resource.String.info = global::RacerMobileApp.Droid.Resource.String.info;
-			global::Nuubit.SDK.Droid.Resource.String.internal_server_error = global::RacerMobileApp.Droid.Resource.String.internal_server_error;
-			global::Nuubit.SDK.Droid.Resource.String.length_required = global::RacerMobileApp.Droid.Resource.String.length_required;
-			global::Nuubit.SDK.Droid.Resource.String.method_not_allowed = global::RacerMobileApp.Droid.Resource.String.method_not_allowed;
-			global::Nuubit.SDK.Droid.Resource.String.moved_permanently = global::RacerMobileApp.Droid.Resource.String.moved_permanently;
-			global::Nuubit.SDK.Droid.Resource.String.multiple_choices = global::RacerMobileApp.Droid.Resource.String.multiple_choices;
-			global::Nuubit.SDK.Droid.Resource.String.network_error = global::RacerMobileApp.Droid.Resource.String.network_error;
-			global::Nuubit.SDK.Droid.Resource.String.no_content = global::RacerMobileApp.Droid.Resource.String.no_content;
-			global::Nuubit.SDK.Droid.Resource.String.no_network = global::RacerMobileApp.Droid.Resource.String.no_network;
-			global::Nuubit.SDK.Droid.Resource.String.non_authoritative_information = global::RacerMobileApp.Droid.Resource.String.non_authoritative_information;
-			global::Nuubit.SDK.Droid.Resource.String.not_acceptable = global::RacerMobileApp.Droid.Resource.String.not_acceptable;
-			global::Nuubit.SDK.Droid.Resource.String.not_found = global::RacerMobileApp.Droid.Resource.String.not_found;
-			global::Nuubit.SDK.Droid.Resource.String.not_implemented = global::RacerMobileApp.Droid.Resource.String.not_implemented;
-			global::Nuubit.SDK.Droid.Resource.String.ok = global::RacerMobileApp.Droid.Resource.String.ok;
-			global::Nuubit.SDK.Droid.Resource.String.os_access_permissions = global::RacerMobileApp.Droid.Resource.String.os_access_permissions;
-			global::Nuubit.SDK.Droid.Resource.String.payload_to_large = global::RacerMobileApp.Droid.Resource.String.payload_to_large;
-			global::Nuubit.SDK.Droid.Resource.String.payment_required = global::RacerMobileApp.Droid.Resource.String.payment_required;
-			global::Nuubit.SDK.Droid.Resource.String.permission_denied = global::RacerMobileApp.Droid.Resource.String.permission_denied;
-			global::Nuubit.SDK.Droid.Resource.String.read_phone_state = global::RacerMobileApp.Droid.Resource.String.read_phone_state;
-			global::Nuubit.SDK.Droid.Resource.String.read_write_prmission = global::RacerMobileApp.Droid.Resource.String.read_write_prmission;
-			global::Nuubit.SDK.Droid.Resource.String.received_object_with_5xx = global::RacerMobileApp.Droid.Resource.String.received_object_with_5xx;
-			global::Nuubit.SDK.Droid.Resource.String.recovable_oom = global::RacerMobileApp.Droid.Resource.String.recovable_oom;
-			global::Nuubit.SDK.Droid.Resource.String.request_timeout = global::RacerMobileApp.Droid.Resource.String.request_timeout;
-			global::Nuubit.SDK.Droid.Resource.String.reset_content = global::RacerMobileApp.Droid.Resource.String.reset_content;
-			global::Nuubit.SDK.Droid.Resource.String.sdk_initialization_ready_stage = global::RacerMobileApp.Droid.Resource.String.sdk_initialization_ready_stage;
-			global::Nuubit.SDK.Droid.Resource.String.see_other = global::RacerMobileApp.Droid.Resource.String.see_other;
-			global::Nuubit.SDK.Droid.Resource.String.service_unavailable = global::RacerMobileApp.Droid.Resource.String.service_unavailable;
-			global::Nuubit.SDK.Droid.Resource.String.star_finish_sdk_stats_upload_process = global::RacerMobileApp.Droid.Resource.String.star_finish_sdk_stats_upload_process;
-			global::Nuubit.SDK.Droid.Resource.String.start_finish_url_fetch = global::RacerMobileApp.Droid.Resource.String.start_finish_url_fetch;
-			global::Nuubit.SDK.Droid.Resource.String.starting_ending_lm_selection_logic = global::RacerMobileApp.Droid.Resource.String.starting_ending_lm_selection_logic;
-			global::Nuubit.SDK.Droid.Resource.String.starting_ending_sdk_configuration_refresh = global::RacerMobileApp.Droid.Resource.String.starting_ending_sdk_configuration_refresh;
-			global::Nuubit.SDK.Droid.Resource.String.switching_configuration_stale_mode = global::RacerMobileApp.Droid.Resource.String.switching_configuration_stale_mode;
-			global::Nuubit.SDK.Droid.Resource.String.switching_operation_mode = global::RacerMobileApp.Droid.Resource.String.switching_operation_mode;
-			global::Nuubit.SDK.Droid.Resource.String.switching_protocols = global::RacerMobileApp.Droid.Resource.String.switching_protocols;
-			global::Nuubit.SDK.Droid.Resource.String.tcp_quic_connection_reestablishing = global::RacerMobileApp.Droid.Resource.String.tcp_quic_connection_reestablishing;
-			global::Nuubit.SDK.Droid.Resource.String.temporary_redirect = global::RacerMobileApp.Droid.Resource.String.temporary_redirect;
-			global::Nuubit.SDK.Droid.Resource.String.timing_performance_for_loaded_objects = global::RacerMobileApp.Droid.Resource.String.timing_performance_for_loaded_objects;
-			global::Nuubit.SDK.Droid.Resource.String.undefined = global::RacerMobileApp.Droid.Resource.String.undefined;
-			global::Nuubit.SDK.Droid.Resource.String.unknown = global::RacerMobileApp.Droid.Resource.String.unknown;
-			global::Nuubit.SDK.Droid.Resource.String.unrecoverable_oom = global::RacerMobileApp.Droid.Resource.String.unrecoverable_oom;
-			global::Nuubit.SDK.Droid.Resource.String.unsupported_media_type = global::RacerMobileApp.Droid.Resource.String.unsupported_media_type;
-			global::Nuubit.SDK.Droid.Resource.String.upgrade_required = global::RacerMobileApp.Droid.Resource.String.upgrade_required;
-			global::Nuubit.SDK.Droid.Resource.String.uri_too_long = global::RacerMobileApp.Droid.Resource.String.uri_too_long;
-			global::Nuubit.SDK.Droid.Resource.String.use_proxy = global::RacerMobileApp.Droid.Resource.String.use_proxy;
-			global::Nuubit.SDK.Droid.Resource.String.warning = global::RacerMobileApp.Droid.Resource.String.warning;
-			global::Nuubit.SDK.Droid.Resource.String.wifi = global::RacerMobileApp.Droid.Resource.String.wifi;
-			global::Nuubit.SDK.Droid.Resource.Styleable.LoadingImageView = global::RacerMobileApp.Droid.Resource.Styleable.LoadingImageView;
-			global::Nuubit.SDK.Droid.Resource.Styleable.LoadingImageView_circleCrop = global::RacerMobileApp.Droid.Resource.Styleable.LoadingImageView_circleCrop;
-			global::Nuubit.SDK.Droid.Resource.Styleable.LoadingImageView_imageAspectRatio = global::RacerMobileApp.Droid.Resource.Styleable.LoadingImageView_imageAspectRatio;
-			global::Nuubit.SDK.Droid.Resource.Styleable.LoadingImageView_imageAspectRatioAdjust = global::RacerMobileApp.Droid.Resource.Styleable.LoadingImageView_imageAspectRatioAdjust;
-			global::Nuubit.SDK.Droid.Resource.Styleable.SignInButton = global::RacerMobileApp.Droid.Resource.Styleable.SignInButton;
-			global::Nuubit.SDK.Droid.Resource.Styleable.SignInButton_buttonSize = global::RacerMobileApp.Droid.Resource.Styleable.SignInButton_buttonSize;
-			global::Nuubit.SDK.Droid.Resource.Styleable.SignInButton_colorScheme = global::RacerMobileApp.Droid.Resource.Styleable.SignInButton_colorScheme;
-			global::Nuubit.SDK.Droid.Resource.Styleable.SignInButton_scopeUris = global::RacerMobileApp.Droid.Resource.Styleable.SignInButton_scopeUris;
 		}
 		
 		public partial class Animation
@@ -4134,12 +3987,6 @@ namespace RacerMobileApp.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f0a00a8
-			public const int ApplicationName = 2131361960;
-			
-			// aapt resource value: 0x7f0a00a7
-			public const int Hello = 2131361959;
-			
 			// aapt resource value: 0x7f0a002d
 			public const int abc_action_bar_home_description = 2131361837;
 			
@@ -4386,8 +4233,8 @@ namespace RacerMobileApp.Droid
 			// aapt resource value: 0x7f0a006c
 			public const int length_required = 2131361900;
 			
-			// aapt resource value: 0x7f0a00a9
-			public const int library_name = 2131361961;
+			// aapt resource value: 0x7f0a00a7
+			public const int library_name = 2131361959;
 			
 			// aapt resource value: 0x7f0a006d
 			public const int lm_monitoring = 2131361901;

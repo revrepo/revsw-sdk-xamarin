@@ -29,6 +29,9 @@ namespace Nuubit.SDK
                 {"User-Agent", " "}
             };
 
+
+			
+
         public bool DisableCaching { get; set; }
 
         public NuubitMessageHandler() : this(false, false) { }

@@ -3,7 +3,7 @@ using System.Linq;
 using System.Net;
 using Java.Net;
 
-namespace Nuubit.SDK
+namespace Nuubit.SDK.Droid
 {
     public class NativeCookieHandler
     {
