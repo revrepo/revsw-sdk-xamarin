@@ -17,6 +17,6 @@
  */
 using System;
 
-namespace RevSDK
+namespace Nuubit.SDK.iOS
 {
 }

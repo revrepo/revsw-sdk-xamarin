@@ -158,10 +158,6 @@
       <HintPath>..\..\packages\Xam.Plugins.Settings.2.5.2.1\lib\Xamarin.iOS10\Plugin.Settings.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="RevSDK, Version=1.0.6232.34286, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\nuubit.SDK.2.0\lib\xamarinios\RevSDK.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Splat.1.6.2\lib\Xamarin.iOS10\Splat.dll</HintPath>
       <Private>True</Private>
@@ -207,6 +203,10 @@
     <ProjectReference Include="..\..\..\..\RevAPMiOSSDK\RevApm.iOS\Nuubit.SDK.iOS.csproj">
       <Project>{19A64C91-5105-4AEF-BD15-F501BB1A00DB}</Project>
       <Name>Nuubit.SDK.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\RevAPMBinding\RevSDK\RevSDK\Nuubit.SDK.iOS.Binding.csproj">
+      <Project>{9D5542E6-254A-4470-ACAA-3D686F682070}</Project>
+      <Name>Nuubit.SDK.iOS.Binding</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
