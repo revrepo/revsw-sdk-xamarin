@@ -57,5 +57,11 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RevAPMBinding\RevSDK\RevSDK\Nuubit.SDK.iOS.Binding.csproj">
+      <Project>{9d5542e6-254a-4470-acaa-3d686f682070}</Project>
+      <Name>Nuubit.SDK.iOS.Binding</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
