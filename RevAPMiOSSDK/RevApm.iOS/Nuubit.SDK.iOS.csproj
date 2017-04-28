@@ -41,6 +41,12 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\nuuBIT.SDK\nuuBIT.SDK\CaptiveNetworkException.cs">
+      <Link>iOS\CaptiveNetworkException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\nuuBIT.SDK\nuuBIT.SDK\Utility.cs">
+      <Link>iOS\Utility.cs</Link>
+    </Compile>
     <Compile Include="iOS\AsyncLock.cs" />
     <Compile Include="iOS\CFNetworkErrors.cs" />
     <Compile Include="iOS\NativeCookieHandler.cs" />
@@ -50,12 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\nuuBIT.SDK\Nuubit.SDK\Nuubit.SDK.csproj">
-      <Project>{816CFFED-E4B4-43F0-9F2C-199492FC58AC}</Project>
-      <Name>Nuubit.SDK</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

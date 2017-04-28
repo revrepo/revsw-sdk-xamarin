@@ -23,7 +23,7 @@ namespace TestRSSReader.Droid
 
 				view.SetWebChromeClient(chromeClient);
 
-				view.SetWebViewClient(Com.Nuubit.Sdk.NuubitSDK.CreateWebViewClient());
+				view.SetWebViewClient(Com.Nuubit.Sdk.NuubitSDK.CreateWebViewClient(Context,view,Com.Nuubit.Sdk.NuubitSDK.OkHttpCreate(Com.Nuubit.Sdk.NuubitConstants.DefaultTimeoutSec,false,false)));
 
 				SetNativeControl(view);
 

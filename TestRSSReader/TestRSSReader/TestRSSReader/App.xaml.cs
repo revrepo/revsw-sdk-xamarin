@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
-
+using Nuubit.SDK;
 using Xamarin.Forms;
 
 namespace TestRSSReader
@@ -16,6 +16,11 @@ namespace TestRSSReader
             InitializeComponent();
 
             MainPage = new TestRSSReader.MainPage();
+
+            if (Handler == null)
+            {
+                //Handler = new NuubitMessageHandler();
+            }
         }
 
         protected override void OnStart()
