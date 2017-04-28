@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Android.Webkit;
 using TestRSSReader;
 using TestRSSReader.Droid;
@@ -11,24 +12,20 @@ namespace TestRSSReader.Droid
 {
 	public class CustomWebViewRenderer:WebViewRenderer
 	{
-		protected override void OnElementChanged(ElementChangedEventArgs<Xamarin.Forms.WebView> e)
+		//Android.Webkit.WebView _webView;
+
+		protected override async void OnElementChanged(ElementChangedEventArgs<Xamarin.Forms.WebView> e)
 		{
 			base.OnElementChanged(e);
 
-			if (this.Control == null)
-			{
-				var view = new Android.Webkit.WebView(this.Context);
+			var webView = Control;
+			var chromeClient = Com.Nuubit.Sdk.NuubitSDK.CreateWebChromeClient();
+			webView.SetWebChromeClient(chromeClient);
 
-				var chromeClient = Com.Nuubit.Sdk.NuubitSDK.CreateWebChromeClient();
+			webView.SetWebViewClient(Com.Nuubit.Sdk.NuubitSDK.CreateWebViewClient(Context, webView, Com.Nuubit.Sdk.NuubitSDK.OkHttpCreate(Com.Nuubit.Sdk.NuubitConstants.DefaultTimeoutSec, false, false)));
 
-				view.SetWebChromeClient(chromeClient);
-
-				view.SetWebViewClient(Com.Nuubit.Sdk.NuubitSDK.CreateWebViewClient(Context,view,Com.Nuubit.Sdk.NuubitSDK.OkHttpCreate(Com.Nuubit.Sdk.NuubitConstants.DefaultTimeoutSec,false,false)));
-
-				SetNativeControl(view);
-
-				view.LoadUrl(e.NewElement.Source.ToString());
-			}
 		}
+
+
 	}
 }
