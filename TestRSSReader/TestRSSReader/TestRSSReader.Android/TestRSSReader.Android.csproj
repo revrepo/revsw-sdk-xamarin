@@ -156,6 +156,7 @@
     <Compile Include="MainApplication.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CustomWebViewRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -179,7 +180,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TestRSSReader\TestRSSReader.csproj">
-      <Project>{ada71e84-8c81-4eb9-9130-680f8e48b372}</Project>
+      <Project>{2FDA82D6-9D21-476C-8522-AD31E0D4FDE6}</Project>
       <Name>TestRSSReader</Name>
     </ProjectReference>
   </ItemGroup>

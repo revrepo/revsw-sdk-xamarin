@@ -16,11 +16,20 @@ namespace TestRSSReader
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class WebPage : ContentPage
     {
+		Item _item;
+		
         public WebPage(Item item)
         {
             InitializeComponent();
-
+			_item = item;
         }
+
+		protected override void OnAppearing()
+		{
+			base.OnAppearing();
+			webView.Source = _item.Link;
+
+		}
     }
 
   
