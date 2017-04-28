@@ -17,6 +17,6 @@
  */
 using System;
 
-namespace Nuubit.SDK.iOS
+namespace Nuubit.SDK
 {
 }

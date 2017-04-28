@@ -20,7 +20,6 @@ namespace RacerMobileApp.Droid
         public MainApplication(IntPtr handle, JniHandleOwnership transer)
            : base(handle, transer)
         {
-			HttpRequestService.Initialize(new NuubitMessageHandler());
         }
     }
 }

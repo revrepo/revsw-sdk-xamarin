@@ -22,7 +22,7 @@ using Foundation;
 using ObjCRuntime;
 using CoreGraphics;
 
-namespace Nuubit.SDK.iOS
+namespace Nuubit.SDK
 {
 	[Static]
 	partial interface Constants

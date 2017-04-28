@@ -4,7 +4,6 @@ using System.Linq;
 
 using Foundation;
 using Nuubit.SDK;
-using Nuubit.SDK.iOS;
 using RacerMobileApp.Services;
 using UIKit;
 
@@ -27,7 +26,7 @@ namespace RacerMobileApp.iOS
         {
             RevSDK.StartWithSDKKey("a1c4fa56-5945-4f42-b070-e1926641ba8e");  //mike
 
-			HttpRequestService.Initialize(new NuubitMessageHandler());
+			//HttpRequestService.Initialize(new NuubitMessageHandler());
 
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
