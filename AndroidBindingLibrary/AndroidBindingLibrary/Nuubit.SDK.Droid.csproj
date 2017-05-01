@@ -13,8 +13,8 @@
     <RootNamespace>Nuubit.SDK</RootNamespace>
     <AssemblyName>Nuubit.SDK</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v4.2</TargetFrameworkVersion>
     <AndroidTlsProvider>
     </AndroidTlsProvider>
   </PropertyGroup>
