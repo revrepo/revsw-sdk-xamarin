@@ -182,7 +182,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\nuuBIT.SDK\nuuBIT.SDK\NuuBIT.SDK.csproj">
       <Project>{816CFFED-E4B4-43F0-9F2C-199492FC58AC}</Project>
-      <Name>Nuubit.SDK</Name>
+      <Name>NuuBIT.SDK</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
