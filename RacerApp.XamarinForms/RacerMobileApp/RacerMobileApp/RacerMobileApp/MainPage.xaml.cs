@@ -15,7 +15,10 @@ namespace RacerMobileApp
 {
     public partial class MainPage : ContentPage
     {
-
+		async void BrowserStart_Clicked(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new WebPage((BindingContext as MainPageViewModel).Uri));
+		}
 
         public MainPage()
         {
@@ -30,7 +33,7 @@ namespace RacerMobileApp
                     LoadAllPageUrls = false,
                     Uri = "ebay.com",
                     Payload = "0",
-                    TestCount = "10"
+					TestCount = "10"
                 };
             }
             else

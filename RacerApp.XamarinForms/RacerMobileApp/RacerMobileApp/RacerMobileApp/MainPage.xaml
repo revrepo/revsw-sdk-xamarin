@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:RacerMobileApp"
@@ -18,6 +18,7 @@
       <RowDefinition Height="Auto"/>
       <RowDefinition Height="Auto"/>
       <RowDefinition Height="Auto"/>
+			     <RowDefinition Height="Auto"/>
       <RowDefinition Height="*"/>
       <RowDefinition Height="Auto"/>
     </Grid.RowDefinitions>
@@ -81,12 +82,15 @@
     <Switch x:Name="loadPageUrlsSwitch" IsToggled="{Binding LoadAllPageUrls}" HorizontalOptions="EndAndExpand"/>
     
     </StackLayout>
-  
 
-    <Button Text="Start" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="End"
+
+    <Button Text="Browser start" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="End"
+           Clicked="BrowserStart_Clicked"  />
+
+    <Button Text="Start" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="End"
           
            Clicked="Start"/>
-    <Button Text="History" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="4"
+    <Button Text="History" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="4"
             
     Clicked="HistoryBtnClicked"/>
     
