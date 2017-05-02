@@ -17,7 +17,7 @@ namespace RacerMobileApp
     {
 		async void BrowserStart_Clicked(object sender, System.EventArgs e)
 		{
-			await Navigation.PushAsync(new WebPage((BindingContext as MainPageViewModel).Uri));
+			await Navigation.PushAsync(new WebPageNew((BindingContext as MainPageViewModel).Uri));
 		}
 
         public MainPage()
