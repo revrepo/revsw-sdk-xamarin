@@ -38,7 +38,7 @@ namespace Nuubit.SDK
 
 	// @interface RevSDK : NSObject
 	[BaseType (typeof (NSObject))]
-	interface RevSDK
+	interface NuubitSDK
 	{
 		// +(void)startWithSDKKey:(NSS	tring *)aSDKKey;
 		[Static]

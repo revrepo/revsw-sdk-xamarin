@@ -24,7 +24,7 @@ namespace RacerMobileApp.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            RevSDK.StartWithSDKKey("a1c4fa56-5945-4f42-b070-e1926641ba8e");  //mike
+			Nuubit.SDK.NuubitSDK.StartWithSDKKey("a1c4fa56-5945-4f42-b070-e1926641ba8e");  //mike
 
 			//HttpRequestService.Initialize(new NuubitMessageHandler());
 
