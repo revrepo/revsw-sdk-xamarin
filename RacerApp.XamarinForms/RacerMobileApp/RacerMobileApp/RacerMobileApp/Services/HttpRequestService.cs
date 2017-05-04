@@ -32,61 +32,61 @@ namespace RacerMobileApp.Services
         { 
 			HttpResponseMessage response = null;
             var sw = new Stopwatch();
-            long? length = 0;         
-          
-            try
-                {
+            long? length = 0;
 
-                           var client = IsRevApmRequest ? RevClient : DefaultClient;
-                             
-							client.DefaultRequestHeaders.Clear();
-							client.DefaultRequestHeaders.Add("Connection", "keep-alive");
-							client.DefaultRequestHeaders.Add("Keep-Alive", "600");
-                           
-							using(var request = new HttpRequestMessage() { Method = session.Method, RequestUri = session.Uri })
-                            {
-                                request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(session.ContentType));
+			try
+			{
 
-                            if (session.Payload > 0)
-                            {
-                                var content = await new StubDataGenerator().GetAsync(session.ContentType, session.Payload * 1024);
-                                request.Content = new StringContent(content, UnicodeEncoding.UTF8, session.ContentType);
-                            }
+				var client = IsRevApmRequest ? RevClient : DefaultClient;
 
-                                sw.Start();
+				client.DefaultRequestHeaders.Clear();
+				client.DefaultRequestHeaders.Add("Connection", "keep-alive");
+				client.DefaultRequestHeaders.Add("Keep-Alive", "600");
 
-                                response = await client.SendAsync(request);
+				using (var request = new HttpRequestMessage() { Method = session.Method, RequestUri = session.Uri })
+				{
+					request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(session.ContentType));
 
-                                sw.Stop();
+					if (session.Payload > 0)
+					{
+						var content = await new StubDataGenerator().GetAsync(session.ContentType, session.Payload * 1024);
+						request.Content = new StringContent(content, UnicodeEncoding.UTF8, session.ContentType);
+					}
 
-                            if (response.IsSuccessStatusCode)
-                            {
-                                length += await CalculateResponseBufferSize(response);
-                            }
+					sw.Start();
 
-                            if (session.LoadAllUrls)
-                            {
-                                var links = await ExtractAllLinks(session.Uri).ConfigureAwait(false);
+					response = await client.SendAsync(request);
 
-                                if (links != null && links.Count > 0)
-                                {
-                                    length += await TryLoadAllPagesUrl(links, sw, session.Uri, client);
-                                }
-                            }
+					sw.Stop();
+
+					if (response.IsSuccessStatusCode)
+					{
+						length += await CalculateResponseBufferSize(response);
+					}
+
+					if (session.LoadAllUrls)
+					{
+						var links = await ExtractAllLinks(session.Uri).ConfigureAwait(false);
+
+						if (links != null && links.Count > 0)
+						{
+							length += await TryLoadAllPagesUrl(links, sw, session.Uri, client);
+						}
+					}
 
 
-                         }
-                  
+				}
 
-                return new TestResult()
-                {
-                    DurationMs = sw.ElapsedMilliseconds,
-                    StatusCode = (int)response.StatusCode,
+
+				return new TestResult()
+				{
+					DurationMs = sw.ElapsedMilliseconds,
+					StatusCode = (int)response.StatusCode,
 					HasError = response.StatusCode == System.Net.HttpStatusCode.OK ? false : true,
-                    ResponseSizeBytes = length,
-                    Method = session.Method.Method
-                };
-               }
+					ResponseSizeBytes = length,
+					Method = session.Method.Method
+				};
+			}
             catch (Exception e)
             {
              	Debug.WriteLine(e.Message);

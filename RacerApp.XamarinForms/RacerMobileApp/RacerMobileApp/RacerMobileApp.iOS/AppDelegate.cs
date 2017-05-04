@@ -24,9 +24,7 @@ namespace RacerMobileApp.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-			Nuubit.SDK.NuubitSDK.StartWithSDKKey("a1c4fa56-5945-4f42-b070-e1926641ba8e");  //mike
-
-			//HttpRequestService.Initialize(new NuubitMessageHandler());
+			Nuubit.SDK.NuubitSDK.StartWithSDKKey("ea73413b-6112-459b-8538-5f81f3264a4d");  //mike
 
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());

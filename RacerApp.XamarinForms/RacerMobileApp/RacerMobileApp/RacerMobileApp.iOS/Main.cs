@@ -14,7 +14,7 @@ namespace RacerMobileApp.iOS
         static void Main(string[] args)
         {
 			#if !DEBUG
-			RaygunClient.Attach("w8CCfco1qAomnvaIMjl/yA==");
+			//RaygunClient.Attach("w8CCfco1qAomnvaIMjl/yA==");
 			#endif
 
             // if you want to use a different Application Delegate class from "AppDelegate"

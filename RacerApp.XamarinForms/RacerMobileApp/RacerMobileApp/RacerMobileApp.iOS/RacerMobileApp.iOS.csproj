@@ -197,12 +197,12 @@
       <Name>RacerMobileApp</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\RevAPMiOSSDK\RevApm.iOS\Nuubit.SDK.iOS.csproj">
-      <Project>{19A64C91-5105-4AEF-BD15-F501BB1A00DB}</Project>
+      <Project>{9D5542E6-254A-4470-ACAA-3D686F682070}</Project>
       <Name>Nuubit.SDK.iOS</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\RevAPMBinding\RevSDK\RevSDK\Nuubit.SDK.iOS.Binding.csproj">
       <Project>{9D5542E6-254A-4470-ACAA-3D686F682070}</Project>
-      <Name>Nuubit.SDK.iOS.Binding</Name>
+      <Name>Nuubit.SDK.iOS</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
