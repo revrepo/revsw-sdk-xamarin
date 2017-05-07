@@ -190,14 +190,17 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.4.231\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="RevSDK">
+      <HintPath>..\..\..\..\RevAPMBinding\RevSDK.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RacerMobileApp\RacerMobileApp.csproj">
       <Project>{D0A0C1E7-930D-4EF9-9DB9-439DE17C23D3}</Project>
       <Name>RacerMobileApp</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\RevAPMBinding\RevSDK\RevSDK\Nuubit.SDK.iOS.csproj">
-      <Project>{9D5542E6-254A-4470-ACAA-3D686F682070}</Project>
+    <ProjectReference Include="..\..\..\..\RevAPMiOSSDK\RevApm.iOS\Nuubit.SDK.iOS.csproj">
+      <Project>{19A64C91-5105-4AEF-BD15-F501BB1A00DB}</Project>
       <Name>Nuubit.SDK.iOS</Name>
     </ProjectReference>
   </ItemGroup>

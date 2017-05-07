@@ -17,18 +17,32 @@
  */
 using System;
 
-namespace RevAPMiOSSDK
+using UIKit;
+using Foundation;
+using ObjCRuntime;
+using CoreGraphics;
+
+namespace Nuubit.SDK
 {
-    public class RevAPMiOSHttpMessageHandler: RevApm.RevAPMHttpMessageHandler
-    {
-             
-		public RevAPMiOSHttpMessageHandler():base(new iOSRevAPMHttpProcessor())
-		{
-		}
+	[Static]
+	partial interface Constants
+	{
+		// extern double RevSDKVersionNumber;
+		[Field ("RevSDKVersionNumber", "__Internal")]
+		double RevSDKVersionNumber { get; }
 
-        public RevAPMiOSHttpMessageHandler(TimeSpan? TimeOut) : base(new iOSRevAPMHttpProcessor(TimeOut))
-        {
-        }
+		// extern const unsigned char [] RevSDKVersionString;
+		[Field ("RevSDKVersionString", "__Internal")]
+		IntPtr RevSDKVersionString { get; }
+	}
 
-    }
+	// @interface RevSDK : NSObject
+	[BaseType (typeof (NSObject))]
+	interface RevSDK
+	{
+		// +(void)startWithSDKKey:(NSS	tring *)aSDKKey;
+		[Static]
+		[Export ("startWithSDKKey:")]
+		void StartWithSDKKey (string aSDKKey);
+	}
 }
