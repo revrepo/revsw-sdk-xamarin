@@ -40,7 +40,7 @@ namespace Nuubit.SDK
 	[BaseType (typeof (NSObject))]
 	interface RevSDK
 	{
-		// +(void)startWithSDKKey:(NSS	tring *)aSDKKey;
+		// +(void)startWithSDKKey:(NSString *)aSDKKey;
 		[Static]
 		[Export ("startWithSDKKey:")]
 		void StartWithSDKKey (string aSDKKey);

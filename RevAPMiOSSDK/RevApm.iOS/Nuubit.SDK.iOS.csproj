@@ -39,19 +39,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="iOS\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\nuuBIT.SDK\nuuBIT.SDK\CaptiveNetworkException.cs">
-      <Link>iOS\CaptiveNetworkException.cs</Link>
-    </Compile>
-    <Compile Include="..\..\nuuBIT.SDK\nuuBIT.SDK\Utility.cs">
-      <Link>iOS\Utility.cs</Link>
-    </Compile>
-    <Compile Include="iOS\AsyncLock.cs" />
-    <Compile Include="iOS\CFNetworkErrors.cs" />
-    <Compile Include="iOS\NativeCookieHandler.cs" />
-    <Compile Include="iOS\NSErrorExtended.cs" />
-    <Compile Include="iOS\NSUrlSessionHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
