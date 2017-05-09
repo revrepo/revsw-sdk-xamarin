@@ -85,7 +85,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>False</ConsolePause>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
-    <CodesignProvision>1d331519-9c84-48a7-8531-1e0f88de165d</CodesignProvision>
+    <CodesignProvision>RevAPM Racer Xamarin AppStore</CodesignProvision>
     <CodesignKey>iPhone Distribution: Rev Software, Inc (EC9B78GBEQ)</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>

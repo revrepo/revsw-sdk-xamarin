@@ -12,6 +12,8 @@ using System.Net.Http;
 using Foundation;
 using Security;
 using Nuubit.SDK.Foundation;
+using System.Runtime.InteropServices;
+using ObjCRuntime;
 
 #if UNIFIED
 using Foundation;
@@ -53,26 +55,29 @@ namespace Nuubit.SDK
         public bool DisableCaching { get; set; }
 
         public NuubitMessageHandler(): this(false, false) { }
-        public NuubitMessageHandler(bool throwOnCaptiveNetwork, bool customSSLVerification, Nuubit.SDK.Foundation.NativeCookieHandler cookieHandler = null, SslProtocol? minimumSSLProtocol = null)
-        {
-            var configuration = NSUrlSessionConfiguration.DefaultSessionConfiguration;
+		public NuubitMessageHandler(bool throwOnCaptiveNetwork, bool customSSLVerification, Nuubit.SDK.Foundation.NativeCookieHandler cookieHandler = null, SslProtocol? minimumSSLProtocol = null)
+		{
+			var configuration = NSUrlSessionConfiguration.DefaultSessionConfiguration;
 
-            // System.Net.ServicePointManager.SecurityProtocol provides a mechanism for specifying supported protocol types
-            // for System.Net. Since iOS only provides an API for a minimum and maximum protocol we are not able to port
-            // this configuration directly and instead use the specified minimum value when one is specified.
-            if (minimumSSLProtocol.HasValue) {
-                configuration.TLSMinimumSupportedProtocol = minimumSSLProtocol.Value;
-            }
+			// System.Net.ServicePointManager.SecurityProtocol provides a mechanism for specifying supported protocol types
+			// for System.Net. Since iOS only provides an API for a minimum and maximum protocol we are not able to port
+			// this configuration directly and instead use the specified minimum value when one is specified.
+			if (minimumSSLProtocol.HasValue)
+			{
+				configuration.TLSMinimumSupportedProtocol = minimumSSLProtocol.Value;
+			}
 
-            session = NSUrlSession.FromConfiguration(
-                NSUrlSessionConfiguration.DefaultSessionConfiguration, 
-                new DataTaskDelegate(this), null);
+			configuration.WeakProtocolClasses = NSArray.FromNSObjects(new Class("RSURLProtocol"));
 
-            this.throwOnCaptiveNetwork = throwOnCaptiveNetwork;
-            this.customSSLVerification = customSSLVerification;
+			session = NSUrlSession.FromConfiguration(
+				configuration,
+				new DataTaskDelegate(this), null);
+			
+			this.throwOnCaptiveNetwork = throwOnCaptiveNetwork;
+			this.customSSLVerification = customSSLVerification;
 
-            this.DisableCaching = false;
-        }
+			this.DisableCaching = false;
+		}
 
         string getHeaderSeparator(string name)
         {
@@ -201,6 +206,7 @@ namespace Nuubit.SDK
                         ret.Headers.TryAddWithoutValidation(v.Key.ToString(), v.Value.ToString());
                         ret.Content.Headers.TryAddWithoutValidation(v.Key.ToString(), v.Value.ToString());
                     }
+
 
                     data.FutureResponse.TrySetResult(ret);
                 } catch (Exception ex) {
