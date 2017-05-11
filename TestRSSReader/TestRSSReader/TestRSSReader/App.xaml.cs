@@ -19,7 +19,7 @@ namespace TestRSSReader
 
             if (Handler == null)
             {
-                //Handler = new NuubitMessageHandler();
+                Handler = new NuubitMessageHandler();
             }
         }
 

@@ -20,7 +20,7 @@ namespace TestRSSReader.Droid
 
             base.OnCreate(bundle);
 
-            App.Handler = new NuubitMessageHandler();
+            //App.Handler = new NuubitMessageHandler();
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());

@@ -4,7 +4,7 @@ using System.Linq;
 
 using Foundation;
 using Nuubit.SDK;
-using Nuubit.SDK.iOS;
+
 using UIKit;
 
 namespace TestRSSReader.iOS
@@ -24,7 +24,7 @@ namespace TestRSSReader.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            RevSDK.StartWithSDKKey("8852c009-9695-4d44-9300-d627886a9829");
+            RevSDK.StartWithSDKKey("ea73413b-6112-459b-8538-5f81f3264a4d");
 
             //App.Handler = new Nuubit.SDK.NuubitMessageHandler();
             global::Xamarin.Forms.Forms.Init();
