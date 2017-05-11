@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="se.avantime.testrssreadernew">
+	<uses-sdk android:minSdkVersion="15" />
+    <application android:icon="@drawable/icon" android:label="Racer">
+        <meta-data android:name="com.nuubit.key" android:value="8852c009-9695-4d44-9300-d627886a9829" />
+    </application>
+</manifest>
