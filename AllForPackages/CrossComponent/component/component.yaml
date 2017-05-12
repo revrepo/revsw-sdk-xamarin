@@ -1,0 +1,41 @@
+%YAML 1.2
+---
+name: Nuu:bit Mobile SDK
+id: nuubit.SDK
+publisher: NUU:BIT, INC.
+license: License.md
+summary: The nuu:bit Mobile SDK is a simple way to connect a mobile application to nuu:bit's global content acceleration and analytics platform.
+version: "3.0.1"
+details: Details.md
+getting-started: GettingStarted.md
+icons:
+  - icons/icon_128x128.png
+  - icons/icon_512x512.png
+publisher-url: https://www.nuubit.com/
+no_build: true
+libraries:
+  ios-unified:
+    - lib/ios/Nuubit.SDK.dll
+  android:
+    - lib/droid/Nuubit.SDK.dll 
+samples:
+  "Sample fro both Android and iOS": samples/ios/TestRSSReader/TestRSSReader.sln
+packages:
+  android:
+    - GoogleGson, Version=2.6.2
+    - Square.OkHttp3, Version=3.5.0
+    - Square.OkIO, Version=1.11.0
+    - Square.Retrofit2, Version=2.1.0
+    - System.Net.Http, Version=4.3.1
+    - Xamarin.Build.Download, Version=0.4.2
+    - Xamarin.GooglePlayServices.Base, Version=42.1001.0
+    - Xamarin.GooglePlayServices.Basement, Version=42.1001.0
+    - Xamarin.GooglePlayServices.Location, Version=42.1001.0
+    - Xamarin.GooglePlayServices.Tasks, Version=42.1021.0 
+  ios-unified:
+    - Microsoft.Bcl.Build, Version=1.0.21
+    - Microsoft.Bcl, Version=1.1.10
+    - Microsoft.Net.Http, Version=2.2.29
+    - System.Net.Http, Version=4.3.0
+
+  

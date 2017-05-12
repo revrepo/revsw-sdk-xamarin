@@ -1,0 +1,83 @@
+NUU:BIT SOFTWARE LICENSE AND TERMS OF SERVICE (“TOS”)
+
+Definitions
+
+3rd Party Content is considered any content that is not directly hosted in a domain or server owned or operated by Customer.
+
+Administrator is a role designated by customer to a user account within NUU:BIT Service’s Portal.  The Administrator is responsible for all financial responsibility connected to the usage of their account and all terms within this agreement.  An Administrator account must be defined at all times.
+
+A Gigabyte (GB or GBDT) of Bandwidth shall be defined as 1,000,000,000 bytes and all GB data is determined from the Customer’s traffic generated logs and stored for billing.
+
+Billing Plan: The “Billing Plan” refers the the level of service and the monthly usage volumes stated in the plans located on NUU:BIT’s website and can be found here https://portal.revapm.net/#/signup/plans.
+
+Billing Period: The Billing Period is start date is defined as the date Customer agrees to these TOS and selects a Billing Plan and shall extend for thirty (30) days.  At the end of each thirty (30) day period if Customer has not terminated their account, the Billing Period shall renew for an additional thirty (30) days.  
+
+Cache Miss is any request for content which is not in the caching network and the cache needs to request content from the Origin Site.
+
+Global Network Coverage refers to NUU:BIT’s caching systems deployed throughout the global internet network.
+
+Mobile Traffic is defined as any traffic from a mobile device leveraging NUU:BIT’s SDK.
+
+Origin Site is defined as the Customer’s server or application from where the CDN requests content to be cached within the Network.
+
+Overage is defined as usage that extends beyond the amounts of Gigabytes, Hits, Requests, Domains, Web Apps, SSL Names, or any other measured unit allotted in the Billing Plan selected.
+
+Requests are defined as any request made to a NUU:BIT cache for content regardless of where the content may ultimately be sources.  Examples of hits include requests for 3rd party content, origin site requests, cache miss requests, and requests to and from NUU:BIT’s SDK.  
+
+Terabyte (TB) is defined as 1000 GBs of data transfer.
+
+Web Domain(s) are defined as unique host names which refer to assets within NUU:BIT’s network of caching system.
+
+Web Traffic is defined by any traffic traversing NUU:BIT’s network or caches without the use of NUU:BIT’s Software Development Kit (SDK).
+
+Written Notice is any written message sent from NUU:BIT to Customer’s Account Administrator.  Email shall constitute Written Notice.                                     
+
+By selecting a billing plan and agreeing to use Services provided by NUU:BIT, Inc. (“NUU:BIT”)  you are agreeing to this TOS, which shall constitute the complete agreement of the parties (together they may be referred to as “Agreement” and supersedes all prior discussions and negotiations.  In case of conflict, the terms of the Service Order or Billing Plan shall take precedence over this TOS.
+
+Acceptable Use:  NUU:BIT’s Acceptable Use Policy, located at https://www.revapm.com/aup.html, is considered an integral part of the Service Order and is incorporated herein by reference.
+
+Service Fees:  Customer will pay all fees due for Services according to the prices and terms listed in the agreed to Billing Plans.   NUU:BIT may at any time change or withdraw a billing plan or update pricing, which will take effect on the next billing cycle after Customer is notified by email to address associated with the administrators account of the Billing Plan change. All amounts payable hereunder to NUU:BIT will be exclusive (i.e. net) of all sales, use, value-added, withholding and other taxes and duties, which are for Customer’s account.  In the event NUU:BIT pays any such amounts (other than its own income or capital taxes) and has not collected those amounts previously from Customer, Customer shall reimburse NUU:BIT and they shall be added to the invoiced amounts as separate charges.
+
+Payments:   The service activation date for each Billing Plan will immediately take effect and NUU:BIT shall bill Customer’s Credit Card on file for any Billing Plan selected at the time it is selected.  The fee is billed at the time of checkout and should the customer adjust their Billing Plan to a less expensive Billing Plan, NUU:BIT reserves the right to issue a credit to be applied to future billing.  If Customer changes from a less expensive Billing Plan to a more expensive Billing Plan the Credit Card on file will be charged immediately for the difference in plan cost.  With respect to Customer’s excess bandwidth usage over the Billing Plan’s allotment, NUU:BIT will be entitled to additional fees based on Customer’s Overage as defined above.  Overage billing amount shall be calculated by subtracting Customer’s actual usage at the end of the Billing Period from the amounts allotted in the Billing Plan for all allotted amounts including: GBs/TBs, hits, domains, SSL Names, Web Apps, or any other measured component multiplied by the Overage Charge as specified in the Billing Plan chosen.  All plans are billed in advance with overages billed after the end of the Billing Period.  If usage for the month falls below the allotted amounts, no additional charges will be assessed. NUU:BIT shall charge Customer’s Credit Card on file for the monthly Billing Plan selected and any Overage at the beginning of each new Billing Period or at the time of termination.
+
+Proprietary Rights/Confidentiality:
+
+Customer acknowledges that the NUU:BIT technology, including related trade secrets, marks and copyrights, and all intellectual property rights therein and thereto are, and shall remain, the sole and exclusive property of NUU:BIT as owner or licensee, and Customer is only receiving a limited right to use the Services.  Customer may not resell, distribute, sublicense, reproduce, rent, share or transfer the Services or Customer’s right to use the Services to any third party. Customer further agrees to not reverse engineer, re engineer, or create competitive technologies related to NUU:BIT’s services, technologies, or proprietary information disclosed during the term of this agreement.  Customer agrees not to divulge any Confidential Information to third parties or make any usage of it other than as intended by NUU:BIT. NUU:BIT at its sole discretion may use the Customer name and logo on its website and print media for public relation and marketing purpose.
+
+Indemnification:  NUU:BIT hereby indemnifies and holds harmless Customer from and against any claims, actions, or demands alleging that the Services infringe any U.S. patent, trademark or copyright of any third party.
+
+Limitation of Liability: NOTWITHSTANDING ANYTHING TO THE CONTRARY IN THIS AGREEMENT OR A SERVICE ORDER, NUU:BIT WILL NOT BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, INCLUDING, WITHOUT LIMITATION, LOST PROFITS, LOSS OF DATA OR PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES – EVEN IF NUU:BIT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO EVENT SHALL NUU:BIT’S LIABILITY ARISING OUT OF THIS AGREEMENT AND ANY SERVICE ORDER, WHETHER IN CONTRACT, TORT OR OTHERWISE, EXCEED 100% OF THE MAXIMUM CUMULATIVE AMOUNT PAYABLE BY CUSTOMER FOR NUU:BIT’S SERVICES PURSUANT TO SERVICE ORDERS HEREUNDER.
+
+Term and Termination:
+
+NUU:BIT is providing a service on a month to month basis and Customer is free to discontinue services or cancel at any time.  Should Customer elect to terminate in the middle of a Service Billing Plan, all Service fees including overage will become immediately due and will be charged to Customer Credit Card on file.  If there is unused Bandwidth, customer will forfeit the unused bandwidth and any credits toward future billing periods.
+
+Either party may terminate Service at any time if (a) a receiver is appointed for the other party or its property, (b) the other party makes an assignment of all or substantially all of its assets for the benefit of its creditors, (c) proceedings are commenced by or for the other party under any bankruptcy, insolvency, or debtor’s relief law, (d) the other party liquidates or dissolves or attempts to do so, (e) the other party assigns or purports to assign this agreement in breach of its provisions, or (f) the other party commits any other breach of a material obligation hereunder which it fails to cure within 3 days of written notice or immediately if it is by its nature incurable.
+
+Furthermore, should Customer fail to pay any fee in a timely manner or the Credit Card on file is unable to be charged for any reason, NUU:BIT shall be entitled to suspend its Services immediately until a valid Credit Card can be charged.
+
+NUU:BIT’s failure to perform any term or condition of this Agreement as a result of conditions beyond its control such as, but not limited to, war, strikes, fires, floods, acts of God, governmental restrictions, power failures, or damage or destruction of any network facilities or servers (a “force majeure event”), shall not be deemed a breach of this Agreement.  In the event that NUU:BIT is not able to provide Services during a force majeure event, during this period Customer’s obligation to pay for the Services shall be suspended.
+
+Disclaimer: EXCEPT AS OTHERWISE EXPRESSLY SET FORTH HEREIN, CUSTOMER ACKNOWLEDGES THAT THE SERVICES PROVIDED BY NUU:BIT ARE PROVIDED ON AN “AS IS” BASIS AND THAT, NOTWITHSTANDING ANY OTHER ORAL OR WRITTEN COMMUNICATIONS WITH NUU:BIT ABOUT OR IN CONNECTION WITH ANY SUCH SERVICES, NUU:BIT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON- INTERRUPTION OR AVAILABILITY OF THE SERVICES, OR NON-INFRINGEMENT OF THIRD PARTY RIGHTS.
+
+General: All notices or other communications required or permitted to be given hereunder shall be in writing and shall be deemed given when delivered in person, when received by mail, postage prepaid, registered or certified mail, return receipt requested, or when received by an internationally recognized courier service, and proof of delivery received by the noticing Party. All notices to NUU:BIT shall be sent to NUU:BIT Inc.: Attn: Legal and Finance.  Notices to Customer shall be sent to the email address provided as the Administrator Contact at the time of account registration.
+
+This Agreement shall be governed by and construed and interpreted in accordance with the laws of the State of California, USA without regard to conflicts of law principles. In the event that any portion of this Agreement is held to be unenforceable, the unenforceable portion shall be restated to reflect as nearly as possible the original intent of the Parties and the remainder of the provisions shall remain in full force and effect.
+
+The Parties agree that any and all disputes arising out of or relating to this Agreement that are not resolved by their mutual agreement shall be initiated only and exclusively before the courts of Santa Clara County, CA, with California substantive and procedural laws prevailing (except those that pertain to conflict of laws).  
+
+If any legal action is necessary to enforce the terms of the Agreement, the substantially prevailing party shall be entitled to reasonable legal fees and costs.
+
+Customer acknowledges that NUU:BIT, its affiliates, and third party providers own and retain all trademarks, service marks, trade names, logos, designations, copyrights and other proprietary rights in or associated with NUU:BIT, its affiliates and their third party providers, respectively, as applicable, and agrees that it will not at any time during or after the Term assert or claim any interest in such proprietary rights or do anything that may adversely affect NUU:BIT, its affiliates, or the third party providers (including, without limitation, any act or assistance to act which may infringe or lead to the infringement of any of the proprietary rights of NUU:BIT, its affiliates or the third party providers).
+
+Neither party may assign this Agreement to any third-party except upon prior written consent, not to be unreasonably withheld.  Notwithstanding the foregoing, a party may assign this Agreement without such consent to (i) a parent or subsidiary of such party, (ii) an acquirer of all or substantially all of the capital stock or assets of such party, or (iii) in connection with a reorganization or merger. Any purported assignment in violation of this Section shall be void. Subject to the foregoing, this Agreement and each and all of the provisions hereof bind and benefit the parties and their respective heirs, executors, administrators, legal representatives, successors and assigns.
+
+No failure to pursue any remedy resulting from a breach of this Agreement by the non-breaching Party shall be construed as a waiver of that breach by the non-breaching Party or as a waiver of any subsequent or other breach unless such waiver is in writing and signed by the non-breaching Party.
+
+The provisions contained in Sections 4 (only to the extent that a payment obligation arising during the term of the Agreement has not been fully paid on or before termination of the Agreement), 5, 7 and 9 shall continue in force notwithstanding the termination of this Agreement.
+
+Neither the course of conduct between the Parties nor trade practice shall act to modify any provision hereunder. The terms and conditions of the Agreement, including all attachments thereto, shall prevail notwithstanding any conflicting terms and conditions of any order form or other form for order solicitation submitted by Customer to NUU:BIT. This Agreement and any addenda or order forms accepted hereunder constitute one and the same legally binding instrument and the entire agreement between Customer and NUU:BIT, and supersede all prior oral or written agreements between the Parties with respect to the matters provided for herein. Unless otherwise provided in this Agreement, no modification, amendment or other change may be made to this Agreement or any part thereof unless reduced to writing and executed by authorized representatives of both Parties.
+
+The parties agree that, to the extent permitted by law, the United Nations Convention on the International Sale of Goods, or similar consumer protection legislation worldwide, do not apply in any respect to the Agreement.
+
+This Agreement does not create an employer-employee relationship between NUU:BIT and Customer, or any agency, joint venture or partnership. Customer shall have no authority to act for or to bind NUU:BIT in any way, including to warrant or to execute agreements on behalf of NUU:BIT or to represent that NUU:BIT is in any way responsible for the acts or omissions of Customer. Customer and NUU:BIT shall be independent contractors only.
