@@ -1,9 +1,0 @@
-/Users/ekaterina/Projects/RevSDK.Core/RevSDK.iOS/obj/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
-/Users/ekaterina/Projects/RevSDK.Core/RevSDK.iOS/obj/Debug/optimized/
-/Users/ekaterina/Projects/RevSDK.Core/RevSDK.iOS/bin/Debug/RevSDK.iOS.dll.mdb
-/Users/ekaterina/Projects/RevSDK.Core/RevSDK.iOS/bin/Debug/RevSDK.iOS.dll
-/Users/ekaterina/Projects/RevSDK.Core/RevSDK.iOS/obj/Debug/RevSDK.iOS.dll
-/Users/ekaterina/Projects/RevSDK.Core/RevSDK.iOS/obj/Debug/RevSDK.iOS.dll.mdb
-/Users/ekaterina/Projects/RevSDK.Core/RevSDK.iOS/bin/Debug/RevSDK.dll
-/Users/ekaterina/Projects/RevSDK.Core/RevSDK.iOS/bin/Debug/RevSDK.Core.dll
-/Users/ekaterina/Projects/RevSDK.Core/RevSDK.iOS/bin/Debug/RevSDK.Core.dll.mdb
