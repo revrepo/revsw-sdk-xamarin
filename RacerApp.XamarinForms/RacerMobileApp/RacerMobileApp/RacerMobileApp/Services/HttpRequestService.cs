@@ -12,12 +12,13 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Nuubit.SDK;
 
 namespace RacerMobileApp.Services
 {
    public class HttpRequestService 
     {
-		public static HttpClientHandler DefaultRacerHttpClientHandler = new Nuubit.SDK.NuubitMessageHandler();
+		public static HttpClientHandler DefaultRacerHttpClientHandler = new NuubitMessageHandler();
 
 		private static HttpClient RevClient;
         private static HttpClient DefaultClient = new HttpClient(new HttpClientHandler() { AllowAutoRedirect = true });

@@ -196,10 +196,6 @@
       <Project>{D0A0C1E7-930D-4EF9-9DB9-439DE17C23D3}</Project>
       <Name>RacerMobileApp</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\RevAPMBinding\RevSDK\RevSDK\Nuubit.SDK.iOS.csproj">
-      <Project>{9D5542E6-254A-4470-ACAA-3D686F682070}</Project>
-      <Name>Nuubit.SDK.iOS</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
