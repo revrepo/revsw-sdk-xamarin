@@ -182,7 +182,7 @@
       <Project>{D0A0C1E7-930D-4EF9-9DB9-439DE17C23D3}</Project>
       <Name>RacerMobileApp</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\AndroidBindingLibrary\AndroidBindingLibrary\Nuubit.SDK.Droid.csproj">
+    <ProjectReference Include="..\..\NuubitSDK\Nuubit.SDK.Android\AndroidBindingLibrary\Nuubit.SDK.Droid.csproj">
       <Project>{EDE5B85F-AED0-4355-A85F-6F711609C0E7}</Project>
       <Name>Nuubit.SDK.Droid</Name>
     </ProjectReference>

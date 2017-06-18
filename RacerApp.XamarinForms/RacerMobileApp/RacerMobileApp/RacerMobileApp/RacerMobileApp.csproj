@@ -181,7 +181,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\nuuBIT.SDK\nuuBIT.SDK\NuuBIT.SDK.csproj">
+    <ProjectReference Include="..\..\..\..\NuubitSDK\nuuBIT.SDK\nuuBIT.SDK\Nuubit.SDK.csproj">
       <Project>{816CFFED-E4B4-43F0-9F2C-199492FC58AC}</Project>
       <Name>Nuubit.SDK</Name>
     </ProjectReference>
