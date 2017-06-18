@@ -40,6 +40,12 @@
     <Compile Include="NativeCookieHandler.cs" />
     <Compile Include="NSErrorExtended.cs" />
     <Compile Include="NSUrlSessionHandler.cs" />
+    <Compile Include="..\..\..\nuuBIT.SDK\nuuBIT.SDK\Utility.cs">
+      <Link>Utility.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\nuuBIT.SDK\nuuBIT.SDK\CaptiveNetworkException.cs">
+      <Link>CaptiveNetworkException.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ObjcBindingApiDefinition Include="Binding\ApiDefinition.cs" />
@@ -58,12 +64,6 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\nuuBIT.SDK\nuuBIT.SDK\Nuubit.SDK.csproj">
-      <Project>{816CFFED-E4B4-43F0-9F2C-199492FC58AC}</Project>
-      <Name>Nuubit.SDK</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
 </Project>
